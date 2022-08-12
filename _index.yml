@@ -1,32 +1,22 @@
 ---
-settings:
-  name: Amazon FSx for ONTAP
-  platform: cloud
-  internal:
-    pdf_enabled: true
-  prod:
-    pdf_enabled: true
-    harmony_enabled: false
-  rss_page: whats-new.html
-  langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr
-sidebar:
-  entries:
-  - title: Amazon FSX for ONTAP 文档
-    url: "/index.html"
-  - title: 发行说明
-    url: "/whats-new.html"
+indexpage:
+  lead: 适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用
+    NetApp Cloud Manager 管理适用于 ONTAP 的 FSX 。
+  tiles:
   - title: 入门
-    entries:
-    - title: 了解适用于 ONTAP 的 FSX
+    links:
+    - title: 发行说明
+      url: "/whats-new.html"
+    - title: 了解适用于 ONTAP 的 Amazon FSX
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-    - title: 为适用于 ONTAP 的 FSX 设置权限
+    - title: 设置权限
       url: "/requirements/task-setting-up-permissions-fsx.html"
-    - title: 适用于 ONTAP 的 FSX 的安全组规则
+    - title: 安全组规则
       url: "/requirements/reference-security-groups-fsx.html"
   - title: 使用适用于 ONTAP 的 Amazon FSx
-    entries:
+    links:
     - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"
     - title: 管理工作环境
@@ -36,14 +26,16 @@ sidebar:
     - title: 管理卷和数据服务
       url: "/use/task-manage-fsx-volumes.html"
   - title: 知识和支持
-    entries:
+    links:
     - title: 注册以获得支持
       url: "/support/task-support-registration.html"
     - title: 获取帮助
       url: "/support/task-get-help.html"
-  - title: 法律声明
-    url: "/legal-notices.html"
-product-family:
-  name: Cloud Manager
-  repo: cloud-manager-family
-  sidebar_label: All Cloud Manager documentation
+  - title: 博客社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 博客
+      url: https://cloud.netapp.com/blog
+    - title: 云网络研讨会
+      url: https://cloud.netapp.com/events
