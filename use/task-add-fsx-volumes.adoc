@@ -145,9 +145,11 @@ image:screenshot_fsx_volume_usage_tiering.png["用于创建 ONTAP 卷的 FSX 的
 
 .步骤
 . 打开工作环境。
-. 打开卷菜单并选择 * 挂载卷 * 。
+. 选择*卷*选项卡和*管理卷*以打开*卷操作*菜单。
 +
-image:screenshot_fsx_volume_actions.png["打开卷菜单时可用操作的屏幕截图。"]
+image:screenshot_fsx_volume_actions.png["有关如何打开卷操作菜单的屏幕截图。"]
 
-. 按照说明挂载卷。
+. 选择*挂载命令*、然后按照说明挂载卷。
 
+
+此时、卷将挂载到主机。

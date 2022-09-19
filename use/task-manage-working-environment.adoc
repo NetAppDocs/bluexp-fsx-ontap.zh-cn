@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
 keywords: amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, 
-summary: 您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。 
+summary: 您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以更改吞吐量和存储容量以及IOPS、并删除或删除工作环境。 
 ---
 = 管理适用于ONTAP 的Amazon FSX工作环境
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。�
 
 
 [role="lead"]
-您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。
+您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以更改吞吐量和存储容量以及IOPS、并删除或删除工作环境。
 
 
 
@@ -26,12 +26,43 @@ summary: 您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。�
 
 .步骤
 . 打开适用于 ONTAP 的 FSX 工作环境。
-. 在*概述*选项卡中、单击*功能*。
+. 从*概述*选项卡中、选择*功能*。
+. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*吞吐量容量*编辑页面。
 +
-image:screenshot-change-thruput.png["通过\"hgput capacity\"菜单显示更改位置的屏幕截图。"]
+image:screenshot-change-thruput.png["更改吞吐量容量菜单位置的屏幕截图。"]
 
-. 单击铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*吞吐量容量*编辑页面。
-. 从下拉列表中选择一个新的吞吐量容量、然后单击*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。
+. 从下拉列表中选择一个新的吞吐量容量、然后选择*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。
+
+
+
+
+== 更改存储容量和IOPS
+
+在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。
+
+您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
+
+.步骤
+. 打开适用于 ONTAP 的 FSX 工作环境。
+. 从*概述*选项卡中、选择*功能*。
+. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])以打开*存储容量和IOPS*编辑页面。
++
+image:screenshot-change-iops.png["更改存储容量和IOPS菜单位置的屏幕截图。"]
+
+. 您可以每六小时更改一次存储容量和IOPS。如果您尝试更频繁地进行更改、则会收到错误。
++
+image:screenshot-configure-iops.png["用于更改存储容量和IOPS值的页面的屏幕截图。"]
+
++
+[NOTE]
+====
+** 建议的最大存储容量利用率为80%、以保持数据分层性能并为其他数据提供容量。
+** 选择*自动* IOPS可使主存储的每个GiB上配置的三个SSD IOPS的比率保持在高达80、000。您不能手动配置80、000或更高的IOPS值。
+
+
+====
+. 选中此复选框可确认您了解更改存储容量会影响ONTAP 服务的FSX成本、并且在六小时内无法进行其他更改。
+. 选择*更新*以确认所做的更改。
 
 
 
@@ -42,11 +73,11 @@ image:screenshot-change-thruput.png["通过\"hgput capacity\"菜单显示更改�
 
 .步骤
 . 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。
+. 在页面右上角、选择操作菜单、然后选择*从工作空间中删除*。
 +
 image:screenshot_fsx_working_environment_remove.png["Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。"]
 
-. 单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
+. 选择*删除*以从Cloud Manager中删除适用于ONTAP 的FSx。
 
 
 
@@ -70,9 +101,9 @@ WARNING: 此操作将删除与工作环境关联的所有资源。此操作无�
 
 .步骤
 . 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角，选择操作菜单，然后单击 * 删除 * 。
+. 在页面右上角、选择操作菜单并选择*删除*。
 +
 image:screenshot_fsx_working_environment_delete.png["通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。"]
 
-. 输入工作环境的名称，然后单击 * 删除 * 。
+. 输入工作环境的名称并选择*删除*。
 

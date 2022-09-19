@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
 summary: 使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
 ---
 = 创建或发现适用于ONTAP 的Amazon FSX工作环境
@@ -91,8 +91,8 @@ image:screenshot_add_fsx_encryption.png["为适用于 ONTAP 的 FSX 设置默认
 
 . 配置存储：
 +
-.. 选择吞吐量，容量和单位。您可以随时更改吞吐量容量。
-.. 您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。
+.. 选择吞吐量，容量和单位。您可以随时更改吞吐量和存储容量值。
+.. 您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。
 +
 
 WARNING: 如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。image:screenshot_fsx_working_environment_failed_iops.png["如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。"]

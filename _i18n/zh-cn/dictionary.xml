@@ -96,10 +96,6 @@
   <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">挂载卷</block>
   <block id="86a3efaabfd178d684bcd98f4cd6434c" category="paragraph">从 Cloud Manager 中访问挂载说明，以便将卷挂载到主机。</block>
   <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">打开工作环境。</block>
-  <block id="7dae500c424af1807e52460f734b857e" category="list-text">打开卷菜单并选择 * 挂载卷 * 。</block>
-  <block id="958a7394acfcee5d86c01e758be4f1c2" category="inline-image-macro">打开卷菜单时可用操作的屏幕截图。</block>
-  <block id="54b1fe05786347782bfe7e4a3e5de355" category="paragraph"><block ref="54b1fe05786347782bfe7e4a3e5de355" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="38aa5b57f82843fe74bb954a343bf4e0" category="list-text">按照说明挂载卷。</block>
   <block id="54e54adb33e337b5c804d6820b674b9a" category="inline-link-macro">使用 Cloud Manager 发现它</block>
   <block id="e5375c42110b0016231f311272774e83" category="paragraph">第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
   <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：</block>
@@ -139,7 +135,6 @@
   <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置默认主密钥的屏幕截图</block>
   <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">配置存储：</block>
-  <block id="44c0eb6e7e1c5fab261de20248c94791" category="list-text">您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。</block>
   <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。</block>
   <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8088a4fa7d414a887d0eb3f19623bc06" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置存储配置的屏幕截图</block>
@@ -168,10 +163,8 @@
   <block id="b3fee7abcfd59e1f7a4b591d94eea26b" category="section-title">从工作空间中删除适用于 ONTAP 的 FSX</block>
   <block id="619c35c80b530c32704e964530d66517" category="paragraph">您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。</block>
   <block id="9ddaae0edb615f2995d27bd6e00976ce" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
-  <block id="960f6c85ef871302e3e408b649cf6e70" category="list-text">在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。</block>
   <block id="410c78448ff59a132a6ef7e7c2bf2f4e" category="inline-image-macro">Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。</block>
   <block id="47f6e6061b4eadfbf907049dcd591b28" category="paragraph"><block ref="47f6e6061b4eadfbf907049dcd591b28" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a3c7ec91e48d6cb0479b63af7c30a498" category="list-text">单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</block>
   <block id="2167c28c0f5b01d9e01bb4084f44d791" category="section-title">删除适用于 ONTAP 的 FSX 工作环境</block>
   <block id="4de2a58fbc41a8206c0c53a3dd1da960" category="paragraph">您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
@@ -181,32 +174,24 @@
   <block id="ef91377d933625cd5679a41980e84a7d" category="list-text">您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。</block>
   <block id="264e33787c94efb543f65228a9b52512" category="admonition">此操作将删除与工作环境关联的所有资源。此操作无法撤消。</block>
   <block id="759e9950bbe6d95f5d993751a21090d8" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
-  <block id="5c026b5b99b1471c1695d12c5be5e3d9" category="list-text">在页面右上角，选择操作菜单，然后单击 * 删除 * 。</block>
   <block id="eea2ce15389bae978a0efc5763b9cdac" category="inline-image-macro">通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。</block>
   <block id="636c7339a775dda79a1b6b37974a27b3" category="paragraph"><block ref="636c7339a775dda79a1b6b37974a27b3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7c1e5f31ebf2bb33eb06de268374f840" category="list-text">输入工作环境的名称，然后单击 * 删除 * 。</block>
   <block id="00b56458820e0abf51f147bc4e399a7e" category="summary">您可以使用 Cloud Manager 管理卷，克隆和快照，并更改适用于 ONTAP 的 FSX 的分层策略。</block>
   <block id="7e8d943ffd901385b9eef24cb61b44b9" category="doc">管理适用于 ONTAP 的 Amazon FSX 的卷</block>
   <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">编辑卷</block>
   <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">创建卷后，您可以随时对其进行修改。</block>
-  <block id="e3c15b55dc36cad58edc7cb73ae80e2c" category="list-text">打开卷菜单并选择 * 编辑 * 。</block>
   <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">对于 NFS ，您可以修改大小和标记。</block>
   <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">对于 CIFS ，您可以根据需要修改共享名称，用户，权限和 Snapshot 策略。</block>
-  <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">单击 * 应用 * 。</block>
   <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">克隆卷</block>
   <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">创建卷后，您可以从新 Snapshot 创建新的读写卷。</block>
-  <block id="343bf0d675ca357b025fb7472514438f" category="list-text">打开卷菜单并选择 * 克隆 * 。</block>
   <block id="5e5db467595563d87880b20fec615319" category="list-text">输入克隆卷的名称。</block>
-  <block id="8215bd5d2f1e1b1cb3002f32795c762e" category="list-text">单击 * 克隆 * 。</block>
   <block id="e479d2534f323a1275e2ed0809755e56" category="section-title">管理 Snapshot 副本</block>
   <block id="13d23436eebf5663e94f902e862ce3bb" category="paragraph">Snapshot 副本可为卷提供时间点副本。创建 Snapshot 副本并将数据还原到新卷。</block>
-  <block id="c841bd422df65ac6f48f90c6d842cfc8" category="list-text">打开卷菜单，然后选择一个可用选项来管理 Snapshot 副本：</block>
   <block id="77920e8d9473162a2167976898eaa180" category="list-text">* 创建 Snapshot 副本 *</block>
   <block id="fa41e2569b3e81d19868356601d4d103" category="list-text">* 从 Snapshot 副本还原 *</block>
   <block id="df95b2ddbeefe0bd257bae9d1c7d663a" category="list-text">按照提示完成选定操作。</block>
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="section-title">更改分层策略</block>
   <block id="3a2ff6a4c845ba47894d1dd10a1b908f" category="paragraph">更改卷的分层策略。</block>
-  <block id="d5f25d8802c3b7804d35fc3426a2f809" category="list-text">打开卷菜单并选择 * 更改分层策略 * 。</block>
   <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">选择一个新的卷分层策略，然后单击 * 更改 * 。</block>
   <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">复制和同步数据</block>
   <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">在系统之间复制数据</block>
@@ -214,7 +199,6 @@
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">删除卷</block>
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">删除不再需要的卷。</block>
   <block id="08d16a95ed82f881bcc5359ecb0c8769" category="paragraph">您不能使用 Cloud Manager 删除先前属于 SnapMirror 关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。</block>
-  <block id="fa41d7948af66c69407c3a05211bb4b9" category="list-text">打开卷菜单并选择 * 删除 * 。</block>
   <block id="a1757cd330af9ddfc6b1f315176b17e9" category="list-text">输入工作环境名称并确认要删除此卷。从 Cloud Manager 中完全删除卷可能需要长达一小时的时间。</block>
   <block id="590368745da00a61c492e4b834d9568e" category="admonition">如果您尝试删除克隆的卷，则会收到错误。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
@@ -511,12 +495,8 @@
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
   <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">我们非常重视您的反馈意见。提交反馈以帮助我们改进 Cloud Manager 。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 支持</block>
-  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">除了上述自助支持选项之外，您还可以在激活支持后与 NetApp 支持工程师合作解决任何问题。</block>
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">在 Cloud Manager 中，单击 * 帮助 &gt; 支持 * 。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">在 "Technical Support" 下选择一个可用选项：</block>
-  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">单击 * 致电我们 * 可查找 NetApp 技术支持的电话号码。</block>
-  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">单击 * 打开问题描述 * ，选择一个选项，然后单击 * 发送 * 。</block>
-  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">设置权限</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">安全组规则</block>
   <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">从Connector访问fsxadmin管理LIF、以便向FSX发送API调用</block>
@@ -549,7 +529,6 @@
   <block id="c3948e9af2286480c185296c8233504b" category="summary">使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。</block>
   <block id="56741382a48f0ad5efb57a6532876317" category="doc">创建或发现适用于ONTAP 的Amazon FSX工作环境</block>
   <block id="ce077de6f3a969e5aa4cd26e1b3b5793" category="paragraph">使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。</block>
-  <block id="1854a29768044309b55fe7b58108c6b2" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量容量。</block>
   <block id="a856a2e7ff7a861c3124938689a66a62" category="paragraph">如果您使用AWS管理控制台创建了适用于ONTAP 的FSX文件系统、或者希望还原之前删除的工作环境、则可以使用"我 的商机"或手动发现该环境。</block>
   <block id="1b52b643a7dc88400af8fd712fed3d12" category="section-title">利用"我的商机"进行发现</block>
   <block id="2727507bf62cbd85fbf2b9c615630c53" category="paragraph">如果您之前已向Cloud Manager提供AWS凭据、则*我的商机*可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。</block>
@@ -573,17 +552,11 @@
   <block id="ecfc70ae41156684ed148266abaf3a62" category="list-text">输入一个"*启动程序组名称"*。</block>
   <block id="ccb9a070caab16c4e464e89fd6afe362" category="inline-image-macro">用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。</block>
   <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a20dc51cbd898b34e33a20c14094ed53" category="summary">您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。</block>
   <block id="faac9e60f93091e9068b8f347b36ec75" category="doc">管理适用于ONTAP 的Amazon FSX工作环境</block>
   <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">更改吞吐量容量</block>
   <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。</block>
   <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">您需要一个活动的<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
-  <block id="753a4005737100e35c99c30e52ef2c44" category="list-text">在*概述*选项卡中、单击*功能*。</block>
-  <block id="2e68dd5f8760ab98fc603405ef786ad2" category="inline-image-macro">通过"hgput capacity"菜单显示更改位置的屏幕截图。</block>
-  <block id="ba4f4a5f2fc20fe299d66d82a707dcfa" category="paragraph"><block ref="ba4f4a5f2fc20fe299d66d82a707dcfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">铅笔编辑图标的图像。</block>
-  <block id="956ab3e11e7c49feef0401b3df8ea2ef" category="list-text">单击铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*吞吐量容量*编辑页面。</block>
-  <block id="3ce3cdf8360d5fadb6de611684221e5f" category="list-text">从下拉列表中选择一个新的吞吐量容量、然后单击*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。</block>
   <block id="f6dfc77133ec0d2399d3f1b82fd008fe" category="list-text">目前、Cloud Manager可以将数据从内部或Cloud Volumes ONTAP 复制到适用于ONTAP 的FSX、以及从适用于ONTAP 的FSX复制到适用于ONTAP 系统的内部或其他FSX。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
@@ -598,4 +571,77 @@
   <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">创建或发现工作环境</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">管理工作环境</block>
   <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">管理工作环境</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">更改存储容量和IOPS</block>
+  <block id="0e36458fd86c678ff613e05396096775" category="paragraph">您现在可以： <block ref="0fb4d5e2ef1238fe0c2ee898e859399c" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="af1b15a700df7234e9ad68515cde3f5b" category="summary">您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以更改吞吐量和存储容量以及IOPS、并删除或删除工作环境。</block>
+  <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">从*概述*选项卡中、选择*功能*。</block>
+  <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*吞吐量容量*编辑页面。</block>
+  <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">更改吞吐量容量菜单位置的屏幕截图。</block>
+  <block id="e09dc417c2d896d165ca331477153842" category="paragraph"><block ref="e09dc417c2d896d165ca331477153842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="230f70d1e5d26fbe6e5ad10f5308cabe" category="list-text">从下拉列表中选择一个新的吞吐量容量、然后选择*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。</block>
+  <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">更改存储容量和IOPS</block>
+  <block id="f3c93b45ca50102a9f0b7eae1e06d071" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。</block>
+  <block id="048b8d92cffbe45e8afec553ae5bdab0" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)以打开*存储容量和IOPS*编辑页面。</block>
+  <block id="d6684930c2875391fe70b5eb14401bbb" category="inline-image-macro">更改存储容量和IOPS菜单位置的屏幕截图。</block>
+  <block id="687579d242782f9a851dc5bb5ba9abc9" category="paragraph"><block ref="687579d242782f9a851dc5bb5ba9abc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfb628b495d5e0828edcde206a117a0d" category="list-text">您可以每六小时更改一次存储容量和IOPS。如果您尝试更频繁地进行更改、则会收到错误。</block>
+  <block id="e67f7cfa37e5dcd4f3836e76f5301a68" category="inline-image-macro">用于更改存储容量和IOPS值的页面的屏幕截图。</block>
+  <block id="f5aa006a4894acbba121bdb32f513ead" category="paragraph"><block ref="f5aa006a4894acbba121bdb32f513ead" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c17ed8503d69fa2ad1c61b6c92a2255" category="list-text">建议的最大存储容量利用率为80%、以保持数据分层性能并为其他数据提供容量。</block>
+  <block id="e8036e0ac9189e05af8ebeb943ee3fd3" category="list-text">选择*自动* IOPS可使主存储的每个GiB上配置的三个SSD IOPS的比率保持在高达80、000。您不能手动配置80、000或更高的IOPS值。</block>
+  <block id="d179171b709f127d6b88e332ad5ac396" category="list-text">选中此复选框可确认您了解更改存储容量会影响ONTAP 服务的FSX成本、并且在六小时内无法进行其他更改。</block>
+  <block id="1f25673463b8f906d801bd291ad45315" category="list-text">选择*更新*以确认所做的更改。</block>
+  <block id="4fe33f0977f17b0718840c634bb48345" category="list-text">在页面右上角、选择操作菜单、然后选择*从工作空间中删除*。</block>
+  <block id="695c6322f28397cda2ea2ea4d49f33fc" category="list-text">选择*删除*以从Cloud Manager中删除适用于ONTAP 的FSx。</block>
+  <block id="3767b7b1dbf8b0f59d82eb46c294df83" category="list-text">在页面右上角、选择操作菜单并选择*删除*。</block>
+  <block id="e19eec57ec1908f25e4a753fbf9d1bf5" category="list-text">输入工作环境的名称并选择*删除*。</block>
+  <block id="d33ef5be6071ae5e3d7d930d8977e41a" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量和存储容量值。</block>
+  <block id="7f234f33b9862c892e7c8dbf9dd91bc5" category="list-text">您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。</block>
+  <block id="c39def9377c6bd394b8633558a53f581" category="paragraph">您可以使用Cloud Manager查看和管理卷、克隆和快照、以及更改适用于ONTAP 的FSX的分层策略。</block>
+  <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">查看卷详细信息</block>
+  <block id="217a2eee444fb09dda70bb076071f17e" category="paragraph">创建卷后、您可以查看配置详细信息。</block>
+  <block id="45dddf924938e17bccdd6a467352bfa0" category="admonition">您可以将鼠标悬停在卷名称上以显示卷类型。</block>
+  <block id="a99a1e91f5b89a3a1bb26badc77c44b1" category="list-text">打开卷选项卡并选择*管理卷*以打开*卷操作*菜单。</block>
+  <block id="bc113f9071c312c1d14ec49df82aa928" category="list-text">选择*查看卷详细信息*。</block>
+  <block id="a324b09bde8b0186d3f43692b7556fd9" category="list-text">选择*编辑卷设置*。</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">选择 * 应用 * 。</block>
+  <block id="d64b993d52f8a267e9dfb902139ad672" category="list-text">选择*克隆卷*。</block>
+  <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">选择 * 克隆 * 。</block>
+  <block id="8b5f6e4263eafb9559eeaffe98711978" category="list-text">打开卷选项卡并选择*管理卷*以打开*保护操作*菜单。</block>
+  <block id="f5baa7ceb1673e19b71f0f856feee19a" category="list-text">选择一个可用选项来管理Snapshot副本：</block>
+  <block id="f879ed761f1ca2475598c0bea304d10d" category="list-text">打开卷选项卡并选择*管理卷*以打开*高级操作*菜单。</block>
+  <block id="dedc9eb7ac0cb065a0b90f9f63104b01" category="list-text">选择*更改分层策略*。</block>
+  <block id="f596a753aac59df7e240140c2eb96e99" category="list-text">选择*删除卷*。</block>
+  <block id="87ab0ddecc6298e066c5bf52a6e57341" category="list-text">选择*卷*选项卡和*管理卷*以打开*卷操作*菜单。</block>
+  <block id="1cffe537ba60b23c60608f4b7ec02e43" category="inline-image-macro">有关如何打开卷操作菜单的屏幕截图。</block>
+  <block id="b43e642ae439f1f795292eb5df5f84d3" category="paragraph"><block ref="b43e642ae439f1f795292eb5df5f84d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78c27b88e2a8142906bb69594e5b22a6" category="list-text">选择*挂载命令*、然后按照说明挂载卷。</block>
+  <block id="35f5a704747f7e6644a0bbedc33a0c2e" category="paragraph">此时、卷将挂载到主机。</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
+  <block id="09651e14b46d7e8697d32de90d0deacb" category="paragraph">要使用*创建案例*功能、您必须先一次性注册Cloud Manager帐户ID序列号(即960xxxx)。 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</block>
+  <block id="ec65cc87efda54741062da1fce99ff76" category="paragraph">如果未看到您的NSS帐户、您可以导航到Cloud Manager支持部分中的* NSS管理*选项卡将其添加到该选项卡中。</block>
+  <block id="b3144caf7d928b7954447c757b3ed77b" category="list-text">*服务*：选择与问题描述 关联的服务。例如、Cloud Manager适用于具有服务中工作流或功能的技术支持问题描述。</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
+  <block id="1e38219c106fb9d07d173c027b8911c7" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的Cloud Manager帐户、工作空间和连接器的范围。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有关这些优先级的更多详细信息、请将鼠标悬停在字段名称旁边的信息图标上。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*问题描述 *：提供问题的详细问题描述 、包括任何适用的错误消息或您执行的故障排除步骤。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他电子邮件地址*：如果您希望其他人了解此问题描述 、请输入其他电子邮件地址。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">创建案例表的屏幕截图、可用于向NetApp支持部门创建案例。</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">此时将显示一个弹出窗口、其中包含您的支持案例编号。NetApp支持专家将审核您的案例、并尽快与您联系。</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">有关支持案例的历史记录、您可以单击*设置&gt;时间线*并查找名为"创建支持案例"的操作。 最右侧的按钮可用于展开操作以查看详细信息。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">尝试创建案例时、您可能会遇到以下错误消息：</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您无权针对选定服务创建案例"</block>
+  <block id="148f13242c3e296dc276821cdc574921" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与Cloud Manager帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用产品内聊天功能</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">通过提交非技术案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">要求</block>
+  <block id="74e5a199ea27b8b415c0c77d75229e79" category="sidebar">NVMe和iSCSI主机配置</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
 </blocks>
