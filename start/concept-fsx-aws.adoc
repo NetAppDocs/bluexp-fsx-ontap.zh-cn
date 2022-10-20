@@ -59,11 +59,3 @@ Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系
 对于 Cloud Manager 或 Cloud Manager 微服务特有的一般问题，您可以从在线 Cloud Manager 聊天开始。
 
 对于 Cloud Manager 或中的微服务特有的技术支持问题，您可以使用 Cloud Manager 帐户级别序列号打开 NetApp 支持服务单。您需要注册 Cloud Manager 序列号才能激活支持。
-
-
-
-== 限制
-
-* 目前、Cloud Manager可以将数据从内部或Cloud Volumes ONTAP 复制到适用于ONTAP 的FSX、以及从适用于ONTAP 的FSX复制到适用于ONTAP 系统的内部或其他FSX。
-* 目前、从适用于ONTAP 的FSX进行SnapMirror复制 link:https://docs.netapp.com/us-en/ontap/data-protection/index.html["支持使用ONTAP 命令行界面"^]。
-
