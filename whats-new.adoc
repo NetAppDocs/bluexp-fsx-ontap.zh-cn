@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
 summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。 
 ---
 = 适用于 ONTAP 的 Amazon FSX 的新增功能

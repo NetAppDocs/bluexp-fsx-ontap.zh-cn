@@ -2,7 +2,7 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-summary: 适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用 NetApp Cloud Manager 管理适用于 ONTAP 的 FSX 。 
+summary: 适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用NetApp BlueXP管理适用于ONTAP 的FSX。 
 ---
 = Amazon FSX for ONTAP 文档
 :hardbreaks:

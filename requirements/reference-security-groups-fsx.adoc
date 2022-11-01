@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements/reference-security-groups-fsx.html 
 keywords: security group, security groups, rules, ports, fsx, inbound, outbound, rules 
-summary: Cloud Manager 会创建 AWS 安全组，其中包含 Cloud Manager 和适用于 ONTAP 的 FSX 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。 
+summary: BlueXP创建了AWS安全组、其中包含了BlueXP和适用于ONTAP 的FSX成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。 
 ---
 = 适用于 ONTAP 的 FSX 的安全组规则
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager 会创建 AWS 安全组，其中包含 Cloud Manager 和�
 
 
 [role="lead"]
-Cloud Manager 会创建 AWS 安全组，其中包含 Cloud Manager 和适用于 ONTAP 的 FSX 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。
+BlueXP创建了AWS安全组、其中包含了BlueXP和适用于ONTAP 的FSX成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。
 
 
 
@@ -344,7 +344,7 @@ NOTE: 源 IP 地址是 Connector 主机。
 | API 调用 | TCP | 8088 | 备份到 S3 | 对备份到 S3 进行 API 调用 
 
 
-| DNS | UDP | 53. | DNS | 用于云管理器进行 DNS 解析 
+| DNS | UDP | 53. | DNS | 用于BlueXP的DNS解析 
 
 
 | 云数据感知 | HTTP | 80 | 云数据感知实例 | 适用于 Cloud Volumes ONTAP 的云数据感知 

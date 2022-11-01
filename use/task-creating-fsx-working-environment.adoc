@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
 keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
-summary: 使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
+summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
 ---
 = 创建或发现适用于ONTAP 的Amazon FSX工作环境
 :hardbreaks:
@@ -14,33 +14,33 @@ summary: 使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工�
 
 
 [role="lead"]
-使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。
+使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。
 
 
 
 == 创建适用于 ONTAP 的 Amazon FSX 工作环境
 
-第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用 Cloud Manager 发现它"]。
+第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用BlueXP发现它"]。
 
-在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：
+在BlueXP中创建适用于ONTAP 的FSX工作环境之前、您需要：
 
-* IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
+* IAM角色的ARN、为BlueXP提供为ONTAP 工作环境创建FSX所需的权限。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将AWS凭据添加到BlueXP"] 了解详细信息。
 * 要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。
 
 
 .步骤
-. 在 Cloud Manager 中，添加一个新的工作环境，选择位置 * Amazon Web Services* ，然后单击 * 下一步 * 。
+. 在BlueXP中、添加一个新的工作环境、选择位置* Amazon Web Services*、然后单击*下一步*。
 . 选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 下一步 * 。
 +
 image:screenshot_add_fsx_working_env.png["为适用于 ONTAP 的 Amazon FSX 添加工作环境的屏幕截图"]
 
-. 在 Cloud Manager 中对适用于 ONTAP 的 FSX 进行身份验证。
+. 在BlueXP中对适用于ONTAP 的FSX进行身份验证。
 +
 .. 如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。
 +
 image:screenshot-fsx-assume-role-present.png["显示 AWS 角色下拉列表的屏幕截图"]
 
-.. 如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
+.. 如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将AWS凭据添加到BlueXP"] 了解详细信息。
 +
 image:screenshot-fsx-assume-role-not-present.png["为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。"]
 
@@ -81,7 +81,7 @@ image:screenshot_add_fsx_region.png["为适用于 ONTAP 的 FSX 添加区域和 
 +
 image:screenshot_add_fsx_floatingIP.png["为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图"]
 
-. 选择包含到浮动 IP 地址的路由的路由表。如果 VPC 中的子网只有一个路由表（主路由表），则 Cloud Manager 会自动将浮动 IP 地址添加到该路由表中。单击 * 下一步 * 继续。
+. 选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。单击 * 下一步 * 继续。
 +
 image:screenshot_add_fsx_route_table.png["为 ONTAP 的 FSX 选择路由表的屏幕截图"]
 
@@ -92,7 +92,7 @@ image:screenshot_add_fsx_encryption.png["为适用于 ONTAP 的 FSX 设置默认
 . 配置存储：
 +
 .. 选择吞吐量，容量和单位。您可以随时更改吞吐量和存储容量值。
-.. 您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。
+.. 您也可以指定 IOPS 值。如果未指定IOPS值、则BlueXP将根据输入的总容量的每GiB 3个IOPS设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。
 +
 
 WARNING: 如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。image:screenshot_fsx_working_environment_failed_iops.png["如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。"]
@@ -112,11 +112,11 @@ image:screenshot_add_fsx_review.png["查看适用于 ONTAP 的 FSX 设置的屏�
 
 
 
-Cloud Manager 会在 " 画布 " 页面上显示适用于 ONTAP 的 FSX 配置。
+BlueXP会在"画布"页面上显示适用于ONTAP 的FSX配置。
 
 image:screenshot_add_fsx_cloud.png["工作环境页面上的 Amazon FSX for ONTAP 屏幕截图。"]
 
-现在，您可以使用 Cloud Manager 将卷添加到适用于 ONTAP 的 FSX 工作环境中。
+现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。
 
 
 
@@ -128,10 +128,10 @@ image:screenshot_add_fsx_cloud.png["工作环境页面上的 Amazon FSX for ONTA
 
 === 利用"我的商机"进行发现
 
-如果您之前已向Cloud Manager提供AWS凭据、则*我的商机*可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。
+如果您之前已向BlueXP提供AWS凭据、则*我的商机*可以自动发现并建议使用BlueXP添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。
 
 .步骤
-. 在Cloud Manager中、单击*我的商机*选项卡。
+. 在BlueXP中、单击*我的商机*选项卡。
 . 此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。
 +
 image:screenshot-opportunities.png["适用于ONTAP 的FSX的\"我的商机\"页面的屏幕截图。"]
@@ -142,7 +142,7 @@ image:screenshot-opportunities.png["适用于ONTAP 的FSX的\"我的商机\"页�
 [NOTE]
 ====
 * 如果选择未命名的集群、则会提示您输入集群名称。
-* 如果您选择的集群没有允许Cloud Manager管理适用于ONTAP 的FSX文件系统所需的凭据、则会提示您选择具有所需权限的凭据。
+* 如果您选择的集群没有允许BlueXP管理适用于ONTAP 的FSX文件系统所需的凭据、则系统将提示您选择具有所需权限的凭据。
 
 
 ====
@@ -150,10 +150,10 @@ image:screenshot-opportunities.png["适用于ONTAP 的FSX的\"我的商机\"页�
 
 === 手动发现
 
-您可以手动发现您使用AWS管理控制台添加的或先前从Cloud Manager中删除的适用于ONTAP 的FSX文件系统。
+您可以手动发现您使用AWS管理控制台添加的或先前从BlueXP中删除的适用于ONTAP 的FSX文件系统。
 
 .步骤
-. 在 Cloud Manager 中，单击 * 添加工作环境 * ，然后选择 * Amazon Web Services* 。
+. 在BlueXP中、单击*添加工作环境*、然后选择* Amazon Web Services*。
 . 选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 单击此处 * 。
 +
 image:screenshot_fsx_working_environment_discover.png["发现适用于 ONTAP 的 Amazon FSX 的工作环境的屏幕截图"]
@@ -163,6 +163,6 @@ image:screenshot_fsx_working_environment_discover.png["发现适用于 ONTAP 的
 . 单击 * 添加 * 。
 
 
-Cloud Manager 将显示您发现的适用于 ONTAP 文件系统的 FSX 。
+BlueXP将显示您发现的适用于ONTAP 文件系统的FSX。
 
 image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
