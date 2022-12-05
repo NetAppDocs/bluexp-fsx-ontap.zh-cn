@@ -355,7 +355,6 @@
   <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系统，基础架构或使用此服务的任何 AWS 解决方案相关的问题或技术支持问题，请使用 AWS 控制台中的支持中心向 AWS 创建支持案例。选择 "FSX for ONTAP " 服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。</block>
   <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。</block>
   <block id="bf7ec532103402eaed4653738655f6ad" category="doc">开始使用适用于 ONTAP 的 Amazon FSX</block>
-  <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
   <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
@@ -555,9 +554,7 @@
   <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp新手</block>
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">了解如何向NetApp注册</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户一起添加。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
   <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">由三个水平点组成的图标</block>
@@ -574,24 +571,19 @@
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成以创建NetApp 支持站点 帐户<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">请务必复制上面用于序列号字段的Cloud Manager帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp的新品牌</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">从支持注册页面找到您的Cloud Manager帐户ID序列号。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支持注册站点</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">导航到<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 并选择*我不是NetApp注册客户*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填写必填字段(带有红色星号的字段)。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">复制上述第2步中的Cloud Manager帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">在电子邮件中确认操作。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
   <block id="ca9f06fa1a00f01b3d6a92ff7e6556ff" category="summary">适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用NetApp BlueXP管理适用于ONTAP 的FSX。</block>
   <block id="6a7ebeee8a870484e91de7ed605595e5" category="section-title">BlueXP中的其他功能</block>
-  <block id="61d1931826c6b4bafae8f3e532759004" category="list-text">使用AWS和BlueXP中的连接器(以前称为Cloud Manager)、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSx与Data sense和Cloud Sync 等NetApp云服务集成。</block>
-  <block id="2e1fca4dcaae8d35c81661aec02958b2" category="paragraph">您的FSX for ONTAP 帐户由AWS维护、而不是由BlueXP维护。<block ref="8ceb48ebb1fa83d69a24f299e3fde40a" category="inline-link-rx"></block></block>
   <block id="c38a4c52c19f29b55ed16af8a145fb57" category="paragraph">对于特定于BlueXP或BlueXP微服务的常规问题、您可以从在线BlueXP聊天开始。</block>
   <block id="8ae3d71a6e8ab23cdfe061900ab42a08" category="paragraph">对于特定于BlueXP或中的微服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要注册BlueXP序列号才能激活支持。</block>
   <block id="d2f0ad44b51fbd3850fad8307ea16aa3" category="inline-link-macro">设置一个IAM角色、使BlueXP SaaS能够承担此角色</block>
@@ -687,4 +679,14 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
+  <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">快速步骤</block>
+  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
+  <block id="a9272148ddd8493b835b5b0ed973a495" category="paragraph">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
+  <block id="c8e7a79b3e62d2a377fbadb534f60c42" category="list-text">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)和AWS中的连接器、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSX与Data sense和Cloud Sync 等NetApp云服务集成。</block>
+  <block id="962c08f0916b80f5a1a7aec1e657dbe8" category="paragraph">您的FSX for ONTAP 帐户由AWS维护、而不是由BlueXP维护。请参见<block ref="8ceb48ebb1fa83d69a24f299e3fde40a" category="inline-link-rx"></block>。</block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
 </blocks>

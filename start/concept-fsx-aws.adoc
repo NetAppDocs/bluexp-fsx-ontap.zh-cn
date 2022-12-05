@@ -31,7 +31,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["�
 
 == BlueXP中的其他功能
 
-* 使用AWS和BlueXP中的连接器(以前称为Cloud Manager)、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSx与Data sense和Cloud Sync 等NetApp云服务集成。
+* 使用 link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^] (以前称为Cloud Manager)和AWS中的连接器、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSX与Data sense和Cloud Sync 等NetApp云服务集成。
 * 利用人工智能（ AI ）驱动的技术，云数据感知可以帮助您了解数据环境，并识别 FSX for ONTAP 帐户中的敏感数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["了解更多信息。"^]。
 * 使用 NetApp Cloud Sync ，您可以自动将数据迁移到云中或内部环境中的任何目标。 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["了解更多信息。"^]
 
@@ -40,7 +40,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["�
 
 == 成本
 
-您的FSX for ONTAP 帐户由AWS维护、而不是由BlueXP维护。 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["《适用于 ONTAP 的 Amazon FSX 入门指南》"^]
+您的FSX for ONTAP 帐户由AWS维护、而不是由BlueXP维护。请参见 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["《适用于 ONTAP 的 Amazon FSX 入门指南》"^]。
 
 在 AWS 中使用连接器以及 Cloud Sync 和 Data sense 等可选数据服务会产生额外成本。
 

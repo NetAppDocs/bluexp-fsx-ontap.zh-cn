@@ -16,7 +16,11 @@ summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
 [role="lead"]
 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
 
-只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。
+
+
+== 快速步骤
+
+使用 link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^]、您只需几个步骤即可开始使用适用于ONTAP 的FSX。
 
 [role="quick-margin-para"]
 在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 link:../requirements/task-setting-up-permissions-fsx.html["设置一个IAM角色、使BlueXP SaaS能够承担此角色"]。
