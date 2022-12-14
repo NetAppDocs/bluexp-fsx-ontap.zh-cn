@@ -24,6 +24,7 @@ ONTAP 的 FSX 安全组需要入站和出站规则。此图显示了适用于 ON
 
 image:diagram-fsx-security-groups.png["ONTAP 安全组配置的 FSX 示意图。"]
 
+.开始之前
 您需要使用 AWS 管理控制台查找与 Enis 关联的安全组。
 
 .步骤

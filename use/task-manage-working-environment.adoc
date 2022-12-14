@@ -22,6 +22,7 @@ summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您�
 
 在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。
 
+.开始之前
 您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
 
 .步骤
@@ -40,6 +41,7 @@ image:screenshot-change-thruput.png["更改吞吐量容量菜单位置的屏幕�
 
 在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。
 
+.开始之前
 您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
 
 .步骤

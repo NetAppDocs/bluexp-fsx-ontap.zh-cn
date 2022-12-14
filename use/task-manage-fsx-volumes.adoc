@@ -108,6 +108,7 @@ Snapshot 副本可为卷提供时间点副本。创建 Snapshot 副本并将数�
 
 删除不再需要的卷。
 
+.开始之前
 您不能使用BlueXP删除先前属于SnapMirror关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。
 
 .步骤

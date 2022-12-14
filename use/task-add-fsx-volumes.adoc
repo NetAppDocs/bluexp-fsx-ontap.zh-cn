@@ -22,6 +22,7 @@ summary: 设置工作环境后，您可以创建和管理适用于 ONTAP 卷，�
 
 您可以在BlueXP中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。
 
+.开始之前
 您需要：
 
 * 活动 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
@@ -135,6 +136,7 @@ image:screenshot_fsx_volume_usage_tiering.png["用于创建 ONTAP 卷的 FSX 的
 . * 审阅 * ：查看卷配置。单击 * 上一步 * 以更改设置，或单击 * 添加 * 以创建卷。
 
 
+.结果
 此时，新卷将添加到工作环境中。
 
 
@@ -152,4 +154,5 @@ image:screenshot_fsx_volume_actions.png["有关如何打开卷操作菜单的屏
 . 选择*挂载命令*、然后按照说明挂载卷。
 
 
+.结果
 此时、卷将挂载到主机。
