@@ -13,14 +13,20 @@ summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
 :imagesdir: ./media/
 
 
-[role="lead"]
+[role="lead^"]
 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
+
+
+
+== 2023年1月1日
+
+现在、您可以选择启用 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["自动容量管理"^] 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。
 
 
 
 == 2022年9月18日
 
-您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
 
 
 
@@ -28,11 +34,11 @@ summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
 
 * 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"]
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"^]
 
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"]。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"^] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"^]。
 
 
 
@@ -41,11 +47,11 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx
 
 * 现在、您可以选择一个或多个可用性区域HA部署模式。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["创建适用于 ONTAP 的 FSX 工作环境"]
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["创建适用于 ONTAP 的 FSX 工作环境"^]
 
 * Cloud Manager现在支持AWS GovCloud帐户身份验证。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["设置 IAM 角色"]
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["设置 IAM 角色"^]
 
 
 
@@ -59,7 +65,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 
 在创建适用于 ONTAP 的 FSX 工作环境时，您现在必须提供一个 IAM 角色的 ARN ， Cloud Manager 可以使用此 ARN 来创建适用于 ONTAP 的 FSX 工作环境。您以前需要提供 AWS 访问密钥。
 
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为适用于 ONTAP 的 FSX 设置权限"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为适用于 ONTAP 的 FSX 设置权限"^]。
 
 
 
@@ -75,7 +81,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 
 === 创建卷时选择卷单元
 
-您可以 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["创建卷时，请选择卷单位（ GiB 或 TiB ）"] 在适用于 ONTAP 的 FSX 中。
+您可以 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["创建卷时，请选择卷单位（ GiB 或 TiB ）"^] 在适用于 ONTAP 的 FSX 中。
 
 
 
@@ -85,13 +91,13 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 
 === 使用 Cloud Manager 创建 CIFS 卷
 
-现在可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用 Cloud Manager 在适用于 ONTAP 的 FSX 中创建 CIFS 卷"]。
+现在可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用 Cloud Manager 在适用于 ONTAP 的 FSX 中创建 CIFS 卷"^]。
 
 
 
 === 使用 Cloud Manager 编辑卷
 
-现在可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["使用 Cloud Manager 编辑 ONTAP 卷的 FSX"]。
+现在可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["使用 Cloud Manager 编辑 ONTAP 卷的 FSX"^]。
 
 
 
@@ -101,13 +107,13 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 
 === 支持适用于 ONTAP 的 Amazon FSX
 
-* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["适用于 ONTAP 的 Amazon FSX"] 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["适用于 ONTAP 的 Amazon FSX"^] 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"^]。
 
 * 您可以在 Cloud Manager 中配置适用于 ONTAP 的 FSX 工作环境。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]。
 
 * 使用 AWS 和 Cloud Manager 中的连接器，您可以创建和管理卷，复制数据，并将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。
 +

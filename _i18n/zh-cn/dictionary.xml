@@ -22,7 +22,6 @@
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">支持适用于 ONTAP 的 Amazon FSX</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
-  <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。</block>
   <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link-macro">了解适用于 ONTAP 的 Amazon FSX</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">您可以在 Cloud Manager 中配置适用于 ONTAP 的 FSX 工作环境。</block>
   <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="inline-link-macro">创建适用于 ONTAP 的 Amazon FSX 工作环境</block>
@@ -323,7 +322,6 @@
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">设置 IAM 角色</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">转到目标帐户中的 IAM 控制台。</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
-  <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">请务必执行以下操作：</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</block>
   <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">创建包含以下权限的策略：</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">IAM 角色现在具有所需的权限。</block>
@@ -370,12 +368,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">活动<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
   <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
-  <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>。</block>
-  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">您可以 <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
-  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">现在可以了 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
-  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">现在可以了 <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>。</block>
-  <block id="b84e3c9bb4ac9216f14349e3b5be8ec3" category="paragraph"><block ref="173ddc048bd16ccfb71d77420d7581cb" category="inline-link-macro-rx"></block>。</block>
-  <block id="b7dd73bfb5bbb0ec2884525999924384" category="paragraph"><block ref="e85a369c316ea87dc3d5da27638bd157" category="inline-link-macro-rx"></block>。</block>
   <block id="d35e6fa404873b4a616b1313e98cf3d9" category="paragraph"><block ref="6e3374d20d69610b03c5ed3fa5af9a08" category="inline-link-macro-rx"></block>。</block>
   <block id="a4f557d4dc5603464fae9d733ed96263" category="paragraph">ONTAP 的 FSX 安全组需要入站和出站规则。此图显示了适用于 ONTAP 的 FSX 网络配置和安全组要求。</block>
   <block id="804e1541ef4556a247ad9499202fb6e2" category="inline-image-macro">ONTAP 安全组配置的 FSX 示意图。</block>
@@ -426,9 +418,7 @@
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">现在、您可以选择一个或多个可用性区域HA部署模式。</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">创建适用于 ONTAP 的 FSX 工作环境</block>
-  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager现在支持AWS GovCloud帐户身份验证。</block>
-  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
   <block id="f84135b2c550b8d738093a4346ac024d" category="list-text">选择*单个可用性区域*或*多个可用性区域* HA部署模式。</block>
   <block id="2be7f08200a1fe8660c0e3b215446b33" category="inline-image-macro">一个或多个可用性区域部署模式的选择单选按钮的屏幕截图。</block>
   <block id="501a818c591eeaa056b0d623f83dba40" category="paragraph"><block ref="501a818c591eeaa056b0d623f83dba40" category="inline-image-macro-rx" type="image"></block></block>
@@ -466,19 +456,14 @@
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
   <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">利用"我的商机"发现适用于ONTAP 的FSX</block>
-  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
   <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">更改吞吐量容量</block>
-  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">您现在可以： <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
   <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">复制和同步数据</block>
-  <block id="2e54b9a897181c7862d708807a350694" category="list-text">您现在可以： <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
-  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">您现在可以： <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>。</block>
   <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">创建或发现工作环境</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">管理工作环境</block>
   <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">管理工作环境</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">更改存储容量和IOPS</block>
-  <block id="0e36458fd86c678ff613e05396096775" category="paragraph">您现在可以： <block ref="0fb4d5e2ef1238fe0c2ee898e859399c" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
   <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">从*概述*选项卡中、选择*功能*。</block>
   <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*吞吐量容量*编辑页面。</block>
   <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">更改吞吐量容量菜单位置的屏幕截图。</block>
@@ -587,8 +572,6 @@
   <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">设置一个IAM角色、使BlueXP能够承担此角色。</block>
   <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">选择*其他AWS帐户*并输入BlueXP的ID。</block>
   <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">对于BlueXP SaaS：952013314444</block>
-  <block id="7ac66cbf6468d4b2ac580b0142eb7f7b" category="inline-link-macro">BlueXP策略页面</block>
-  <block id="a4b479a41ed7a914d0dd394ff19733d2" category="paragraph">从查看连接器部署策略 <block ref="6bc39dc7152091d002dd49afe75c9615" category="inline-link-macro-rx"></block>。</block>
   <block id="fa9df323148192800073dd2a78c81f73" category="list-text">复制IAM角色的角色ARN、以便在下一步将其粘贴到BlueXP中。</block>
   <block id="d5dc64744da4d60a47aa835877d08194" category="paragraph">为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。</block>
   <block id="6d9d6baff2479ce7a87bf705f93f1641" category="paragraph">如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。</block>
@@ -630,7 +613,6 @@
   <block id="6f28647aed612b810bbd7e815e8adbef" category="inline-link">BlueXP自动化文档</block>
   <block id="40093c43e131165eb7dd2a980ff78509" category="cell">选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="cabcbbac4437e0dbf2eec9f1d07d973b" category="paragraph">从BlueXP中访问挂载说明、以便将卷挂载到主机。</block>
-  <block id="0aab21b00fa6135e62b29e7f8bb6778e" category="summary">借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以更改吞吐量和存储容量以及IOPS、并删除或删除工作环境。</block>
   <block id="78b85142b4840670f82bc1e876164d5a" category="paragraph">您可以从BlueXP中删除适用于ONTAP 的FSX、而无需删除适用于ONTAP 的FSX帐户或卷。您可以随时将适用于ONTAP 的FSX工作环境重新添加到BlueXP中。</block>
   <block id="2bded8459b9098e5f464123fa54a7a84" category="inline-image-macro">BlueXP界面中适用于ONTAP 的FSX的删除选项的屏幕截图。</block>
   <block id="00e44395dfa88719cfdde0d3aafb0b4c" category="paragraph"><block ref="00e44395dfa88719cfdde0d3aafb0b4c" category="inline-image-macro-rx" type="image"></block></block>
@@ -697,4 +679,39 @@
   <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">您可以 <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> 使用BlueXP。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步行动</block>
   <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。</block>
+  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
+  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自动容量管理</block>
+  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">现在、您可以选择启用 <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
+  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">您现在可以： <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
+  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">您现在可以： <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="897d994d4d024883042e664eba152417" category="list-text">您现在可以： <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
+  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">您现在可以： <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
+  <block id="bee52cc88c0a721fa21705e43f975a38" category="paragraph"><block ref="bee52cc88c0a721fa21705e43f975a38" category="inline-link-macro-rx"></block></block>
+  <block id="68b4888c90bad97d83573c204e39d4f6" category="paragraph"><block ref="68b4888c90bad97d83573c204e39d4f6" category="inline-link-macro-rx"></block></block>
+  <block id="1a457abce740f74637d89636cb4bf465" category="paragraph"><block ref="b41a9efd67b5cf55cf548e8762fd5391" category="inline-link-macro-rx"></block>。</block>
+  <block id="878635d00100085ed9c73c84b23923a8" category="paragraph">您可以 <block ref="7efe0bba09b9697b63e1ec0f00c0d9bb" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
+  <block id="b957b3c2b45d171475a7589df8173510" category="paragraph">现在可以了 <block ref="e1e8315fc20ff9071c786150bb6a8fd4" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3e1ff7fb2dc6fd7c64f15c4ce7d34e3" category="paragraph">现在可以了 <block ref="1546ddd4150be40b2e31760299f6633d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1deb64c5b7d1fce612c4ca0466dfa255" category="paragraph"><block ref="fdd32d934c03692704574175344c207a" category="inline-link-macro-rx"></block>。</block>
+  <block id="7a2732ff05563f251f1ac93ae2d0c9d5" category="paragraph"><block ref="22cb2c9bc18ba713f3606939a029b986" category="inline-link-macro-rx"></block>。</block>
+  <block id="6ba425a78c17896d93d28f52eaadb6f2" category="admonition"><block ref="350df107c59fa79663916b7955bbe306" prefix="" category="inline-code"></block> 和<block ref="db68eaa323cf27d3f429647b32e5d91b" prefix=" " category="inline-code"></block> 需要启用 <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="9e6871113ad24ed3830e2e58ce51dfc4" category="summary">借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量和存储容量以及IOPS、以及删除或删除工作环境。</block>
+  <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">管理自动容量</block>
+  <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">您可以选择启用自动容量管理、以便根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最高可达集群最大容量的80%。</block>
+  <block id="0b77a63f8ac25e1cd8509e906523f459" category="inline-link-macro">创建工作环境</block>
+  <block id="0185df25abbf3744285dd03ec2704b86" category="admonition">如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新总容量的IOPS增加3个GiB。如果指定了IOPS值、则BlueXP不会调整IOPS。有关配置IOPS的详细信息、请参见 <block ref="54a688b79e41730a76924297f5ac42a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">默认情况下、自动容量管理处于禁用状态。您可以在AWS中管理具有或不具有活动Connector的自动容量。</block>
+  <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">在没有活动Connector的情况下管理自动容量</block>
+  <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">您可以在AWS中管理自动容量、而无需使用活动的Connector。</block>
+  <block id="0550d13a80e42471343b954ee5c015ec" category="inline-image-macro">三点菜单图标的图像。</block>
+  <block id="aaf6fdbd2f99b44b18a3501978c7e4b5" category="list-text">选择菜单图标(<block ref="166f5e453125f8a771e7eb7abd5877c7" category="inline-image-macro-rx" type="image"></block>)、然后选择*管理自动容量*。</block>
+  <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">管理自动容量菜单的屏幕截图。</block>
+  <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">在*自动容量管理*页面上：</block>
+  <block id="fc3a15f119ad5decc28ff415b2538e29" category="list-text">选中此框可启用自动容量管理。</block>
+  <block id="b7e02100f637951d6f90e4991487480c" category="list-text">如果先前已启用自动容量管理、请取消选中此框以禁用自动容量管理。</block>
+  <block id="d9299eb7664af835098dc63cf4cfa0a9" category="section-title">使用活动的Connector管理自动容量</block>
+  <block id="24eab999bc6be3c2241c58c7aee7ae10" category="paragraph">您可以使用AWS中的活动Connector管理自动容量。</block>
+  <block id="938b92d62e3cd9d5d18b4db5abd32cfa" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*自动容量管理*页面。</block>
 </blocks>

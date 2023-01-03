@@ -26,9 +26,6 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 . 转到目标帐户中的 IAM 控制台。
 . 在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
 +
-请务必执行以下操作：
-
-+
 ** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
 ** 选择*其他AWS帐户*并输入BlueXP的ID。
 +
@@ -50,10 +47,12 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
                 "fsx:*",
                 "ec2:Describe*",
                 "ec2:CreateTags",
+                "iam:CreateServiceLinkedRole",
                 "kms:Describe*",
                 "kms:List*",
                 "kms:CreateGrant",
-                "iam:CreateServiceLinkedRole"
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics"
             ],
             "Resource": "*"
         }
@@ -61,7 +60,8 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 }
 ----
 +
-从查看连接器部署策略 link:https://mysupport.netapp.com/site/info/cloud-manager-policies["BlueXP策略页面"]。
+
+NOTE: `"cloudwatch:GetMetricData"` 和 `"cloudwatch:GetMetricStatistics"` 需要启用 link:../use/task-manage-working-environment.html["自动容量管理"]。
 
 
 
