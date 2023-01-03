@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: start/task-getting-started-fsx.html 
 keywords: amazon fsx for ontap, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, bluexp website, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create 
-summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。 
+summary: 使用BlueXP、您只需几个步骤即可开始使用适用于ONTAP 的FSX。 
 ---
-= 开始使用适用于 ONTAP 的 Amazon FSX
+= 适用于ONTAP 的Amazon FSX快速入门
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,32 +14,23 @@ summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
 
 
 [role="lead"]
-通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
-
-
-
-== 快速步骤
-
 使用 link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^]、您只需几个步骤即可开始使用适用于ONTAP 的FSX。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建适用于 ONTAP 的 FSX 工作环境
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 在AWS中设置IAM角色
 [role="quick-margin-para"]
-在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 link:../requirements/task-setting-up-permissions-fsx.html["设置一个IAM角色、使BlueXP SaaS能够承担此角色"]。
+要创建或管理适用于ONTAP 的Amazon FSX工作环境、您需要向BlueXP添加AWS凭据、方法是为BlueXP提供IAM角色的ARN、从而为BlueXP提供创建适用于ONTAP 的FSX工作环境所需的权限。要执行此操作、您必须执行此操作 link:../requirements/task-setting-up-permissions-fsx.html["设置一个IAM角色、使BlueXP SaaS能够承担此角色"]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 创建连接器
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 创建适用于 ONTAP 的 FSX 工作环境
 [role="quick-margin-para"]
-您必须具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["适用于 AWS 的连接器"^] 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、则BlueXP将提示您是否尚未添加一个。
+您必须 link:../use/task-creating-fsx-working-environment.html["创建适用于ONTAP 的Amazon FSX工作环境"] 添加卷之前。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 添加卷
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 创建适用于AWS的连接器
 [role="quick-margin-para"]
-您可以使用BlueXP为ONTAP 卷创建FSX。
+您必须具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#how-to-create-a-connector["适用于 AWS 的连接器"^] 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、BlueXP将在其中一个连接器尚未处于活动状态时提示您。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 管理卷：
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 添加并挂载卷
 [role="quick-margin-para"]
-使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。
+您可以 link:../use/task-add-fsx-volumes.html["为ONTAP 卷创建和挂载FSX"] 使用BlueXP。
 
-.相关链接
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["从BlueXP创建连接器"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["从 AWS Marketplace 启动 Connector"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主机上安装 Connector 软件"^]
-
+.下一步行动
+现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。

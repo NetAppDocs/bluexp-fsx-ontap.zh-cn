@@ -353,11 +353,7 @@
   <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">获取帮助</block>
   <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系统，基础架构或使用此服务的任何 AWS 解决方案相关的问题或技术支持问题，请使用 AWS 控制台中的支持中心向 AWS 创建支持案例。选择 "FSX for ONTAP " 服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。</block>
-  <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。</block>
-  <block id="bf7ec532103402eaed4653738655f6ad" category="doc">开始使用适用于 ONTAP 的 Amazon FSX</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
-  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
-  <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
   <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Amazon FSX for ONTAP 文档</block>
   <block id="69f7f21f4fc680b59f6e889bf9547523" category="sidebar">Amazon FSX for ONTAP 文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
@@ -374,8 +370,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">活动<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
   <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
-  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
-  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
   <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>。</block>
   <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">您可以 <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
   <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">现在可以了 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
@@ -587,12 +581,6 @@
   <block id="c38a4c52c19f29b55ed16af8a145fb57" category="paragraph">对于特定于BlueXP或BlueXP微服务的常规问题、您可以从在线BlueXP聊天开始。</block>
   <block id="8ae3d71a6e8ab23cdfe061900ab42a08" category="paragraph">对于特定于BlueXP或中的微服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要注册BlueXP序列号才能激活支持。</block>
   <block id="d2f0ad44b51fbd3850fad8307ea16aa3" category="inline-link-macro">设置一个IAM角色、使BlueXP SaaS能够承担此角色</block>
-  <block id="0120a6985fd9a638c32bf88c75ec0802" category="paragraph">在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>。</block>
-  <block id="d7d767395bf3ee01260b8e372bdc033a" category="paragraph">您必须具有<block ref="ee4793145cbadfb90a826d44d7b7a098" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、则BlueXP将提示您是否尚未添加一个。</block>
-  <block id="17a1b5c516ad7934395e8ea2d41f50ed" category="paragraph">您可以使用BlueXP为ONTAP 卷创建FSX。</block>
-  <block id="a4f149004152f60637fdf95cdc81a47d" category="paragraph">使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。</block>
-  <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">从BlueXP创建连接器</block>
-  <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
   <block id="9936779ebe4e0ac089fa89c319d5473b" category="summary">BlueXP创建了AWS安全组、其中包含了BlueXP和适用于ONTAP 的FSX成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用于BlueXP的DNS解析</block>
   <block id="f7690c21dcdeafa719d4764552e4d2d7" category="paragraph">要创建或管理适用于ONTAP 的Amazon FSX工作环境、您需要向BlueXP添加AWS凭据、方法是为BlueXP提供IAM角色的ARN、从而为BlueXP提供创建适用于ONTAP 的FSX工作环境所需的权限。</block>
@@ -679,7 +667,6 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
-  <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">快速步骤</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
   <block id="a9272148ddd8493b835b5b0ed973a495" category="paragraph">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
   <block id="c8e7a79b3e62d2a377fbadb534f60c42" category="list-text">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)和AWS中的连接器、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSX与Data sense和Cloud Sync 等NetApp云服务集成。</block>
@@ -692,12 +679,22 @@
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">开始之前</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
-  <block id="bf3822c58db8aa1fbf20b9653ec5a67e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 创建适用于 ONTAP 的 FSX 工作环境</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
-  <block id="70629c795585a51cd2dd42e29eb9110a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 创建连接器</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三个</block>
-  <block id="5b7f3404157f78a543ff4be64d149a1a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 添加卷</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
-  <block id="e05adacdd87d8db1102d0a9f547ca18a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 管理卷：</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成后</block>
+  <block id="94adfe266f613e087d05c9260eb004a5" category="summary">使用BlueXP、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
+  <block id="adb9767d8972d81b2cb7885f361d86a1" category="doc">适用于ONTAP 的Amazon FSX快速入门</block>
+  <block id="ff521b94ba57a25e6c791317a4a7c7b8" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 在AWS中设置IAM角色</block>
+  <block id="a91c2d61396b40e96facf3415a6062b0" category="paragraph">要创建或管理适用于ONTAP 的Amazon FSX工作环境、您需要向BlueXP添加AWS凭据、方法是为BlueXP提供IAM角色的ARN、从而为BlueXP提供创建适用于ONTAP 的FSX工作环境所需的权限。要执行此操作、您必须执行此操作 <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>。</block>
+  <block id="f95c74952c0b72133feb54c45db4c89a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 创建适用于 ONTAP 的 FSX 工作环境</block>
+  <block id="807fcae0a49a388e1e8c238bbd595f66" category="inline-link-macro">创建适用于ONTAP 的Amazon FSX工作环境</block>
+  <block id="32d5affb3faac4a5daaa14ce4968df36" category="paragraph">您必须 <block ref="bf0fc94fdc839c457f308b3d8824e401" category="inline-link-macro-rx"></block> 添加卷之前。</block>
+  <block id="08668d46aa9ce2b52e7c349499a9f0a0" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 创建适用于AWS的连接器</block>
+  <block id="0e2c71dee315ea3ae0b3e253b0bb13c0" category="paragraph">您必须具有<block ref="06b487e1dd2b2618860abb4a038fd471" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、BlueXP将在其中一个连接器尚未处于活动状态时提示您。</block>
+  <block id="b681838283484e0b94906567a577ad47" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 添加并挂载卷</block>
+  <block id="4bd8fd698bf66b76447369f6d59d7e0f" category="inline-link-macro">为ONTAP 卷创建和挂载FSX</block>
+  <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">您可以 <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> 使用BlueXP。</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步行动</block>
+  <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。</block>
 </blocks>
