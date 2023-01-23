@@ -13,7 +13,7 @@ summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
 :imagesdir: ./media/
 
 
-[role="lead^"]
+[role="lead"]
 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
 
 
