@@ -56,6 +56,6 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与您的Amazon FSX for ONTAP 文件系统、基础架构或任何使用此服务的解决方案 相关的问题或技术支持问题、请使用AWS控制台中的支持中心为AWS创建支持案例。选择 "FSX for ONTAP " 服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。
 
-有关BlueXP或BlueXP服务的一般问题、您可以从在线BlueXP聊天开始。
+有关BlueXP或BlueXP存储解决方案和服务的一般问题、您可以从在线BlueXP聊天开始。
 
-对于特定于BlueXP或BlueXP服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/support/task-support-registration.html["注册您的BlueXP帐户"^] 激活支持。
+对于特定于BlueXP或BlueXP存储解决方案和服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/support/task-support-registration.html["注册您的BlueXP帐户"^] 激活支持。
