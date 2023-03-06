@@ -34,8 +34,8 @@ NOTE: 如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新�
 您可以在AWS中管理自动容量、而无需使用活动的Connector。
 
 .步骤
-. 打开适用于 ONTAP 的 FSX 工作环境。
-. 选择菜单图标(image:icon-three-dots.png["三点菜单图标的图像。"])、然后选择*管理自动容量*。
+. 在Canvas上选择适用于ONTAP 的FSX工作环境。
+. 在*详细信息*面板中、使用三个点图标(image:icon-three-dots.png["三个点的图标"])打开选项菜单。单击*管理自动容量*。
 +
 image:screenshot-auto-capacity-no-connector.png["管理自动容量菜单的屏幕截图。"]
 
@@ -139,18 +139,19 @@ image:screenshot_fsx_working_environment_remove.png["BlueXP界面中适用于ONT
 
 您可以从BlueXP中删除适用于ONTAP 的FSX。
 
-.开始之前
-* 您必须 link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。
-
-
-
-NOTE: 要删除卷，您需要在 AWS 中使用活动的 Connector 。
-
-* 您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。
-
-
 
 WARNING: 此操作将删除与工作环境关联的所有资源。此操作无法撤消。
+
+.开始之前
+在删除工作环境之前、您必须：
+
+* 在此工作环境中中断所有复制关系。
+* link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。要删除卷，您需要在 AWS 中使用活动的 Connector 。
++
+
+NOTE: 必须使用AWS管理控制台或命令行界面删除故障卷。
+
+
 
 .步骤
 . 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。

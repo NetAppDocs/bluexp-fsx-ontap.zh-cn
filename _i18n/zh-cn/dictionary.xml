@@ -31,34 +31,20 @@
   <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">为适用于 ONTAP 的 Amazon FSX 创建卷</block>
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">设置工作环境后，您可以为 ONTAP 卷创建和挂载 FSX 。</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">创建卷</block>
-  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">您需要：</block>
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS 中的连接器</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：使用自管理 Microsoft AD 的前提条件</block>
   <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">如果要使用 SMB 、必须设置 DNS 和 Active Directory 。有关 DNS 和 Active Directory 网络配置的详细信息，请参见 <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="5f1502c18596a814041ff3a5f4953b39" category="list-text">打开适用于 ONTAP 的 FSX 工作环境。</block>
-  <block id="8bb933964e44d095412ffc5c20dc6cd4" category="list-text">如果未启用 Connector ，系统将提示您添加一个。</block>
-  <block id="e5269a85a2cb3cf98fc7a82c3a558211" category="inline-image-macro">适用于 ONTAP 连接器的 FSX 提示符的屏幕截图。</block>
-  <block id="5890e0ca1f9df3cd1ea6270dc6c67d05" category="paragraph"><block ref="5890e0ca1f9df3cd1ea6270dc6c67d05" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="811f08ec14bddf12bb95cd5465790a18" category="list-text">单击 * 卷 * 选项卡</block>
-  <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">单击 * 添加卷 * 。</block>
-  <block id="e76e0d2c6703e75c3666c67d2b185919" category="inline-image-macro">适用于 ONTAP 卷的 FSX 选项卡的屏幕截图。</block>
-  <block id="638a4176be76c6cf595776403405ef92" category="paragraph"><block ref="638a4176be76c6cf595776403405ef92" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77c018c319fffd489ece68e7e9f933e3" category="list-text">* 卷详细信息和保护 * ：</block>
   <block id="2165a478df3c7cdbb020957742f7a396" category="list-text">输入新卷的名称。</block>
   <block id="8a7a21842c95be5ef7cf8fb45e457fbb" category="list-text">Storage VM （ SVM ）字段会根据工作环境的名称自动填充 SVM 。</block>
   <block id="09d72555d9ef793670cfd52c3b29a5a9" category="list-text">输入卷大小并选择一个单位（ GiB 或 TiB ）。请注意，卷大小将随使用量增长而增加。</block>
   <block id="67cab8c7d29423fd822eaba3b1d1ad3e" category="list-text">选择快照策略。默认情况下，每小时（保留最后六个副本），每天（保留最后两个副本）和每周（保留最后两个副本）创建一个快照。</block>
-  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
-  <block id="4b1ceb73f69790897d4632ba712c7659" category="inline-image-macro">用于创建 ONTAP 卷的 FSX 的卷详细信息和保护字段的屏幕截图。</block>
-  <block id="5d40ada61a97a98ef6bc45b298d20ee3" category="paragraph"><block ref="5d40ada61a97a98ef6bc45b298d20ee3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">对于 NFS ：</block>
   <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">选择访问控制策略。</block>
   <block id="b07a5c1cd32beac9e88c78df72edc8ec" category="list-text">选择 NFS 版本。</block>
   <block id="fc103acdd0c976c704dfea17981b4304" category="list-text">选择自定义导出策略。单击信息图标以查看有效值条件。</block>
   <block id="f2ee46b3a1c0e7f976a1164a6ca75f9e" category="inline-image-macro">用于创建 ONTAP 卷的 NFS 配置 FSX 的屏幕截图。</block>
   <block id="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="paragraph"><block ref="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="83b83892341426df7b542344aa75ca76" category="list-text">对于 CIFS ：</block>
   <block id="2ab8185476c6aa2340579384597cb230" category="list-text">输入共享名称。</block>
   <block id="e5de5245ec2c46e9d548be02749c8dc0" category="list-text">输入以分号分隔的用户或组。</block>
   <block id="4b84f0c5fc5c7b04da02e0f060ce5ce5" category="list-text">选择卷的权限级别。</block>
@@ -81,76 +67,38 @@
   <block id="314c2b52f53238e133233b60949a6d36" category="cell">Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。</block>
   <block id="225f0204cd2ca87530c681aeae9b7f3e" category="cell">NTP 服务器</block>
   <block id="c806fc6088504aece33ec1078f7edf13" category="list-text">如果选择工作组设置，请输入为 CIFS 配置的工作组的服务器和工作组名称。</block>
-  <block id="77329b4991542c66635b8dd3f7a6f518" category="list-text">* 使用情况配置文件和分层 * ：</block>
   <block id="0458d209a53113bf4e745280c9316fc5" category="list-text">默认情况下， * 存储效率 * 处于禁用状态。您可以更改此设置以启用重复数据删除和数据压缩。</block>
   <block id="ecc7b94568d033b8afa5f95b89b20136" category="list-text">默认情况下， * 分层策略 * 设置为 * 仅 Snapshot * 。您可以根据需要选择其他分层策略。</block>
   <block id="7721c2bc1a46653d2fe31df04b1f1d7b" category="inline-image-macro">用于创建 ONTAP 卷的 FSX 的使用情况配置文件和分层配置的屏幕截图。</block>
   <block id="d92dc17a178426d4916acd66998be69b" category="paragraph"><block ref="d92dc17a178426d4916acd66998be69b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f3a303dc17c6a2c91073ff0eb515587f" category="list-text">* 审阅 * ：查看卷配置。单击 * 上一步 * 以更改设置，或单击 * 添加 * 以创建卷。</block>
   <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">此时，新卷将添加到工作环境中。</block>
   <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">挂载卷</block>
   <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">打开工作环境。</block>
   <block id="122aefb3c8684a0e38fb50d87247ad18" category="list-text">要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。</block>
-  <block id="b270ee1d45588367ac774fa0f727fc7b" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 下一步 * 。</block>
   <block id="f8b92939989132d828cfc3eea521a293" category="inline-image-macro">为适用于 ONTAP 的 Amazon FSX 添加工作环境的屏幕截图</block>
   <block id="61a727936c57251e32cb54d629e03313" category="paragraph"><block ref="61a727936c57251e32cb54d629e03313" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。</block>
-  <block id="bc7877d082a71bb780b2cfe54a2f56db" category="inline-image-macro">显示 AWS 角色下拉列表的屏幕截图</block>
-  <block id="88c29361a495a558e8e94ba0f1787827" category="paragraph"><block ref="88c29361a495a558e8e94ba0f1787827" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="49727167f9c15ab5bfa0422395e72a31" category="inline-image-macro">为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。</block>
-  <block id="32e8c427ff9ed76c4f8f6c5425c12c82" category="paragraph"><block ref="32e8c427ff9ed76c4f8f6c5425c12c82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2d2a9afadbb6d43ee9c21ef6dc9d315f" category="list-text">提供有关适用于 ONTAP 的 FSX 实例的信息：</block>
   <block id="620a619e5abf90904f8bd9148673563f" category="list-text">输入要使用的工作环境名称。</block>
   <block id="d99cba7d7f71be21b06a8ed7b3cead82" category="list-text">您也可以单击加号并输入标记名称和值来创建标记。</block>
   <block id="be5962a1bf7a843353b57734848a4297" category="list-text">输入并确认要使用的 ONTAP 集群密码。</block>
-  <block id="5e3355d70ab52073cbbd53548a916969" category="list-text">选择此选项可对 SVM 用户使用相同的密码或设置不同的密码。</block>
-  <block id="d0b2e405325c02e50ba6ff1e7a0bfdeb" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加凭据的屏幕截图</block>
-  <block id="0c59eb935a218de10968d2478d3839c5" category="paragraph"><block ref="0c59eb935a218de10968d2478d3839c5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="282e8cadc54623677e7bc13447fcac29" category="list-text">提供区域和 VPC 信息：</block>
   <block id="d234e32cc579256f2dc2b1c0f46bf8ed" category="inline-link-macro">AWS 安全组</block>
   <block id="c0a56d37b9a744bb980fb63714ff853a" category="inline-link-macro">AWS 弹性网络接口（ ENI ）</block>
   <block id="70f807aec183b4123fd9e27691b549ae" category="list-text">接受默认安全组或选择其他安全组。 <block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>。</block>
   <block id="02b7327efc840726659c50bf482440ba" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图</block>
   <block id="e856b8b85c22d45ac9df09b76538baf0" category="paragraph"><block ref="e856b8b85c22d45ac9df09b76538baf0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8acea1c4fcca87631ca127e2bc757f13" category="inline-link">AWS 传输网关</block>
-  <block id="98cd8d548fd2fa5186e8dc1c1123f9f6" category="list-text">保留 _CIDR Range_ 为空，然后单击 * 下一步 * 以自动设置可用范围。您也可以选择使用<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> 手动配置范围。</block>
-  <block id="7cc0a94cd1ccce02b23807753272d589" category="paragraph"><block ref="7cc0a94cd1ccce02b23807753272d589" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="efae399de597884ba9e25be68c488178" category="inline-image-macro">为 ONTAP 的 FSX 选择路由表的屏幕截图</block>
-  <block id="9e3037d0c83106b66f9113f03ee4fb10" category="paragraph"><block ref="9e3037d0c83106b66f9113f03ee4fb10" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link">设置 AWS KMS</block>
-  <block id="ba7f6c9c6d14f28bb8898cb79c05a77b" category="list-text">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>。单击 * 下一步 * 继续。</block>
-  <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置默认主密钥的屏幕截图</block>
-  <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">配置存储：</block>
-  <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。</block>
-  <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8088a4fa7d414a887d0eb3f19623bc06" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置存储配置的屏幕截图</block>
-  <block id="43135e6fbb293afbc21ffcb9200cd5ea" category="list-text">单击 * 下一步 * 。<block ref="acedc649b329bc2fa4856a424e9ac8f3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c9a1d71e742483b14e29f7c2e43e1c64" category="list-text">查看您的配置：</block>
   <block id="0308fb9d7cca24bdc3f9928245f79119" category="list-text">单击选项卡以查看 ONTAP 属性，提供程序属性和网络配置。</block>
-  <block id="fded4515ce29ea3fdc954faa2784fe7f" category="list-text">单击 * 上一步 * 以更改任何设置。</block>
-  <block id="b5bd94a09b2ad1fd2dba6c4a902a9fd3" category="list-text">单击 * 添加 * 以接受设置并创建工作环境。</block>
-  <block id="ef80142d18e6c5a6d15e4724ab6810b8" category="inline-image-macro">查看适用于 ONTAP 的 FSX 设置的屏幕截图</block>
-  <block id="e8b9477d45071756ecb4a2cc5082344a" category="paragraph"><block ref="e8b9477d45071756ecb4a2cc5082344a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45d8e5da7753a5571797f6a81a9c4e3c" category="inline-image-macro">工作环境页面上的 Amazon FSX for ONTAP 屏幕截图。</block>
   <block id="26682ff9a292960b61e97b937520b135" category="paragraph"><block ref="26682ff9a292960b61e97b937520b135" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">发现适用于 ONTAP 的现有 FSX 文件系统</block>
-  <block id="6800849898be1086bb69e4658dd59629" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 单击此处 * 。</block>
-  <block id="e574e1da19f282b48ebb67c362fbc5cc" category="inline-image-macro">发现适用于 ONTAP 的 Amazon FSX 的工作环境的屏幕截图</block>
-  <block id="72e0dd6fd0d4009c79805d8504e7e490" category="paragraph"><block ref="72e0dd6fd0d4009c79805d8504e7e490" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="92362ba030c73cd6e20f4b4da71b26c3" category="list-text">选择现有凭据或创建新凭据。单击 * 下一步 * 。</block>
-  <block id="4dc9c1030aab459d22cbeca85a77bd17" category="list-text">选择要添加的 AWS 区域和工作环境。</block>
   <block id="4d40b97424368fd2dcfa3beb51eac192" category="inline-image-macro">选择 AWS 区域和工作环境的屏幕截图</block>
   <block id="daf8847714f7e326bcf10553bdbffa28" category="paragraph"><block ref="daf8847714f7e326bcf10553bdbffa28" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
   <block id="b3fee7abcfd59e1f7a4b591d94eea26b" category="section-title">从工作空间中删除适用于 ONTAP 的 FSX</block>
   <block id="9ddaae0edb615f2995d27bd6e00976ce" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
   <block id="2167c28c0f5b01d9e01bb4084f44d791" category="section-title">删除适用于 ONTAP 的 FSX 工作环境</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
-  <block id="b917a1d8451423450873eef39565dca3" category="inline-link-macro">删除所有卷</block>
-  <block id="7b41e03b81e97660913781a8239006df" category="list-text">您必须 <block ref="54cc4f96ff154d8637a706e7f5511434" category="inline-link-macro-rx"></block> 与文件系统关联。</block>
-  <block id="88b66180df4e558c94db0e4418e28d50" category="admonition">要删除卷，您需要在 AWS 中使用活动的 Connector 。</block>
-  <block id="ef91377d933625cd5679a41980e84a7d" category="list-text">您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。</block>
   <block id="264e33787c94efb543f65228a9b52512" category="admonition">此操作将删除与工作环境关联的所有资源。此操作无法撤消。</block>
   <block id="759e9950bbe6d95f5d993751a21090d8" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
   <block id="7e8d943ffd901385b9eef24cb61b44b9" category="doc">管理适用于 ONTAP 的 Amazon FSX 的卷</block>
@@ -398,7 +346,6 @@
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自助支持</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知识库</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -406,8 +353,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 支持</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在 "Technical Support" 下选择一个可用选项：</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">设置权限</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">安全组规则</block>
   <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">从Connector访问fsxadmin管理LIF、以便向FSX发送API调用</block>
@@ -418,27 +363,17 @@
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">现在、您可以选择一个或多个可用性区域HA部署模式。</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">创建适用于 ONTAP 的 FSX 工作环境</block>
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager现在支持AWS GovCloud帐户身份验证。</block>
-  <block id="f84135b2c550b8d738093a4346ac024d" category="list-text">选择*单个可用性区域*或*多个可用性区域* HA部署模式。</block>
-  <block id="2be7f08200a1fe8660c0e3b215446b33" category="inline-image-macro">一个或多个可用性区域部署模式的选择单选按钮的屏幕截图。</block>
-  <block id="501a818c591eeaa056b0d623f83dba40" category="paragraph"><block ref="501a818c591eeaa056b0d623f83dba40" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="604034876d198af3f8d6cece2f09d984" category="list-text">选择一个区域和VPC。</block>
-  <block id="d7387928ac1cfa971f35a613cd81907c" category="paragraph">对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。</block>
   <block id="a7cf2ac8ff4dd10d1e304f0abd7fe0bd" category="list-text">如果您使用的是AWS GovCloud (US)帐户、请选中*我使用的是AWS GovCloud (US)帐户*。</block>
   <block id="045e30d9d567e729274d9202eee4ff62" category="inline-image-macro">GovCloud (US)帐户复选框的屏幕截图。</block>
   <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">对于AWS GovCloud (美国)：033442085313</block>
   <block id="56741382a48f0ad5efb57a6532876317" category="doc">创建或发现适用于ONTAP 的Amazon FSX工作环境</block>
-  <block id="a856a2e7ff7a861c3124938689a66a62" category="paragraph">如果您使用AWS管理控制台创建了适用于ONTAP 的FSX文件系统、或者希望还原之前删除的工作环境、则可以使用"我 的商机"或手动发现该环境。</block>
-  <block id="1b52b643a7dc88400af8fd712fed3d12" category="section-title">利用"我的商机"进行发现</block>
   <block id="e9ba45e021b291739ba996c9cde18a78" category="list-text">此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。</block>
   <block id="7208d8184b0d0e6e3c7bcf475c8f9bd2" category="inline-image-macro">适用于ONTAP 的FSX的"我的商机"页面的屏幕截图。</block>
   <block id="9e4da126e3095f89c00bb676d98195d8" category="paragraph"><block ref="9e4da126e3095f89c00bb676d98195d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b4a4c841d4545b117e4104be254a0e8" category="list-text">选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。</block>
   <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">如果选择未命名的集群、则会提示您输入集群名称。</block>
-  <block id="1d064916590560310250a3e94aec4539" category="section-title">手动发现</block>
-  <block id="c0beac119c78b8228ca36d4b93ef1bc7" category="list-text">*协议*：选择NFS、CIFS或iSCSI卷协议。</block>
-  <block id="7a641f2010297c1d06c28aad18308a5b" category="list-text">对于iSCSI：您可以使用现有启动程序组或创建新启动程序组来连接LUN。要映射现有启动程序组、请选择操作系统以及一个或多个启动程序组。</block>
   <block id="7d7217d548e427bd0d76f5081e4b4cb5" category="paragraph">要创建新启动程序组、请执行以下操作：</block>
   <block id="6ae6d068572461cadd78494cd3954770" category="list-text">选择"*新建"*。</block>
   <block id="6439f651e3ce60a787666dc41a8ca17f" category="list-text">选择操作系统。</block>
@@ -460,7 +395,6 @@
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
   <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">创建或发现工作环境</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">管理工作环境</block>
-  <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">管理工作环境</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">更改存储容量和IOPS</block>
   <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">从*概述*选项卡中、选择*功能*。</block>
@@ -483,7 +417,6 @@
   <block id="4fe33f0977f17b0718840c634bb48345" category="list-text">在页面右上角、选择操作菜单、然后选择*从工作空间中删除*。</block>
   <block id="3767b7b1dbf8b0f59d82eb46c294df83" category="list-text">在页面右上角、选择操作菜单并选择*删除*。</block>
   <block id="e19eec57ec1908f25e4a753fbf9d1bf5" category="list-text">输入工作环境的名称并选择*删除*。</block>
-  <block id="d33ef5be6071ae5e3d7d930d8977e41a" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量和存储容量值。</block>
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">查看卷详细信息</block>
   <block id="217a2eee444fb09dda70bb076071f17e" category="paragraph">创建卷后、您可以查看配置详细信息。</block>
   <block id="45dddf924938e17bccdd6a467352bfa0" category="admonition">您可以将鼠标悬停在卷名称上以显示卷类型。</block>
@@ -498,15 +431,11 @@
   <block id="f879ed761f1ca2475598c0bea304d10d" category="list-text">打开卷选项卡并选择*管理卷*以打开*高级操作*菜单。</block>
   <block id="dedc9eb7ac0cb065a0b90f9f63104b01" category="list-text">选择*更改分层策略*。</block>
   <block id="f596a753aac59df7e240140c2eb96e99" category="list-text">选择*删除卷*。</block>
-  <block id="87ab0ddecc6298e066c5bf52a6e57341" category="list-text">选择*卷*选项卡和*管理卷*以打开*卷操作*菜单。</block>
   <block id="1cffe537ba60b23c60608f4b7ec02e43" category="inline-image-macro">有关如何打开卷操作菜单的屏幕截图。</block>
-  <block id="b43e642ae439f1f795292eb5df5f84d3" category="paragraph"><block ref="b43e642ae439f1f795292eb5df5f84d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="78c27b88e2a8142906bb69594e5b22a6" category="list-text">选择*挂载命令*、然后按照说明挂载卷。</block>
   <block id="35f5a704747f7e6644a0bbedc33a0c2e" category="paragraph">此时、卷将挂载到主机。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
@@ -534,10 +463,7 @@
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">由三个水平点组成的图标</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">成功登录后、NetApp将存储NSS用户名。这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。使用此选项将提示您重新登录。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp注册</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
@@ -624,19 +550,10 @@
   <block id="7a1088b800573a1bba3b00786182133b" category="paragraph">在BlueXP中创建适用于ONTAP 的FSX工作环境之前、您需要：</block>
   <block id="74e0ba9ea27cef4d0c11560e135b281e" category="inline-link-macro">将AWS凭据添加到BlueXP</block>
   <block id="02e21891e6a4d87f518207b9609ebed1" category="list-text">IAM角色的ARN、为BlueXP提供为ONTAP 工作环境创建FSX所需的权限。请参见 <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> 了解详细信息。</block>
-  <block id="6b13ffee707f25ae8bcd9dc0e4d7b4d6" category="list-text">在BlueXP中、添加一个新的工作环境、选择位置* Amazon Web Services*、然后单击*下一步*。</block>
-  <block id="07c0b2e93427e88c842be765301e4e63" category="list-text">在BlueXP中对适用于ONTAP 的FSX进行身份验证。</block>
-  <block id="b7a36240333d2de8502faca756504977" category="list-text">如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> 了解详细信息。</block>
-  <block id="274f0b3b024e5cbf45b403266b2d8e00" category="list-text">选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。单击 * 下一步 * 继续。</block>
   <block id="c43f98768b6bade26ae94ab84f81134f" category="list-text">您也可以指定 IOPS 值。如果未指定IOPS值、则BlueXP将根据输入的总容量的每GiB 3个IOPS设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。</block>
-  <block id="69a6a9ad9378e16228ecd670e9d167c8" category="paragraph">BlueXP会在"画布"页面上显示适用于ONTAP 的FSX配置。</block>
-  <block id="9e35167248d4118a73a969017acba1d8" category="paragraph">现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
   <block id="decbe5e805a0a9516184b64d9bad01c3" category="paragraph">如果您之前已向BlueXP提供AWS凭据、则*我的商机*可以自动发现并建议使用BlueXP添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。</block>
   <block id="b74bb93cbb66b60fd6c91eba3c535cb2" category="list-text">在BlueXP中、单击*我的商机*选项卡。</block>
   <block id="547dba06b4fcfe3fa41996e831e9fb1c" category="list-text">如果您选择的集群没有允许BlueXP管理适用于ONTAP 的FSX文件系统所需的凭据、则系统将提示您选择具有所需权限的凭据。</block>
-  <block id="494021d1d3a9a769ede7819e9cf10cf6" category="paragraph">您可以手动发现您使用AWS管理控制台添加的或先前从BlueXP中删除的适用于ONTAP 的FSX文件系统。</block>
-  <block id="c13815d75af2d8f4f6b97743a5731dae" category="list-text">在BlueXP中、单击*添加工作环境*、然后选择* Amazon Web Services*。</block>
-  <block id="02ebf3de367dc7096d28e785a65d8c78" category="paragraph">BlueXP将显示您发现的适用于ONTAP 文件系统的FSX。</block>
   <block id="4e853a8ef076b82d13f35807a2dfe93b" category="summary">您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="669f767086bf3b89606658facb29605a" category="paragraph">您可以使用BlueXP查看和管理卷、克隆和快照、以及更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="060dde3ca9c7d4e73cf9b65b84114028" category="paragraph">您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
@@ -701,8 +618,6 @@
   <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">默认情况下、自动容量管理处于禁用状态。您可以在AWS中管理具有或不具有活动Connector的自动容量。</block>
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">在没有活动Connector的情况下管理自动容量</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">您可以在AWS中管理自动容量、而无需使用活动的Connector。</block>
-  <block id="0550d13a80e42471343b954ee5c015ec" category="inline-image-macro">三点菜单图标的图像。</block>
-  <block id="aaf6fdbd2f99b44b18a3501978c7e4b5" category="list-text">选择菜单图标(<block ref="166f5e453125f8a771e7eb7abd5877c7" category="inline-image-macro-rx" type="image"></block>)、然后选择*管理自动容量*。</block>
   <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">管理自动容量菜单的屏幕截图。</block>
   <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">在*自动容量管理*页面上：</block>
@@ -722,4 +637,64 @@
   <block id="b284ee716f958658a642a656a79699dc" category="paragraph">有关BlueXP或BlueXP存储解决方案和服务的一般问题、您可以从在线BlueXP聊天开始。</block>
   <block id="3daaa300f491b3dcb99896f1ebc0a277" category="paragraph">对于特定于BlueXP或BlueXP存储解决方案和服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要 <block ref="1da17bacda87cc6ccc7a9f1f44b5e325" category="inline-link-macro-rx"></block> 激活支持。</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">您需要的内容</block>
+  <block id="aaf2f9eb33227134e101525e33ad19c2" category="list-text">在BlueXP中、添加一个新的工作环境、选择* Amazon Web Services*、然后单击*为适用于ONTAP 的Amazon FSX添加新*。</block>
+  <block id="bc1fbeca04a0bc47b1dd85e467f87ffc" category="list-text">*用于ONTAP 身份验证的FSX *</block>
+  <block id="2bc897b30b2df26c531635a145af68ae" category="list-text">如果您的帐户中没有IAM角色、请单击*凭据*、然后按照向导中的步骤使用FSX for ONTAP 凭据为AWS IAM角色添加ARN。请参见 <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="acffd96d264a8bd18e75d6d6ce0aac12" category="list-text">*详细信息和凭据*</block>
+  <block id="b3decd3dc6245a45a816d81cc94eb4be" category="list-text">或者、取消选择此选项以对SVM用户使用相同的密码并设置不同的密码。</block>
+  <block id="f0b48aa240ffb99007210ba5d55e0fd3" category="list-text">*地区和VPC*</block>
+  <block id="15ef2ed90c27f9867f7383d8f200ba6b" category="list-text">选择*单个可用性区域*或*多个可用性区域* HA部署模式。对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。</block>
+  <block id="3f589588a5e2b50cf827ef7f979de432" category="list-text">*浮动IP*(仅限多个可用性区域)</block>
+  <block id="5b1a0e567c07875980cb98cbf8a0fc60" category="paragraph">将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> 手动配置范围。</block>
+  <block id="b04e1903e3de2fffa52c1c517b8fed45" category="list-text">*路由表*(仅限多个可用性区域)</block>
+  <block id="f884e9a3951c5c6df696ce1faeecf517" category="paragraph">选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。</block>
+  <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*数据加密*</block>
+  <block id="9ecf502b4c55c670661584e0a2866004" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>。</block>
+  <block id="a1ab9258bbeb31ecc1e35b1adc9465dc" category="list-text">*存储配置*</block>
+  <block id="e38fe475552b433630789034542b28de" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量、存储容量和IOPS。</block>
+  <block id="704b454e0a67ad9d30229aad055c4456" category="paragraph"><block ref="704b454e0a67ad9d30229aad055c4456" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="966c244dc2aee9efc1c62796b0ab5cc8" category="admonition">如果指定的IOPS值不符合最低要求、则在添加工作环境时将收到错误。</block>
+  <block id="12799e1af0745585e0f5800e7ab5ac0d" category="list-text">*审阅*</block>
+  <block id="a434ec7166240525e1136a9caf043a5e" category="list-text">单击*上一步*对任何设置进行更改、或者单击*添加*接受设置并创建工作环境。</block>
+  <block id="1f56efe328efe9c20f590e659125509a" category="paragraph">BlueXP会在Canvas上显示适用于ONTAP 的FSX配置。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
+  <block id="3c98e2bfe156ca99fa37e38b1eb68d0d" category="inline-link-macro">创建新的工作环境</block>
+  <block id="e3ed7d241946f79ddb205b1bcc1095b7" category="paragraph">您可以通过发现适用于ONTAP 文件系统的FSx <block ref="7605911292967addd7ea4683855fa385" category="inline-link-macro-rx"></block> 或者使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
+  <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP会在Canvas上显示您发现的适用于ONTAP 的FSX文件系统。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
+  <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">在Canvas上选择适用于ONTAP 的FSX工作环境。</block>
+  <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">三个点的图标</block>
+  <block id="c0f7f08571189db02e2d550c230d6abf" category="list-text">在*详细信息*面板中、使用三个点图标(<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>)打开选项菜单。单击*管理自动容量*。</block>
+  <block id="0cf6b9b81deec54f9429260623e85e8b" category="paragraph">在删除工作环境之前、您必须：</block>
+  <block id="23419c7b0a3275446ffc7e82955443ad" category="list-text">在此工作环境中中断所有复制关系。</block>
+  <block id="1cf37f8bb2a45b0eb43d008c81e06383" category="inline-link-macro">删除所有卷</block>
+  <block id="6d4ce18513137c910112525e9f50214e" category="list-text"><block ref="a924ac5b9b50eb423be94dfd57ea531f" category="inline-link-macro-rx"></block> 与文件系统关联。要删除卷，您需要在 AWS 中使用活动的 Connector 。</block>
+  <block id="46ca10c4f1fa35ffe73fb3970a6f5e46" category="admonition">必须使用AWS管理控制台或命令行界面删除故障卷。</block>
+  <block id="fd4322d61d27e0bae17659af1929fafa" category="paragraph">您可以通过打开工作环境并选择*卷*选项卡来添加卷、也可以仅使用"画布"中的工作环境*详细信息*面板来添加卷。此任务介绍如何使用*详细信息*面板添加卷。</block>
+  <block id="393e4f2cf3f681c80417a200fd375c32" category="list-text">在Canvas上选择适用于ONTAP 的FSX工作环境。如果未启用 Connector ，系统将提示您添加一个。</block>
+  <block id="ada6c4a93e7b96d58f35712af7225f16" category="list-text">在*详细信息*面板中、使用三个点(<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>)打开选项菜单。单击 * 添加卷 * 。</block>
+  <block id="cb29a37b5b733fa09b9f5235c1a2f7e1" category="inline-image-macro">详细信息面板上添加卷选项的屏幕截图。</block>
+  <block id="08d8ba93d0c829ce154f2f67f8a7a548" category="paragraph"><block ref="08d8ba93d0c829ce154f2f67f8a7a548" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76e8c4dc9b4691280948a11959dd6d53" category="list-text">*卷详细信息和保护*</block>
+  <block id="0e71045ffb2c142e38f192348939d657" category="list-text">*卷协议*：</block>
+  <block id="763a3be303d8f075b28b4fb47257840f" category="list-text">选择NFS、CIFS或iSCSI卷协议。</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
+  <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="open-title">iSCSI</block>
+  <block id="fcfb20c7ce7597f54040eb6305c3786d" category="paragraph">您可以使用现有启动程序组或创建新启动程序组来连接LUN。要映射现有启动程序组、请选择操作系统以及一个或多个启动程序组。</block>
+  <block id="271ff3c405f1d0bf77f44dca1ae889d7" category="list-text">*使用情况配置文件和分层*</block>
+  <block id="2f9631107b29a4c26b665771a82d9f56" category="list-text">* 审阅 * ：查看卷配置。单击*上一步*以更改设置、或单击*添加*以创建卷。</block>
+  <block id="6df90ef93bacadad99949e91d9939685" category="paragraph">您可以通过打开工作环境并选择*卷*选项卡来挂载卷、也可以直接使用"画布"中的工作环境*详细信息*面板来挂载卷。此任务介绍如何使用*详细信息*面板添加卷。</block>
+  <block id="429ff694ee7c975d6a18e64d444cfe54" category="list-text">在*详细信息*面板中、使用三个点图标(<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>)打开选项菜单。单击*查看卷*。</block>
+  <block id="6810d2b262e251b8e971d641214ac623" category="paragraph"><block ref="6810d2b262e251b8e971d641214ac623" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f823db4e216ccdaa9739419e7047d6cd" category="list-text">使用*管理卷*打开*卷操作*菜单。单击*挂载命令*、然后按照说明挂载卷。</block>
+  <block id="3adf166446cff07c619f4ced2b63a230" category="inline-image-macro">mount volume命令的屏幕截图。</block>
+  <block id="dd4a0887863004c5f1787efbc9f44761" category="paragraph"><block ref="dd4a0887863004c5f1787efbc9f44761" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
+  <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">文档中对用户界面进行了改进、并更新了屏幕截图。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
+  <block id="cde704f6035294578016569ea9508122" category="sidebar">管理工作环境</block>
 </blocks>
