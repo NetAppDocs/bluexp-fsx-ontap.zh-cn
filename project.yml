@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Amazon FSx for ONTAP
+  name: Amazon FSx for NetApp ONTAP
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Amazon FSX for ONTAP 文档
+  - title: 适用于NetApp的Amazon FSX ONTAP 文档
     url: "/index.html"
   - title: 发行说明
     url: "/whats-new.html"
@@ -27,7 +27,7 @@ sidebar:
       url: "/requirements/task-setting-up-permissions-fsx.html"
     - title: 适用于 ONTAP 的 FSX 的安全组规则
       url: "/requirements/reference-security-groups-fsx.html"
-  - title: 使用适用于 ONTAP 的 Amazon FSx
+  - title: 使用适用于NetApp ONTAP 的Amazon FSx
     entries:
     - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"

@@ -93,61 +93,61 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
-== 898e35e1a4bf4b025c3edec879439b08
+== 管理支持案例(预览)
 
-8b74b053fbeeff5c3b6f4991cb1d028d
+您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
 
-394ef093ad3259b9ff0fe7406f015b83
+案例管理以预览形式提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
 请注意以下事项：
 
-* 5e4e7672ec2ba2b8a763da7f6714e212
+* 页面顶部的案例管理信息板提供了两个视图：
 +
-** 01c3ffea552d74a5ae390b10e71a1f26
-** e3b6c09a5686233f72ce1ea60a1eb088
+** 左侧视图显示了您提供的用户NSS帐户在过去3个月内打开的案例总数。
+** 右侧视图显示了过去3个月内根据用户NSS帐户在公司级别开立的案例总数。
 
 
 +
-b19b168cc8a2b8c984465e140256b3a2
+此表中的结果反映了与选定视图相关的案例。
 
-* 56dcadeee6b0e5c47a52673f9b5a0bb3
+* 您可以添加或删除感兴趣的列、也可以筛选优先级和状态等列的内容。其他列仅提供排序功能。
 +
-6f936762e1223311f031685422fcd3a4
+有关更多详细信息、请查看以下步骤。
 
-* b14929795a61440e9b4ec9f8a4885ae3
+* 在每个案例级别、我们可以更新案例备注或关闭尚未处于"已关闭"或"待关闭"状态的案例。
 
 
 .步骤
 . 在BlueXP中、单击*帮助>支持*。
-. 34b1296d31cefa72dae9b3a364b1f444
+. 单击*案例管理*、如果出现提示、请将您的NSS帐户添加到BlueXP。
 +
-d8ce1865cf1fe3cffd60300b4b86ad63
+"*案例管理*"页面显示了与您的BlueXP用户帐户关联的NSS帐户相关的已打开案例。此NSS帐户与* NSS管理*页面顶部显示的NSS帐户相同。
 
-. 2ae5ae78bdb2d222f15fd8e89248709c
+. 也可以修改表中显示的信息：
 +
-** 27635a52fe4c34c39ffc6430f4244ec6
-** 059e856250b59be3069246887b74a23c
+** 在*组织的案例*下、单击*查看*以查看与您的公司关联的所有案例。
+** 通过选择确切的日期范围或选择其他时间范围来修改日期范围。
 +
-7fcba8aeefa9960d3fc3fa08b360ba2e
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["案例管理页面上表上方选项的屏幕截图、可用于选择确切的日期范围或过去7天、30天或3个月。"]
 
-** a1bb576be9e5a356290f231efb51b3f5
+** 筛选列的内容。
 +
-37709be3a43df07d5975287545d0ba12
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["\"状态\"列中筛选选项的屏幕截图、可用于筛选与特定状态(如\"活动\"或\"已关闭\")匹配的案例。"]
 
-** 1614dc8e47c0492434152c990d6c1040
+** 通过单击更改表中显示的列 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["表中显示的加号图标"] 然后选择要显示的列。
 +
-5de408d7cbad49634fb25f9047498132
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["显示可在表中显示的列的屏幕截图。"]
 
 
 
-. 98efef1c8a47ed5791b41944e8ff4ec2
+. 单击以管理现有案例 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["包含三个点的图标、显示在表的最后一列中"] 并选择一个可用选项：
 +
-** 6d9dd74e7709ef802d299966f7898f6b
-** 482429810c2b00a4fa04f9900c560232
-** f791bc685c526af8296381acff10f6a0
+** *查看案例*：查看有关特定案例的完整详细信息。
+** *更新案例注释*：提供有关您的问题的更多详细信息。
+** *关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。
 
 
 +
-e9a5c374fb47ed2ae5cc6108fb36d829
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。"]
 
 

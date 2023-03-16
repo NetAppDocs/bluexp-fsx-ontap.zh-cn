@@ -4,7 +4,7 @@ permalink: use/task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
 summary: 您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。 
 ---
-= 管理适用于 ONTAP 的 Amazon FSX 的卷
+= 管理适用于NetApp ONTAP 的Amazon FSX的卷
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

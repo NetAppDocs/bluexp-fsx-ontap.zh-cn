@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
-summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。 
+summary: 了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。 
 ---
-= 适用于 ONTAP 的 Amazon FSX 的新增功能
+= 适用于NetApp ONTAP 的Amazon FSX的新增功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 了解适用于 ONTAP 的 Amazon FSX 的新增功能。
 
 
 [role="lead"]
-了解适用于 ONTAP 的 Amazon FSX 的新增功能。
+了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。
 
 
 
@@ -111,18 +111,18 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 
 
 
-=== 支持适用于 ONTAP 的 Amazon FSX
+=== 支持适用于NetApp ONTAP 的Amazon FSX
 
-* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["适用于 ONTAP 的 Amazon FSX"^] 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["适用于 NetApp ONTAP 的 Amazon FSX"^] 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"^]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["了解适用于NetApp ONTAP 的Amazon FSX"^]。
 
 * 您可以在 Cloud Manager 中配置适用于 ONTAP 的 FSX 工作环境。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于NetApp ONTAP 的Amazon FSX工作环境"^]。
 
 * 使用 AWS 和 Cloud Manager 中的连接器，您可以创建和管理卷，复制数据，并将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-fsx.html["开始使用适用于 Amazon FSX for ONTAP 的 Cloud Data sense"^]。
+link:https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-fsx.html["开始使用适用于Amazon FSX for NetApp ONTAP 的Cloud Data sense"^]。
 
 
