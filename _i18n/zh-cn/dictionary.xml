@@ -327,7 +327,6 @@
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知识库</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社区</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
@@ -376,14 +375,10 @@
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">更改存储容量和IOPS</block>
   <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">从*概述*选项卡中、选择*功能*。</block>
   <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*吞吐量容量*编辑页面。</block>
-  <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">更改吞吐量容量菜单位置的屏幕截图。</block>
-  <block id="e09dc417c2d896d165ca331477153842" category="paragraph"><block ref="e09dc417c2d896d165ca331477153842" category="inline-image-macro-rx" type="image"></block></block>
   <block id="230f70d1e5d26fbe6e5ad10f5308cabe" category="list-text">从下拉列表中选择一个新的吞吐量容量、然后选择*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。</block>
   <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">更改存储容量和IOPS</block>
   <block id="f3c93b45ca50102a9f0b7eae1e06d071" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。</block>
   <block id="048b8d92cffbe45e8afec553ae5bdab0" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)以打开*存储容量和IOPS*编辑页面。</block>
-  <block id="d6684930c2875391fe70b5eb14401bbb" category="inline-image-macro">更改存储容量和IOPS菜单位置的屏幕截图。</block>
-  <block id="687579d242782f9a851dc5bb5ba9abc9" category="paragraph"><block ref="687579d242782f9a851dc5bb5ba9abc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfb628b495d5e0828edcde206a117a0d" category="list-text">您可以每六小时更改一次存储容量和IOPS。如果您尝试更频繁地进行更改、则会收到错误。</block>
   <block id="e67f7cfa37e5dcd4f3836e76f5301a68" category="inline-image-macro">用于更改存储容量和IOPS值的页面的屏幕截图。</block>
   <block id="f5aa006a4894acbba121bdb32f513ead" category="paragraph"><block ref="f5aa006a4894acbba121bdb32f513ead" category="inline-image-macro-rx" type="image"></block></block>
@@ -586,8 +581,6 @@
   <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">默认情况下、自动容量管理处于禁用状态。您可以在AWS中管理具有或不具有活动Connector的自动容量。</block>
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">在没有活动Connector的情况下管理自动容量</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">您可以在AWS中管理自动容量、而无需使用活动的Connector。</block>
-  <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">管理自动容量菜单的屏幕截图。</block>
-  <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">在*自动容量管理*页面上：</block>
   <block id="fc3a15f119ad5decc28ff415b2538e29" category="list-text">选中此框可启用自动容量管理。</block>
   <block id="b7e02100f637951d6f90e4991487480c" category="list-text">如果先前已启用自动容量管理、请取消选中此框以禁用自动容量管理。</block>
@@ -630,7 +623,6 @@
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP会在Canvas上显示您发现的适用于ONTAP 的FSX文件系统。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">在Canvas上选择适用于ONTAP 的FSX工作环境。</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">三个点的图标</block>
-  <block id="c0f7f08571189db02e2d550c230d6abf" category="list-text">在*详细信息*面板中、使用三个点图标(<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>)打开选项菜单。单击*管理自动容量*。</block>
   <block id="0cf6b9b81deec54f9429260623e85e8b" category="paragraph">在删除工作环境之前、您必须：</block>
   <block id="23419c7b0a3275446ffc7e82955443ad" category="list-text">在此工作环境中中断所有复制关系。</block>
   <block id="1cf37f8bb2a45b0eb43d008c81e06383" category="inline-link-macro">删除所有卷</block>
@@ -748,4 +740,7 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件(可选)*：一次最多上传五个附件。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息、或者选择*上传文件*最多附加五个文件。</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">在画布上选择工作环境、然后选择*进入工作环境*。</block>
+  <block id="015abe149b937f218b783e72c81c3e66" category="admonition">所有其他选项都需要一个Connector并已禁用。</block>
 </blocks>

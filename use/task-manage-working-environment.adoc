@@ -34,12 +34,12 @@ NOTE: 如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新�
 您可以在AWS中管理自动容量、而无需使用活动的Connector。
 
 .步骤
-. 在Canvas上选择适用于ONTAP 的FSX工作环境。
-. 在*详细信息*面板中、使用三个点图标(image:icon-three-dots.png["三个点的图标"])打开选项菜单。单击*管理自动容量*。
+. 在画布上选择工作环境、然后选择*进入工作环境*。
+. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*自动容量管理*页面。
 +
-image:screenshot-auto-capacity-no-connector.png["管理自动容量菜单的屏幕截图。"]
 
-. 在*自动容量管理*页面上：
+NOTE: 所有其他选项都需要一个Connector并已禁用。
+
 +
 ** 选中此框可启用自动容量管理。
 ** 如果先前已启用自动容量管理、请取消选中此框以禁用自动容量管理。
@@ -80,9 +80,6 @@ image:screenshot-auto-capacity-no-connector.png["管理自动容量菜单的屏�
 . 打开适用于 ONTAP 的 FSX 工作环境。
 . 从*概述*选项卡中、选择*功能*。
 . 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*吞吐量容量*编辑页面。
-+
-image:screenshot-change-thruput.png["更改吞吐量容量菜单位置的屏幕截图。"]
-
 . 从下拉列表中选择一个新的吞吐量容量、然后选择*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。
 
 
@@ -99,9 +96,6 @@ image:screenshot-change-thruput.png["更改吞吐量容量菜单位置的屏幕�
 . 打开适用于 ONTAP 的 FSX 工作环境。
 . 从*概述*选项卡中、选择*功能*。
 . 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])以打开*存储容量和IOPS*编辑页面。
-+
-image:screenshot-change-iops.png["更改存储容量和IOPS菜单位置的屏幕截图。"]
-
 . 您可以每六小时更改一次存储容量和IOPS。如果您尝试更频繁地进行更改、则会收到错误。
 +
 image:screenshot-configure-iops.png["用于更改存储容量和IOPS值的页面的屏幕截图。"]
