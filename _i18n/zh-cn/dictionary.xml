@@ -609,7 +609,6 @@
   <block id="b04e1903e3de2fffa52c1c517b8fed45" category="list-text">*路由表*(仅限多个可用性区域)</block>
   <block id="f884e9a3951c5c6df696ce1faeecf517" category="paragraph">选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。</block>
   <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*数据加密*</block>
-  <block id="9ecf502b4c55c670661584e0a2866004" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>。</block>
   <block id="a1ab9258bbeb31ecc1e35b1adc9465dc" category="list-text">*存储配置*</block>
   <block id="e38fe475552b433630789034542b28de" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量、存储容量和IOPS。</block>
   <block id="704b454e0a67ad9d30229aad055c4456" category="paragraph"><block ref="704b454e0a67ad9d30229aad055c4456" category="inline-image-macro-rx" type="image"></block></block>
@@ -618,8 +617,6 @@
   <block id="a434ec7166240525e1136a9caf043a5e" category="list-text">单击*上一步*对任何设置进行更改、或者单击*添加*接受设置并创建工作环境。</block>
   <block id="1f56efe328efe9c20f590e659125509a" category="paragraph">BlueXP会在Canvas上显示适用于ONTAP 的FSX配置。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
-  <block id="3c98e2bfe156ca99fa37e38b1eb68d0d" category="inline-link-macro">创建新的工作环境</block>
-  <block id="e3ed7d241946f79ddb205b1bcc1095b7" category="paragraph">您可以通过发现适用于ONTAP 文件系统的FSx <block ref="7605911292967addd7ea4683855fa385" category="inline-link-macro-rx"></block> 或者使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP会在Canvas上显示您发现的适用于ONTAP 的FSX文件系统。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">在Canvas上选择适用于ONTAP 的FSX工作环境。</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">三个点的图标</block>
@@ -743,4 +740,6 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">在画布上选择工作环境、然后选择*进入工作环境*。</block>
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">所有其他选项都需要一个Connector并已禁用。</block>
+  <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> 或使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
 </blocks>
