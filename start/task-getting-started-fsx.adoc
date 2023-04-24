@@ -33,4 +33,4 @@ summary: 使用BlueXP、您只需几个步骤即可开始使用适用于ONTAP �
 您可以 link:../use/task-add-fsx-volumes.html["为ONTAP 卷创建和挂载FSX"] 使用BlueXP。
 
 .下一步行动
-现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。
+现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、复制和同步以及分类。

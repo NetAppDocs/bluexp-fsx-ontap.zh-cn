@@ -268,13 +268,13 @@ Connector 的安全组需要入站和出站规则。
 | SSH | 22. | 提供对 Connector 主机的 SSH 访问 
 
 
-| HTTP | 80 | 提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问以及从 Cloud Data sense 建立的连接 
+| HTTP | 80 | 提供从客户端Web浏览器到本地用户界面的HTTP访问以及从BlueXP分类实例进行的连接 
 
 
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
 
 
-| TCP | 3128 | 如果您的 AWS 网络不使用 NAT 或代理，则可为云数据感知实例提供 Internet 访问 
+| TCP | 3128 | 如果您的AWS网络不使用NAT或代理、则为BlueXP分类实例提供互联网访问 
 |===
 
 
@@ -348,5 +348,5 @@ NOTE: 源 IP 地址是 Connector 主机。
 | DNS | UDP | 53. | DNS | 用于BlueXP的DNS解析 
 
 
-| 云数据感知 | HTTP | 80 | 云数据感知实例 | 适用于 Cloud Volumes ONTAP 的云数据感知 
+| BlueXP分类 | HTTP | 80 | BlueXP分类 | Cloud Volumes ONTAP的BlueXP分类 
 |===

@@ -234,10 +234,8 @@
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Connector 的规则</block>
   <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector 的安全组需要入站和出站规则。</block>
   <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">提供对 Connector 主机的 SSH 访问</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问以及从 Cloud Data sense 建立的连接</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">如果您的 AWS 网络不使用 NAT 或代理，则可为云数据感知实例提供 Internet 访问</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
   <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector 的预定义安全组包括以下出站规则。</block>
   <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">如果您需要对出站流量设置严格的规则，则可以使用以下信息仅打开 Connector 进行出站通信所需的端口。</block>
@@ -249,9 +247,6 @@
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 调用</block>
   <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
   <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">对备份到 S3 进行 API 调用</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">云数据感知</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">云数据感知实例</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">适用于 Cloud Volumes ONTAP 的云数据感知</block>
   <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">为适用于 ONTAP 的 FSX 设置权限</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">设置 IAM 角色</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">转到目标帐户中的 IAM 控制台。</block>
@@ -273,10 +268,7 @@
   <block id="3c36508c8697f7ec7a94803545518d69" category="list-text">经过认证，可在延迟敏感型应用程序上运行，包括 Oracle RAC 。</block>
   <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">可选择捆绑定价和按需购买定价</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
-  <block id="d9bf9116e04a89e455600416ad7872f3" category="list-text">利用人工智能（ AI ）驱动的技术，云数据感知可以帮助您了解数据环境，并识别 FSX for ONTAP 帐户中的敏感数据。<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>。</block>
-  <block id="1f944a9ec2785c18a692aeedf9839548" category="list-text">使用 NetApp Cloud Sync ，您可以自动将数据迁移到云中或内部环境中的任何目标。<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="bcde5e61b57c391c5832e7ea9a5bf2b1" category="paragraph">在 AWS 中使用连接器以及 Cloud Sync 和 Data sense 等可选数据服务会产生额外成本。</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支持的区域</block>
   <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">查看支持的 Amazon 地区。</block>
   <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
@@ -527,7 +519,6 @@
   <block id="4e853a8ef076b82d13f35807a2dfe93b" category="summary">您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="669f767086bf3b89606658facb29605a" category="paragraph">您可以使用BlueXP查看和管理卷、克隆和快照、以及更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="060dde3ca9c7d4e73cf9b65b84114028" category="paragraph">您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
-  <block id="6b91242d31fee1e3576ce594b08573b5" category="paragraph">您可以在BlueXP中使用Cloud Sync 创建同步关系。要配置同步关系，请参见<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
   <block id="f257be535aca4e5a3655fc2dd2887500" category="paragraph">您不能使用BlueXP删除先前属于SnapMirror关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。</block>
   <block id="56f7e1cad5439f90ac8bd08115c74e4a" category="list-text">输入工作环境名称并确认要删除此卷。从BlueXP中完全删除卷可能需要长达一个小时的时间。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
@@ -535,7 +526,6 @@
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
   <block id="a9272148ddd8493b835b5b0ed973a495" category="paragraph">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
-  <block id="c8e7a79b3e62d2a377fbadb534f60c42" category="list-text">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)和AWS中的连接器、您可以创建和管理卷、复制数据、并将适用于ONTAP 的FSX与Data sense和Cloud Sync 等NetApp云服务集成。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
@@ -557,7 +547,6 @@
   <block id="4bd8fd698bf66b76447369f6d59d7e0f" category="inline-link-macro">为ONTAP 卷创建和挂载FSX</block>
   <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">您可以 <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> 使用BlueXP。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步行动</block>
-  <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、Cloud Sync 和数据感知。</block>
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自动容量管理</block>
   <block id="380fe7c3627610af34c9936f46325923" category="paragraph">现在、您可以选择启用 <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
@@ -742,4 +731,14 @@
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">所有其他选项都需要一个Connector并已禁用。</block>
   <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>。</block>
   <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> 或使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
+  <block id="b8bb58c0dcb24fd404f0afdb514812dd" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、复制和同步以及分类。</block>
+  <block id="8f5824ab39555c09f787c12e2a079d11" category="list-text">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (Cloud Manager)和AWS中的Connector、您可以创建和管理卷、复制数据、以及将FSx for ONTAP与NetApp云服务(例如BlueXP分类和BlueXP复制和同步(Cloud Sync))集成。</block>
+  <block id="421285ceb2b9d53d23a60802835cfe70" category="list-text">BlueXP分类(Cloud Data Sense)采用人工智能(AI)驱动的技术、可帮助您了解数据上下文并识别驻留在FSx for ONTAP帐户中的敏感数据。<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>。</block>
+  <block id="e0a61971650c75e6c98840f20042d128" category="list-text">通过BlueXP复制和同步、您可以自动将数据迁移到云中或内部的任何目标。<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
+  <block id="ad9a464e359af0e32ba4423fbe150c59" category="paragraph">在AWS中使用Connector和可选数据服务(例如BlueXP复制和同步以及BlueXP分类)会产生额外的成本。</block>
+  <block id="2457d874eb9fc3fb2b8e5f23618c1c7f" category="cell">提供从客户端Web浏览器到本地用户界面的HTTP访问以及从BlueXP分类实例进行的连接</block>
+  <block id="02499ddfc19d9b80567e19eb3f97deb0" category="cell">如果您的AWS网络不使用NAT或代理、则为BlueXP分类实例提供互联网访问</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">BlueXP分类</block>
+  <block id="a7f8c8869966601b4670aae0a070ba31" category="cell">Cloud Volumes ONTAP的BlueXP分类</block>
+  <block id="a13fe54147eef01f0ae918612d6a4216" category="paragraph">您可以使用BlueXP副本和同步创建同步关系。要配置同步关系，请参见<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
 </blocks>
