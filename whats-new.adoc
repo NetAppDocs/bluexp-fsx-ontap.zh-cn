@@ -20,9 +20,7 @@ summary: 了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。
 
 == 2023年4月2日
 
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["在适用于ONTAP 的FSX上创建FlexGroup"^] 卷、以便在集群中分布卷数据。
-* IOPS限制会增加、以允许手动或自动配置、最高可达160、000次。
-
+IOPS限制会增加、以允许手动或自动配置、最高可达160、000次。
 
 
 

@@ -42,11 +42,6 @@ image:screenshot-add-volume.png["详细信息面板上添加卷选项的屏幕�
 .. Storage VM （ SVM ）字段会根据工作环境的名称自动填充 SVM 。
 .. 输入卷大小并选择一个单位（ GiB 或 TiB ）。请注意，卷大小将随使用量增长而增加。
 .. 选择快照策略。默认情况下，每小时（保留最后六个副本），每天（保留最后两个副本）和每周（保留最后两个副本）创建一个快照。
-.. (可选)选择优化选项以创建FlexGroup 并在集群中分布卷数据。
-+
-
-NOTE: FlexGroup 分发版仅适用于NFS和CIFS卷协议。
-
 
 
 . *卷协议*：
@@ -134,10 +129,6 @@ image:screenshot-volume-protocol-iscsi.png["用于创建ONTAP 卷的iSCSI配置F
 .. 默认情况下， * 分层策略 * 设置为 * 仅 Snapshot * 。您可以根据需要选择其他分层策略。
 +
 image:screenshot_fsx_volume_usage_tiering.png["用于创建 ONTAP 卷的 FSX 的使用情况配置文件和分层配置的屏幕截图。"]
-
-.. 如果选择了优化(FlexGroup)、则必须指定要在其中分布卷数据的成分卷数。我们强烈建议使用偶数的成分卷、以确保数据分布均匀。最佳实践是8个组成部分。
-+
-image:screenshot-constituents.png["字段的屏幕截图、用于指定分布卷数据的成分卷数。"]
 
 
 
