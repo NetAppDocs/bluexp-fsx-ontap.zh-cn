@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
 summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
 ---
 = 创建或发现适用于NetApp ONTAP 的Amazon FSX工作环境
@@ -22,7 +22,7 @@ summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环�
 
 第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用BlueXP发现它"]。
 
-.您需要的内容
+.开始之前
 在BlueXP中创建适用于ONTAP 的FSX工作环境之前、您需要：
 
 * IAM角色的ARN、为BlueXP提供为ONTAP 工作环境创建FSX所需的权限。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将AWS凭据添加到BlueXP"] 了解详细信息。
@@ -43,18 +43,20 @@ image:screenshot_add_fsx_working_env.png["为适用于NetApp ONTAP 的Amazon FSX
 . *详细信息和凭据*
 +
 .. 输入要使用的工作环境名称。
-.. 您也可以单击加号并输入标记名称和值来创建标记。
+.. 您也可以通过单击加号并输入标记名称和值来创建标记以对您的工作环境进行分类。
 .. 输入并确认要使用的 ONTAP 集群密码。
 .. 或者、取消选择此选项以对SVM用户使用相同的密码并设置不同的密码。
 
 
-. *地区和VPC*
+. * HA部署模式*
 +
 .. 选择*单个可用性区域*或*多个可用性区域* HA部署模式。对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。
+.. 选择要与文件系统关联的虚拟私有云(Virtual Private Cloud、VPC)。
+.. 使用现有安全组或选择*生成的安全组*以启用BlueXP生成仅允许选定VPC内流量的安全组。
 +
-image:screenshot_add_fsx_region.png["为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图"]
 
-.. 接受默认安全组或选择其他安全组。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
+NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
+
 
 
 . *浮动IP*(仅限多个可用性区域)
@@ -73,9 +75,6 @@ image:screenshot_add_fsx_region.png["为适用于 ONTAP 的 FSX 添加区域和 
 +
 .. 选择吞吐量，容量和单位。您可以随时更改吞吐量、存储容量和IOPS。
 .. 您也可以指定 IOPS 值。如果未指定IOPS值、则BlueXP将根据输入的总容量的每GiB 3个IOPS设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。
-+
-image:screenshot-storage-config.png["为适用于 ONTAP 的 FSX 设置存储配置的屏幕截图"]
-
 +
 
 NOTE: 如果指定的IOPS值不符合最低要求、则在添加工作环境时将收到错误。
