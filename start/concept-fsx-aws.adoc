@@ -31,6 +31,15 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["�
 
 == BlueXP中的其他功能
 
+* 在_standard_或_Restricted_模式下使用BlueXP时、支持Amazon FSx for NetApp ONTAP。
++
+** 标准模式利用BlueXP SaaS层提供完整功能。
+** 受限模式适用于具有连接限制的组织。
++
+请参见 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["BlueXP部署模式"^] 有关详细信息 ...
+
+
+
 * 使用 link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^] (Cloud Manager)和AWS中的Connector、您可以创建和管理卷、复制数据、以及将FSx for ONTAP与NetApp云服务(例如BlueXP分类和BlueXP复制和同步(Cloud Sync))集成。
 * BlueXP分类(Cloud Data Sense)采用人工智能(AI)驱动的技术、可帮助您了解数据上下文并识别驻留在FSx for ONTAP帐户中的敏感数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["了解更多信息。"^]。
 * 通过BlueXP复制和同步、您可以自动将数据迁移到云中或内部的任何目标。 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["了解更多信息。"^]

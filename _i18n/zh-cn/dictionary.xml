@@ -345,7 +345,6 @@
   <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">更改吞吐量容量</block>
   <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。</block>
-  <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">您需要一个活动的<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
   <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">铅笔编辑图标的图像。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
@@ -749,4 +748,10 @@
   <block id="9175bb34d0aede26315b313b9432bcbb" category="open-title">安全组</block>
   <block id="42c16fd45375c160089e29d754f16e36" category="inline-link-macro">生成安全组</block>
   <block id="78004ed8e8658d85d8a3d99a1a533922" category="paragraph">要允许BlueXP执行此操作、需要具备以下附加权限 <block ref="37425afe2ceb1de25205a180b5a14074" category="inline-link-macro-rx"></block>。</block>
+  <block id="25ee158968a50cfd221a03cd5c35714d" category="list-text">在_standard_或_Restricted_模式下使用BlueXP时、支持Amazon FSx for NetApp ONTAP。</block>
+  <block id="3cb5845101cca1d3632756ad505df41c" category="list-text">标准模式利用BlueXP SaaS层提供完整功能。</block>
+  <block id="8515864aee35dd4c309a887dc85ffb7f" category="list-text">受限模式适用于具有连接限制的组织。</block>
+  <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXP部署模式</block>
+  <block id="4fc602d8b048690865d920b6e5c24b3c" category="paragraph">请参见 <block ref="4bc49635495ab7c2db508b6d63907d47" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="b6b3f8e91334c4e2b9135fdcdc27fdb6" category="paragraph">您需要一个活动的<block ref="3cb2ea74cf184f32793e529e96915ba2" category="inline-link-rx"></block>。</block>
 </blocks>
