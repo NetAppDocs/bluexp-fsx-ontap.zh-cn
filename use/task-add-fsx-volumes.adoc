@@ -23,7 +23,7 @@ summary: 设置工作环境后、您可以创建和管理适用于NetApp ONTAP �
 您可以在BlueXP中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。
 
 .开始之前
-在创建新卷之前、您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
+在创建新卷之前、您需要一个活动的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
 
 如果要使用 SMB 、必须设置 DNS 和 Active Directory 。有关 DNS 和 Active Directory 网络配置的详细信息，请参见 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS ：使用自管理 Microsoft AD 的前提条件"^]。
 
@@ -98,7 +98,7 @@ image:screenshot_fsx_volume_protocol_cifs.png["用于创建 ONTAP 卷的 NFS 配
 | DNS 域 | Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。 
 
 
-| NTP 服务器 | 选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自动化文档"^] 了解详细信息。 
+| NTP 服务器 | 选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。 
 |===
 
 
@@ -113,7 +113,7 @@ image:screenshot_fsx_volume_protocol_cifs.png["用于创建 ONTAP 卷的 NFS 配
 
 ... 选择"*新建"*。
 ... 选择操作系统。
-... 单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html["将主机连接到LUN"^]。
+... 单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["将主机连接到LUN"^]。
 ... 输入一个"*启动程序组名称"*。
 +
 image:screenshot-volume-protocol-iscsi.png["用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。"]

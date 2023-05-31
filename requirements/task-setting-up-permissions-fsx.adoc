@@ -142,6 +142,6 @@ image:screenshot-govcloud-checkbox.png["GovCloud (US)帐户复选框的屏幕截
 
 == 相关链接
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html["AWS 凭据和权限"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["AWS 凭据和权限"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据"^]
 

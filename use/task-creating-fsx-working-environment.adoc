@@ -61,7 +61,7 @@ NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-ru
 
 . *浮动IP*(仅限多个可用性区域)
 +
-将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 传输网关"^] 手动配置范围。
+将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 传输网关"^] 手动配置范围。
 
 . *路由表*(仅限多个可用性区域)
 +
@@ -69,7 +69,7 @@ NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-ru
 
 . *数据加密*
 +
-接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["设置 AWS KMS"^]。
+接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["设置 AWS KMS"^]。
 
 . *存储配置*
 +

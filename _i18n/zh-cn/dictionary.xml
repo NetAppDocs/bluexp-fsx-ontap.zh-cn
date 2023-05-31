@@ -105,14 +105,6 @@
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">删除不再需要的卷。</block>
   <block id="590368745da00a61c492e4b834d9568e" category="admonition">如果您尝试删除克隆的卷，则会收到错误。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="72999cd653b12474752fb77bab9691e3" category="inline-link-macro">Cloud Backup 注意事项</block>
-  <block id="75be9a02506771b87be972c89707f0d4" category="list-text"><block ref="75be9a02506771b87be972c89707f0d4" category="inline-link-macro-rx"></block></block>
-  <block id="bf6a36d1f8c7b0ef48e5a5b01357f720" category="inline-link-macro">云同步注意事项</block>
-  <block id="c9c82aba1257ee6c6ebbade2353f0b0d" category="list-text"><block ref="c9c82aba1257ee6c6ebbade2353f0b0d" category="inline-link-macro-rx"></block></block>
-  <block id="a5e8ac089fe7eb702f683ce020dc2a2a" category="inline-link-macro">有关 Cloud Tiering 的注意事项</block>
-  <block id="3754b5e44654d3dc7bfaa36f213a8795" category="list-text"><block ref="3754b5e44654d3dc7bfaa36f213a8795" category="inline-link-macro-rx"></block></block>
-  <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">云数据感知注意事项</block>
-  <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
   <block id="e87d6ed459b274ad7c388e0797013c9f" category="doc">适用于 ONTAP 的 FSX 的安全组规则</block>
   <block id="9f415057e43c73d4e37a0068a0ca9486" category="section-title">适用于 ONTAP 的 FSX 的规则</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">入站规则</block>
@@ -278,7 +270,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
-  <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
   <block id="a4f557d4dc5603464fae9d733ed96263" category="paragraph">ONTAP 的 FSX 安全组需要入站和出站规则。此图显示了适用于 ONTAP 的 FSX 网络配置和安全组要求。</block>
   <block id="804e1541ef4556a247ad9499202fb6e2" category="inline-image-macro">ONTAP 安全组配置的 FSX 示意图。</block>
   <block id="bca6ab005ba14ce4d09f6862e9acbd0d" category="paragraph"><block ref="bca6ab005ba14ce4d09f6862e9acbd0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -304,7 +295,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">单击 * NSS 管理 &gt; 添加 NSS 帐户 * 。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
@@ -339,7 +329,6 @@
   <block id="6ae6d068572461cadd78494cd3954770" category="list-text">选择"*新建"*。</block>
   <block id="6439f651e3ce60a787666dc41a8ca17f" category="list-text">选择操作系统。</block>
   <block id="16125dd1e69c3f67387e091dfbdb0104" category="inline-link-macro">将主机连接到LUN</block>
-  <block id="4829537a55a4319514ecedacd16c615c" category="list-text">单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 <block ref="ea6aa66bd7959c06552c511c78fe80e4" category="inline-link-macro-rx"></block>。</block>
   <block id="ecfc70ae41156684ed148266abaf3a62" category="list-text">输入一个"*启动程序组名称"*。</block>
   <block id="ccb9a070caab16c4e464e89fd6afe362" category="inline-image-macro">用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。</block>
   <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
@@ -397,7 +386,6 @@
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*问题描述 *：提供问题的详细问题描述 、包括任何适用的错误消息或您执行的故障排除步骤。</block>
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他电子邮件地址*：如果您希望其他人了解此问题描述 、请输入其他电子邮件地址。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">创建案例表的屏幕截图、可用于向NetApp支持部门创建案例。</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">此时将显示一个弹出窗口、其中包含您的支持案例编号。NetApp支持专家将审核您的案例、并尽快与您联系。</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">有关支持案例的历史记录、您可以单击*设置&gt;时间线*并查找名为"创建支持案例"的操作。 最右侧的按钮可用于展开操作以查看详细信息。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">尝试创建案例时、您可能会遇到以下错误消息：</block>
@@ -423,7 +411,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*资源*页面上、单击*注册支持*。</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">显示帐户序列号和注册支持选项的屏幕截图</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是现有的NetApp客户、拥有现有许可证和序列号、但拥有_no_ NSS帐户、则只需创建一个NSS帐户即可。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
@@ -431,7 +418,6 @@
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp的新品牌</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支持注册站点</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">导航到<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 并选择*我不是NetApp注册客户*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填写必填字段(带有红色星号的字段)。</block>
@@ -456,7 +442,6 @@
   <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="469d6f26b0e14d75fc0c834eeac72311" category="list-text">*凭据位置*：选择* Amazon Web Services &gt; BlueX*。</block>
   <block id="193ad4e55afb9be5b67589ce2fc9b33d" category="inline-link">管理BlueXP的AWS凭据</block>
-  <block id="f9a91bf42987bf0077570f294d5077a4" category="list-text"><block ref="f9a91bf42987bf0077570f294d5077a4" category="inline-link-rx"></block></block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。</block>
   <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加NetApp 支持站点 (NSS)帐户、然后注册获取支持。</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
@@ -487,7 +472,6 @@
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</block>
   <block id="0f845867deaf035383ffc217279b9c7f" category="paragraph">您可以在BlueXP中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</block>
   <block id="6f28647aed612b810bbd7e815e8adbef" category="inline-link">BlueXP自动化文档</block>
-  <block id="40093c43e131165eb7dd2a980ff78509" category="cell">选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="cabcbbac4437e0dbf2eec9f1d07d973b" category="paragraph">从BlueXP中访问挂载说明、以便将卷挂载到主机。</block>
   <block id="78b85142b4840670f82bc1e876164d5a" category="paragraph">您可以从BlueXP中删除适用于ONTAP 的FSX、而无需删除适用于ONTAP 的FSX帐户或卷。您可以随时将适用于ONTAP 的FSX工作环境重新添加到BlueXP中。</block>
   <block id="2bded8459b9098e5f464123fa54a7a84" category="inline-image-macro">BlueXP界面中适用于ONTAP 的FSX的删除选项的屏幕截图。</block>
@@ -509,14 +493,11 @@
   <block id="547dba06b4fcfe3fa41996e831e9fb1c" category="list-text">如果您选择的集群没有允许BlueXP管理适用于ONTAP 的FSX文件系统所需的凭据、则系统将提示您选择具有所需权限的凭据。</block>
   <block id="4e853a8ef076b82d13f35807a2dfe93b" category="summary">您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="669f767086bf3b89606658facb29605a" category="paragraph">您可以使用BlueXP查看和管理卷、克隆和快照、以及更改适用于ONTAP 的FSX的分层策略。</block>
-  <block id="060dde3ca9c7d4e73cf9b65b84114028" category="paragraph">您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
   <block id="f257be535aca4e5a3655fc2dd2887500" category="paragraph">您不能使用BlueXP删除先前属于SnapMirror关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。</block>
   <block id="56f7e1cad5439f90ac8bd08115c74e4a" category="list-text">输入工作环境名称并确认要删除此卷。从BlueXP中完全删除卷可能需要长达一个小时的时间。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
-  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
-  <block id="a9272148ddd8493b835b5b0ed973a495" category="paragraph">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
@@ -533,25 +514,12 @@
   <block id="ff521b94ba57a25e6c791317a4a7c7b8" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 在AWS中设置IAM角色</block>
   <block id="f95c74952c0b72133feb54c45db4c89a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 创建适用于 ONTAP 的 FSX 工作环境</block>
   <block id="08668d46aa9ce2b52e7c349499a9f0a0" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 创建适用于AWS的连接器</block>
-  <block id="0e2c71dee315ea3ae0b3e253b0bb13c0" category="paragraph">您必须具有<block ref="06b487e1dd2b2618860abb4a038fd471" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、BlueXP将在其中一个连接器尚未处于活动状态时提示您。</block>
   <block id="b681838283484e0b94906567a577ad47" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 添加并挂载卷</block>
   <block id="4bd8fd698bf66b76447369f6d59d7e0f" category="inline-link-macro">为ONTAP 卷创建和挂载FSX</block>
   <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">您可以 <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> 使用BlueXP。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步行动</block>
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自动容量管理</block>
-  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">现在、您可以选择启用 <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
-  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">您现在可以： <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
-  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
-  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">您现在可以： <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
-  <block id="897d994d4d024883042e664eba152417" category="list-text">您现在可以： <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
-  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">您现在可以： <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
-  <block id="bee52cc88c0a721fa21705e43f975a38" category="paragraph"><block ref="bee52cc88c0a721fa21705e43f975a38" category="inline-link-macro-rx"></block></block>
-  <block id="68b4888c90bad97d83573c204e39d4f6" category="paragraph"><block ref="68b4888c90bad97d83573c204e39d4f6" category="inline-link-macro-rx"></block></block>
-  <block id="1a457abce740f74637d89636cb4bf465" category="paragraph"><block ref="b41a9efd67b5cf55cf548e8762fd5391" category="inline-link-macro-rx"></block>。</block>
-  <block id="878635d00100085ed9c73c84b23923a8" category="paragraph">您可以 <block ref="7efe0bba09b9697b63e1ec0f00c0d9bb" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
-  <block id="b957b3c2b45d171475a7589df8173510" category="paragraph">现在可以了 <block ref="e1e8315fc20ff9071c786150bb6a8fd4" category="inline-link-macro-rx"></block>。</block>
-  <block id="c3e1ff7fb2dc6fd7c64f15c4ce7d34e3" category="paragraph">现在可以了 <block ref="1546ddd4150be40b2e31760299f6633d" category="inline-link-macro-rx"></block>。</block>
   <block id="9e6871113ad24ed3830e2e58ce51dfc4" category="summary">借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量和存储容量以及IOPS、以及删除或删除工作环境。</block>
   <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">管理自动容量</block>
   <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">您可以选择启用自动容量管理、以便根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最高可达集群最大容量的80%。</block>
@@ -568,13 +536,9 @@
   <block id="938b92d62e3cd9d5d18b4db5abd32cfa" category="list-text">选择铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*自动容量管理*页面。</block>
   <block id="41fa05171eb08b9478abe51f41110a5f" category="inline-link-macro">注册您的BlueXP帐户</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">适用于 Google Cloud 的 Cloud Volumes Service</block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="b284ee716f958658a642a656a79699dc" category="paragraph">有关BlueXP或BlueXP存储解决方案和服务的一般问题、您可以从在线BlueXP聊天开始。</block>
-  <block id="3daaa300f491b3dcb99896f1ebc0a277" category="paragraph">对于特定于BlueXP或BlueXP存储解决方案和服务的技术支持问题、您可以使用您的BlueXP帐户级别序列号打开NetApp支持服务单。您需要 <block ref="1da17bacda87cc6ccc7a9f1f44b5e325" category="inline-link-macro-rx"></block> 激活支持。</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="bc1fbeca04a0bc47b1dd85e467f87ffc" category="list-text">*用于ONTAP 身份验证的FSX *</block>
   <block id="2bc897b30b2df26c531635a145af68ae" category="list-text">如果您的帐户中没有IAM角色、请单击*凭据*、然后按照向导中的步骤使用FSX for ONTAP 凭据为AWS IAM角色添加ARN。请参见 <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> 了解详细信息。</block>
@@ -582,7 +546,6 @@
   <block id="b3decd3dc6245a45a816d81cc94eb4be" category="list-text">或者、取消选择此选项以对SVM用户使用相同的密码并设置不同的密码。</block>
   <block id="15ef2ed90c27f9867f7383d8f200ba6b" category="list-text">选择*单个可用性区域*或*多个可用性区域* HA部署模式。对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。</block>
   <block id="3f589588a5e2b50cf827ef7f979de432" category="list-text">*浮动IP*(仅限多个可用性区域)</block>
-  <block id="5b1a0e567c07875980cb98cbf8a0fc60" category="paragraph">将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> 手动配置范围。</block>
   <block id="b04e1903e3de2fffa52c1c517b8fed45" category="list-text">*路由表*(仅限多个可用性区域)</block>
   <block id="f884e9a3951c5c6df696ce1faeecf517" category="paragraph">选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。</block>
   <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*数据加密*</block>
@@ -644,27 +607,19 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*组织的案例*下、单击*查看*以查看与您的公司关联的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">通过选择确切的日期范围或选择其他时间范围来修改日期范围。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理页面上表上方选项的屏幕截图、可用于选择确切的日期范围或过去7天、30天或3个月。</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">筛选列的内容。</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">"状态"列中筛选选项的屏幕截图、可用于筛选与特定状态(如"活动"或"已关闭")匹配的案例。</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表中显示的加号图标</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">通过单击更改表中显示的列 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然后选择要显示的列。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">显示可在表中显示的列的屏幕截图。</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">包含三个点的图标、显示在表的最后一列中</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">单击以管理现有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 并选择一个可用选项：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS帐户必须是客户级别的帐户(而不是来宾或临时帐户)。您可以拥有多个客户级别的NSS帐户。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果此帐户是合作伙伴级别的帐户、则只能有一个NSS帐户。如果您尝试添加客户级别的NSS帐户、并且存在合作伙伴级别的帐户、则会收到以下错误消息：</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"此帐户不允许使用NSS客户类型、因为已存在不同类型的NSS用户。"</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客户级别的NSS帐户、并尝试添加合作伙伴级别的帐户、则也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登录后、NetApp将存储NSS用户名。</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此选项将提示您重新登录。请注意、这些帐户的令牌将在90天后过期。系统将发布通知、提醒您注意这一点。</block>
   <block id="c2ca61cdaafcad548af5836df039fcb3" category="doc">适用于NetApp ONTAP 的Amazon FSX快速入门</block>
   <block id="f0f0fb7949dd435ae874e688628798e3" category="paragraph">要创建或管理适用于NetApp ONTAP 的Amazon FSX工作环境、您需要向BlueXP添加AWS凭据、方法是提供IAM角色的ARN、为BlueXP提供创建适用于ONTAP 的FSX工作环境所需的权限。要执行此操作、您必须执行此操作 <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>。</block>
@@ -682,11 +637,8 @@
   <block id="af78a60c1f50cf81e4812897a751efa4" category="summary">了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。</block>
   <block id="1bab530ca9dd117d24aa1c1510692003" category="doc">适用于NetApp ONTAP 的Amazon FSX的新增功能</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">支持适用于NetApp ONTAP 的Amazon FSX</block>
-  <block id="1385cf1e7d29fd1798df788aa42c8b74" category="paragraph"><block ref="fd7dfb8b205259c356b93928031de897" category="inline-link-macro-rx"></block>。</block>
   <block id="154f5271f725905c77563d2d1d8b3a0a" category="inline-link-macro">创建适用于NetApp ONTAP 的Amazon FSX工作环境</block>
-  <block id="d3be51f291f03daae4a578c9e175d12f" category="paragraph"><block ref="2d691155b6be24c94d675d869467be5f" category="inline-link-macro-rx"></block>。</block>
   <block id="c8b596b90101edd9745fcaebc95d3b53" category="inline-link-macro">开始使用适用于Amazon FSX for NetApp ONTAP 的Cloud Data sense</block>
-  <block id="bc538ecf902d31a2e2d5da896a568d39" category="paragraph"><block ref="d1fc625724d03640e125c3e4f8b63f1b" category="inline-link-macro-rx"></block>。</block>
   <block id="ff8f76810bdaf3c806b24b4f8d990230" category="doc">创建或发现适用于NetApp ONTAP 的Amazon FSX工作环境</block>
   <block id="8d75ffd71230b9a1b93e34cb2e11aa86" category="list-text">在BlueXP中、添加一个新的工作环境、选择* Amazon Web Services*、然后单击*为适用于NetApp ONTAP 的Amazon FSX添加新*。</block>
   <block id="0c701eedf5e7b93c745db83a71466be1" category="inline-image-macro">为适用于NetApp ONTAP 的Amazon FSX添加工作环境的屏幕截图</block>
@@ -708,23 +660,17 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">在画布上选择工作环境、然后选择*进入工作环境*。</block>
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">所有其他选项都需要一个Connector并已禁用。</block>
-  <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>。</block>
   <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> 或使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
   <block id="b8bb58c0dcb24fd404f0afdb514812dd" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、复制和同步以及分类。</block>
-  <block id="8f5824ab39555c09f787c12e2a079d11" category="list-text">使用 <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (Cloud Manager)和AWS中的Connector、您可以创建和管理卷、复制数据、以及将FSx for ONTAP与NetApp云服务(例如BlueXP分类和BlueXP复制和同步(Cloud Sync))集成。</block>
-  <block id="421285ceb2b9d53d23a60802835cfe70" category="list-text">BlueXP分类(Cloud Data Sense)采用人工智能(AI)驱动的技术、可帮助您了解数据上下文并识别驻留在FSx for ONTAP帐户中的敏感数据。<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>。</block>
-  <block id="e0a61971650c75e6c98840f20042d128" category="list-text">通过BlueXP复制和同步、您可以自动将数据迁移到云中或内部的任何目标。<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
   <block id="ad9a464e359af0e32ba4423fbe150c59" category="paragraph">在AWS中使用Connector和可选数据服务(例如BlueXP复制和同步以及BlueXP分类)会产生额外的成本。</block>
   <block id="2457d874eb9fc3fb2b8e5f23618c1c7f" category="cell">提供从客户端Web浏览器到本地用户界面的HTTP访问以及从BlueXP分类实例进行的连接</block>
   <block id="02499ddfc19d9b80567e19eb3f97deb0" category="cell">如果您的AWS网络不使用NAT或代理、则为BlueXP分类实例提供互联网访问</block>
   <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">BlueXP分类</block>
   <block id="a7f8c8869966601b4670aae0a070ba31" category="cell">Cloud Volumes ONTAP的BlueXP分类</block>
-  <block id="a13fe54147eef01f0ae918612d6a4216" category="paragraph">您可以使用BlueXP副本和同步创建同步关系。要配置同步关系，请参见<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
   <block id="d151342d67a639e871ca8c57524ca7f8" category="section-title">管理卷标记</block>
   <block id="1edd4a3142e92621938f60a5002ee3b3" category="paragraph">您可以添加、修改或删除卷标记。在BlueXP中添加的标记将反映在AWS控制台中。与AWS控制台同步标记可能需要长达一小时的时间。</block>
   <block id="4c01e02944d90f20b1f75ee4b1e9c16c" category="list-text">选择*管理卷标记*。</block>
   <block id="030c2a7dd0a2a850c39eb85018a90937" category="list-text">选择*保存*以应用所做的更改。</block>
-  <block id="683e9ad715450e3853ea313118022403" category="paragraph">在创建新卷之前、您需要一个活动的<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
   <block id="4cf58ab90a8b9b744f512ffebcdbebb3" category="list-text">*卷详细信息、保护和标记*</block>
   <block id="7862905bf13e1d709d0da68a16f6b48a" category="list-text">Storage VM (SVM)字段会根据您的工作环境名称自动填充SVM。</block>
   <block id="bf3b5a85e403c1246dbbd111a2122f1b" category="list-text">您也可以通过单击加号并输入标记名称和值来创建标记以对卷进行分类。</block>
@@ -736,10 +682,8 @@
   <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">2023年5月7日</block>
   <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">生成安全组</block>
   <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">需要其他权限</block>
-  <block id="85613cc2934a1e3d40c91656c94e331a" category="list-text">创建工作环境时、您现在可以使用BlueXP <block ref="c4e69423da06cd62564882d11bcec12a" category="inline-link-macro-rx"></block> 仅允许选定VPC中的流量。此功能 <block ref="55b057d10246173e2440d2eae51abd9a" category="inline-link-macro-rx"></block>。</block>
   <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">添加</block>
   <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">修改</block>
-  <block id="158f074c96189eb946118a12a17762b5" category="list-text">您可以选择 <block ref="09047edca5075ad1c71cf5035a98ddf9" category="inline-link-macro-rx"></block> 和 <block ref="d0baf23f6aa987908b3cb85b94241056" category="inline-link-macro-rx"></block> 用于对卷进行分类的标记。</block>
   <block id="4671b76d583d3e68a446878a3342d736" category="list-text">根据需要创建一个包含以下所需最低权限和可选权限的策略。</block>
   <block id="5ad10cfb674234136c181d096cb59522" category="open-title">所需权限</block>
   <block id="7b36ef7355ac702b97a1f4f36816d08c" category="paragraph">要允许BlueXP创建FSx for NetApp ONTAP 文件系统、需要具备以下最低权限。</block>
@@ -752,6 +696,54 @@
   <block id="3cb5845101cca1d3632756ad505df41c" category="list-text">标准模式利用BlueXP SaaS层提供完整功能。</block>
   <block id="8515864aee35dd4c309a887dc85ffb7f" category="list-text">受限模式适用于具有连接限制的组织。</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXP部署模式</block>
-  <block id="4fc602d8b048690865d920b6e5c24b3c" category="paragraph">请参见 <block ref="4bc49635495ab7c2db508b6d63907d47" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
-  <block id="b6b3f8e91334c4e2b9135fdcdc27fdb6" category="paragraph">您需要一个活动的<block ref="3cb2ea74cf184f32793e529e96915ba2" category="inline-link-rx"></block>。</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">通过单击更改表中显示的列 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然后选择要显示的列。</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">单击以管理现有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 并选择一个可用选项：</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="paragraph"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="55f3cecb4f2e2fb5d00cb8e857fb6eee" category="paragraph">请参见 <block ref="499541103fc78774e429d818f457ca15" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="13781b4ae41e7418f77ba4822fc32c49" category="list-text">使用 <block ref="22fc26cf6eb0c7b721364c48d2d0a99b" category="inline-link-macro-rx"></block> 作为AWS中的连接器、您可以创建和管理卷、复制数据以及将FSx for ONTAP与NetApp云服务(例如BlueXP分类和BlueXP复制和同步)集成。</block>
+  <block id="59fe7db193a00d48463a8179e319bc94" category="list-text">BlueXP分类功能采用人工智能(AI)驱动的技术、可帮助您了解数据上下文并识别驻留在FSx for ONTAP帐户中的敏感数据。<block ref="bfbb8228662c42f84be0f3c329d7d1b1" category="inline-link-rx"></block>。</block>
+  <block id="5569f2aa218203754a9e5c9134bae1d2" category="list-text">通过BlueXP复制和同步、您可以自动将数据迁移到云中或内部的任何目标。<block ref="e1c6f4eb1848937ca1b5c90d49af3ebb" category="inline-link-rx"></block></block>
+  <block id="4a0c58afa0cf8e6e215c2321f73e0970" category="paragraph">有关BlueXP或BlueXP存储解决方案和服务的特定技术支持问题、您可以使用BlueXP帐户级别序列号创建NetApp支持服务单。您需要 <block ref="0c02d88e10dc9d33a3c6d90fb8336a90" category="inline-link-macro-rx"></block> 激活支持。</block>
+  <block id="52f0d52ceec121b410112b2a5dba2d7a" category="paragraph">使用 <block ref="22fc26cf6eb0c7b721364c48d2d0a99b" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
+  <block id="c252661fa67fb818de00d332271e5952" category="paragraph">您必须具有<block ref="752bdc7b6cc8b206a39bceaddedfafff" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、BlueXP将在其中一个连接器尚未处于活动状态时提示您。</block>
+  <block id="f8073e9488e1efc9a72bfd8549bdfe65" category="paragraph">将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用<block ref="908a038b6698bef05553dc237966486c" category="inline-link-rx"></block> 手动配置范围。</block>
+  <block id="fed3b58ee53350fc679af9313a452f78" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 <block ref="8fe12519351ca8a607a9a9e011c48c01" category="inline-link-macro-rx"></block>。</block>
+  <block id="598ac5ec4509a5fa7d37ccc4259276e2" category="paragraph">您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="b3f9ef9ab8e2f6f80ef424579ec0a2be" category="inline-link-rx"></block>。</block>
+  <block id="4fe2848eb7d4a0d2def783dfbceaf41d" category="paragraph">您可以使用BlueXP副本和同步创建同步关系。要配置同步关系，请参见<block ref="ebda92a6c5428de5c74cf0458cae3b5e" category="inline-link-rx"></block>。</block>
+  <block id="8d757dbdc7fa419adfd2d9b20629a645" category="paragraph">您需要一个活动的<block ref="36a4e36eea867c3f44362f37d4545eda" category="inline-link-rx"></block>。</block>
+  <block id="3d21cd9a1f8be881b83afe344443ea88" category="paragraph">在创建新卷之前、您需要一个活动的<block ref="7c63a28be6cb831de5033d7fc716e2b5" category="inline-link-rx"></block>。</block>
+  <block id="b344b4701c7bc470b4d413e98ef9c9f9" category="cell">选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="82fec6d31b25a5ecb50c02e473be2188" category="list-text">单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 <block ref="bb4247f1c80c630362ed25b8c41eed59" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">创建工作环境时、您现在可以使用BlueXP <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block> 仅允许选定VPC中的流量。此功能 <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>。</block>
+  <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">您可以选择 <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> 和 <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> 用于对卷进行分类的标记。</block>
+  <block id="7a1efada084b28a5a54db20f07f2e373" category="paragraph">现在、您可以选择启用 <block ref="798ae2d54008eb1f5d42a000af614a06" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
+  <block id="8b5edcd6e9d4ab9285ee3664af7ea2a9" category="paragraph">您现在可以： <block ref="9b7f213d695f8dd25ea908078792fd69" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="466d6bdc4ee1f71dd893e6c99f71163b" category="paragraph"><block ref="466d6bdc4ee1f71dd893e6c99f71163b" category="inline-link-macro-rx"></block></block>
+  <block id="733ef426ec092c634a1b7dbaf3373220" category="list-text">您现在可以： <block ref="9152528a95687d317ab62dcde238fdef" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="32417d8e9e3c82c4c5314062782575c9" category="list-text">您现在可以： <block ref="f635c46f2cd088dcf1369f807e47e94f" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
+  <block id="9f4e04fb3f0860f8350f8ebb5e3a6709" category="list-text">您现在可以： <block ref="2e2cc205fa7502696c4503aa2708460c" category="inline-link-macro-rx"></block>。</block>
+  <block id="8fd7534d6aebbd882ef1960f77315b2f" category="paragraph"><block ref="8fd7534d6aebbd882ef1960f77315b2f" category="inline-link-macro-rx"></block></block>
+  <block id="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="paragraph"><block ref="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="inline-link-macro-rx"></block></block>
+  <block id="a192906bb862e862bbb53506559a844d" category="paragraph"><block ref="9516e987fbb53ba186cfd7cef3866a34" category="inline-link-macro-rx"></block>。</block>
+  <block id="a9736f093d873bda23fae5af0f2e59ad" category="paragraph">您可以 <block ref="86859984b3fe2a3db500ca938508fd38" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
+  <block id="7c0b6ff49cfe71493375c14aa404ca6c" category="paragraph">现在可以了 <block ref="52b661a6eadedcae5186a4ebf8b872ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fb5d20591c6848f132647679c0da362" category="paragraph">现在可以了 <block ref="89079ccbf05a0fc2ea3954d0d79bc38f" category="inline-link-macro-rx"></block>。</block>
+  <block id="557b3fb1f758926ca04bd11d6807c299" category="paragraph"><block ref="834ff3a562756e0b7e56a13f4eb96013" category="inline-link-macro-rx"></block>。</block>
+  <block id="d08ad840d921084daab3eb8ec7ed95d0" category="paragraph"><block ref="1e975261e8c6330d82170a203547fafa" category="inline-link-macro-rx"></block>。</block>
+  <block id="9392a234f812a64a7add82bf3ea440ce" category="paragraph"><block ref="6c403399a6912b636ecf2c35a037d6c1" category="inline-link-macro-rx"></block>。</block>
+  <block id="6bc0d0afbcf301d393b1808f854ff30e" category="list-text"><block ref="6bc0d0afbcf301d393b1808f854ff30e" category="inline-link-rx"></block></block>
+  <block id="8fb5f344898fe922856ca069cb615707" category="list-text"><block ref="8fb5f344898fe922856ca069cb615707" category="inline-link-rx"></block></block>
 </blocks>

@@ -74,7 +74,7 @@ NOTE: 所有其他选项都需要一个Connector并已禁用。
 在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。
 
 .开始之前
-您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
+您需要一个活动的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
 
 .步骤
 . 打开适用于 ONTAP 的 FSX 工作环境。
@@ -90,7 +90,7 @@ NOTE: 所有其他选项都需要一个Connector并已禁用。
 在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。
 
 .开始之前
-您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
+您需要一个活动的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
 
 .步骤
 . 打开适用于 ONTAP 的 FSX 工作环境。
