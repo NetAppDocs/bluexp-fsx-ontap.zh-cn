@@ -659,7 +659,6 @@
   <block id="5ad10cfb674234136c181d096cb59522" category="open-title">所需权限</block>
   <block id="7b36ef7355ac702b97a1f4f36816d08c" category="paragraph">要允许BlueXP创建FSx for NetApp ONTAP 文件系统、需要具备以下最低权限。</block>
   <block id="79d6201c496cf246a16e25b2e725897a" category="open-title">自动容量</block>
-  <block id="762e3bf022059ba9b9cc06c0d2c9b00d" category="paragraph">要启用、需要具备以下附加权限 <block ref="4d6056f5ae867fac15604e7d63efb082" category="inline-link-macro-rx"></block>。</block>
   <block id="9175bb34d0aede26315b313b9432bcbb" category="open-title">安全组</block>
   <block id="42c16fd45375c160089e29d754f16e36" category="inline-link-macro">生成安全组</block>
   <block id="78004ed8e8658d85d8a3d99a1a533922" category="paragraph">要允许BlueXP执行此操作、需要具备以下附加权限 <block ref="37425afe2ceb1de25205a180b5a14074" category="inline-link-macro-rx"></block>。</block>
@@ -763,4 +762,5 @@
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
+  <block id="69ca45f3f7552de8b10ae32cba3897d2" category="paragraph">要启用、需要具备以下附加权限 <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>。</block>
 </blocks>
