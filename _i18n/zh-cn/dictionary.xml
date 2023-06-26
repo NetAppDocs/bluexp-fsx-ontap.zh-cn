@@ -85,8 +85,6 @@
   <block id="759e9950bbe6d95f5d993751a21090d8" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
   <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">编辑卷</block>
   <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">创建卷后，您可以随时对其进行修改。</block>
-  <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">对于 NFS ，您可以修改大小和标记。</block>
-  <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">对于 CIFS ，您可以根据需要修改共享名称，用户，权限和 Snapshot 策略。</block>
   <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">克隆卷</block>
   <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">创建卷后，您可以从新 Snapshot 创建新的读写卷。</block>
   <block id="5e5db467595563d87880b20fec615319" category="list-text">输入克隆卷的名称。</block>
@@ -763,4 +761,5 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="69ca45f3f7552de8b10ae32cba3897d2" category="paragraph">要启用、需要具备以下附加权限 <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a152437275e48cffd13b98c296a5e3f" category="admonition">在与AWS同步之前、您无法编辑在BlueXP中创建的卷标记。这可能需要长达一小时的时间。如果*管理卷标记*选项呈灰色显示、则AWS尚未同步卷标记。</block>
 </blocks>
