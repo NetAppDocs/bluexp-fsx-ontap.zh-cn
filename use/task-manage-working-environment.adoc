@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
-keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity 
-summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量和存储容量以及IOPS、以及删除或删除工作环境。 
+keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
+summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量以及存储容量和IOPS、删除或删除工作环境以及管理数据服务、例如备份和恢复、复制和同步、分类、复制和卷缓存。 
 ---
 = 管理适用于NetApp ONTAP 的Amazon FSX工作环境
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您�
 
 
 [role="lead"]
-借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量和存储容量以及IOPS、以及删除或删除工作环境。
+借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量以及存储容量和IOPS、删除或删除工作环境以及管理数据服务、例如备份和恢复、复制和同步、分类、复制和卷缓存。
 
 
 
@@ -154,4 +154,21 @@ NOTE: 必须使用AWS管理控制台或命令行界面删除故障卷。
 image:screenshot_fsx_working_environment_delete.png["BlueXP界面中适用于ONTAP 的FSX的删除选项的屏幕截图。"]
 
 . 输入工作环境的名称并选择*删除*。
+
+
+
+
+== 管理数据服务
+
+您可以从Amazon FSx for NetApp ONTAP工作环境管理其他数据服务。
+
+image:data-services.png["工作环境中的数据服务选项卡的屏幕截图"]
+
+有关配置数据服务的详细信息、请参见：
+
+* link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["BlueXP备份和恢复"^] 为内部和云端的NetApp ONTAP数据、Kubnetes永久性卷、数据库和虚拟机提供高效、安全且经济高效的数据保护。
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["BlueXP复制和同步"^] 是一种云复制和同步服务、用于在内部和云对象存储之间传输NAS数据。
+* link:https://docs.netapp.com/us-en/bluexp-classification/index.html["BlueXP分类"^] 支持您扫描企业混合多云中的数据并对其进行分类。
+* link:https://docs.netapp.com/us-en/bluexp-replication/index.html["复制数据"^] 在ONTAP存储系统之间进行备份和灾难恢复、以支持云端或云之间的备份和灾难恢复。
+* link:https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["卷缓存"^] 在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。
 

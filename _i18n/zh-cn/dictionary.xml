@@ -96,9 +96,6 @@
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="section-title">更改分层策略</block>
   <block id="3a2ff6a4c845ba47894d1dd10a1b908f" category="paragraph">更改卷的分层策略。</block>
   <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">选择一个新的卷分层策略，然后单击 * 更改 * 。</block>
-  <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">复制和同步数据</block>
-  <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">在系统之间复制数据</block>
-  <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">创建同步关系</block>
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">删除卷</block>
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">删除不再需要的卷。</block>
   <block id="590368745da00a61c492e4b834d9568e" category="admonition">如果您尝试删除克隆的卷，则会收到错误。</block>
@@ -259,10 +256,7 @@
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
-  <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">了解适用于 ONTAP 的 FSX</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
-  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">创建并挂载卷</block>
-  <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">管理卷和数据服务</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
@@ -319,8 +313,6 @@
   <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">对于AWS GovCloud (美国)：033442085313</block>
   <block id="e9ba45e021b291739ba996c9cde18a78" category="list-text">此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。</block>
-  <block id="7208d8184b0d0e6e3c7bcf475c8f9bd2" category="inline-image-macro">适用于ONTAP 的FSX的"我的商机"页面的屏幕截图。</block>
-  <block id="9e4da126e3095f89c00bb676d98195d8" category="paragraph"><block ref="9e4da126e3095f89c00bb676d98195d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b4a4c841d4545b117e4104be254a0e8" category="list-text">选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。</block>
   <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">如果选择未命名的集群、则会提示您输入集群名称。</block>
   <block id="7d7217d548e427bd0d76f5081e4b4cb5" category="paragraph">要创建新启动程序组、请执行以下操作：</block>
@@ -334,8 +326,6 @@
   <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。</block>
   <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">铅笔编辑图标的图像。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
-  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
-  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">利用"我的商机"发现适用于ONTAP 的FSX</block>
   <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">更改吞吐量容量</block>
   <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">复制和同步数据</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
@@ -462,8 +452,6 @@
   <block id="74e0ba9ea27cef4d0c11560e135b281e" category="inline-link-macro">将AWS凭据添加到BlueXP</block>
   <block id="02e21891e6a4d87f518207b9609ebed1" category="list-text">IAM角色的ARN、为BlueXP提供为ONTAP 工作环境创建FSX所需的权限。请参见 <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="c43f98768b6bade26ae94ab84f81134f" category="list-text">您也可以指定 IOPS 值。如果未指定IOPS值、则BlueXP将根据输入的总容量的每GiB 3个IOPS设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。</block>
-  <block id="decbe5e805a0a9516184b64d9bad01c3" category="paragraph">如果您之前已向BlueXP提供AWS凭据、则*我的商机*可以自动发现并建议使用BlueXP添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。</block>
-  <block id="b74bb93cbb66b60fd6c91eba3c535cb2" category="list-text">在BlueXP中、单击*我的商机*选项卡。</block>
   <block id="547dba06b4fcfe3fa41996e831e9fb1c" category="list-text">如果您选择的集群没有允许BlueXP管理适用于ONTAP 的FSX文件系统所需的凭据、则系统将提示您选择具有所需权限的凭据。</block>
   <block id="4e853a8ef076b82d13f35807a2dfe93b" category="summary">您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。</block>
   <block id="669f767086bf3b89606658facb29605a" category="paragraph">您可以使用BlueXP查看和管理卷、克隆和快照、以及更改适用于ONTAP 的FSX的分层策略。</block>
@@ -493,7 +481,6 @@
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步行动</block>
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自动容量管理</block>
-  <block id="9e6871113ad24ed3830e2e58ce51dfc4" category="summary">借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量和存储容量以及IOPS、以及删除或删除工作环境。</block>
   <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">管理自动容量</block>
   <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">您可以选择启用自动容量管理、以便根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最高可达集群最大容量的80%。</block>
   <block id="0b77a63f8ac25e1cd8509e906523f459" category="inline-link-macro">创建工作环境</block>
@@ -560,7 +547,6 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
-  <block id="cde704f6035294578016569ea9508122" category="sidebar">管理工作环境</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="doc">Amazon FSX for NetApp ONTAP 文档</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支持案例(预览)</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。</block>
@@ -631,7 +617,6 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">在画布上选择工作环境、然后选择*进入工作环境*。</block>
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">所有其他选项都需要一个Connector并已禁用。</block>
-  <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> 或使用*我的商机*页面。此任务介绍如何使用*我的商机*进行发现</block>
   <block id="b8bb58c0dcb24fd404f0afdb514812dd" category="paragraph">现在、您可以使用BlueXP管理卷并配置其他服务、例如复制、复制和同步以及分类。</block>
   <block id="ad9a464e359af0e32ba4423fbe150c59" category="paragraph">在AWS中使用Connector和可选数据服务(例如BlueXP复制和同步以及BlueXP分类)会产生额外的成本。</block>
   <block id="2457d874eb9fc3fb2b8e5f23618c1c7f" category="cell">提供从客户端Web浏览器到本地用户界面的HTTP访问以及从BlueXP分类实例进行的连接</block>
@@ -687,17 +672,12 @@
   <block id="52f0d52ceec121b410112b2a5dba2d7a" category="paragraph">使用 <block ref="22fc26cf6eb0c7b721364c48d2d0a99b" category="inline-link-macro-rx"></block>、您只需几个步骤即可开始使用适用于ONTAP 的FSX。</block>
   <block id="c252661fa67fb818de00d332271e5952" category="paragraph">您必须具有<block ref="752bdc7b6cc8b206a39bceaddedfafff" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用Connector、BlueXP将在其中一个连接器尚未处于活动状态时提示您。</block>
   <block id="fed3b58ee53350fc679af9313a452f78" category="paragraph">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 <block ref="8fe12519351ca8a607a9a9e011c48c01" category="inline-link-macro-rx"></block>。</block>
-  <block id="598ac5ec4509a5fa7d37ccc4259276e2" category="paragraph">您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="b3f9ef9ab8e2f6f80ef424579ec0a2be" category="inline-link-rx"></block>。</block>
-  <block id="4fe2848eb7d4a0d2def783dfbceaf41d" category="paragraph">您可以使用BlueXP副本和同步创建同步关系。要配置同步关系，请参见<block ref="ebda92a6c5428de5c74cf0458cae3b5e" category="inline-link-rx"></block>。</block>
   <block id="8d757dbdc7fa419adfd2d9b20629a645" category="paragraph">您需要一个活动的<block ref="36a4e36eea867c3f44362f37d4545eda" category="inline-link-rx"></block>。</block>
-  <block id="3d21cd9a1f8be881b83afe344443ea88" category="paragraph">在创建新卷之前、您需要一个活动的<block ref="7c63a28be6cb831de5033d7fc716e2b5" category="inline-link-rx"></block>。</block>
   <block id="b344b4701c7bc470b4d413e98ef9c9f9" category="cell">选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="82fec6d31b25a5ecb50c02e473be2188" category="list-text">单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 <block ref="bb4247f1c80c630362ed25b8c41eed59" category="inline-link-macro-rx"></block>。</block>
   <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">创建工作环境时、您现在可以使用BlueXP <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block> 仅允许选定VPC中的流量。此功能 <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>。</block>
   <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">您可以选择 <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> 和 <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> 用于对卷进行分类的标记。</block>
-  <block id="7a1efada084b28a5a54db20f07f2e373" category="paragraph">现在、您可以选择启用 <block ref="798ae2d54008eb1f5d42a000af614a06" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
   <block id="8b5edcd6e9d4ab9285ee3664af7ea2a9" category="paragraph">您现在可以： <block ref="9b7f213d695f8dd25ea908078792fd69" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
-  <block id="466d6bdc4ee1f71dd893e6c99f71163b" category="paragraph"><block ref="466d6bdc4ee1f71dd893e6c99f71163b" category="inline-link-macro-rx"></block></block>
   <block id="733ef426ec092c634a1b7dbaf3373220" category="list-text">您现在可以： <block ref="9152528a95687d317ab62dcde238fdef" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
   <block id="32417d8e9e3c82c4c5314062782575c9" category="list-text">您现在可以： <block ref="f635c46f2cd088dcf1369f807e47e94f" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
   <block id="9f4e04fb3f0860f8350f8ebb5e3a6709" category="list-text">您现在可以： <block ref="2e2cc205fa7502696c4503aa2708460c" category="inline-link-macro-rx"></block>。</block>
@@ -762,4 +742,68 @@
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="69ca45f3f7552de8b10ae32cba3897d2" category="paragraph">要启用、需要具备以下附加权限 <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>。</block>
   <block id="1a152437275e48cffd13b98c296a5e3f" category="admonition">在与AWS同步之前、您无法编辑在BlueXP中创建的卷标记。这可能需要长达一小时的时间。如果*管理卷标记*选项呈灰色显示、则AWS尚未同步卷标记。</block>
+  <block id="982342913ed4c65e25bbc0d7a29cc903" category="paragraph">如果您之前向BlueXP提供了AWS凭据、则*My est*可以自动发现并建议FSx for ONTAP文件系统、以便使用BlueXP进行添加和管理。您还可以查看可用的数据服务。</block>
+  <block id="bbc904daea44543b400fcb32aad70c89" category="paragraph">您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> 或者使用“我的资产”页面。此任务说明了如何使用*My ester*进行发现</block>
+  <block id="c44ce3fd744555a7c9e3cb0429cb71e1" category="list-text">在BlueXP中、单击*我的资产*选项卡。</block>
+  <block id="75b0fcc2885b1eaac454cf9392c47fae" category="inline-image-macro">FSx for ONTAP的"我的资产"页面的屏幕截图。</block>
+  <block id="442b9b00a851e385483f988d6deb5a9b" category="paragraph"><block ref="442b9b00a851e385483f988d6deb5a9b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="178f7d653798a30b03a224bd262b2193" category="list-text">您需要一个活动的<block ref="7c63a28be6cb831de5033d7fc716e2b5" category="inline-link-rx"></block>。</block>
+  <block id="9297684f36da0f0f1bee258dc9e26606" category="summary">创建工作环境后、您可以在受管Amazon FSx for NetApp ONTAP集群上添加、查看和管理Storage Virtual Machine (VM)。</block>
+  <block id="09fd7d4c10e67376a6e8ddb20af8bec1" category="doc">添加和管理Storage VM for Amazon FSx for NetApp ONTAP</block>
+  <block id="97db92f07b671990ad480605be666c0b" category="paragraph">创建工作环境后、您可以在受管Amazon FSx for NetApp ONTAP集群上添加、查看和管理Storage Virtual Machine (VM)(也称为_SVM_)。</block>
+  <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">添加Storage VM</block>
+  <block id="451e576c5eeebc2e49f82cf9cb99cc95" category="inline-link-macro">AWS：管理适用于ONTAP Storage Virtual Machine的FSx</block>
+  <block id="ef5264f83fd1399bf2039379d925c326" category="paragraph">使用BlueXP、您可以向Amazon FSx for ONTAP文件系统添加Storage VM、但最多不得超过允许的最大数量。请参见 <block ref="542be7ed4bf1e8cdfb99773f949b9be5" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="c58f39af7af885b3de4e1c55331f663f" category="paragraph">您可以通过打开工作环境并选择*Storage VM*选项卡或从工作环境*Overview*面板添加Storage VM。此任务介绍如何使用*存储VM*面板添加Storage VM。</block>
+  <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="inline-link-macro">在BlueXP中管理Storage VM</block>
+  <block id="161af8b5034edcc63941678877ecc17b" category="list-text">创建一个或多个Storage VM。请参见 <block ref="61e460b38f962b5f0888ccf756a23b8f" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="574e262b2dd630a4c7eb4272e82e5aab" category="list-text">选择*存储VM*面板。此时将显示现有SVM。选择**添加SVM**以添加新的SVM。</block>
+  <block id="176bf974e403285fd95d3fbb9db016e5" category="inline-image-macro">Storage VM面板的屏幕截图。</block>
+  <block id="a0c67784fb87f1d5a7cf89b46b9f9ccc" category="paragraph"><block ref="a0c67784fb87f1d5a7cf89b46b9f9ccc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0cb08f4fadd064ac852519b0a5f65133" category="list-text">*添加Storage Virtual Machiner*</block>
+  <block id="8d2c4d8c3c38e6158959f1755a1ba127" category="list-text">输入Storage VM的名称。</block>
+  <block id="4526ac6b58668132334f4a9b19d2a07b" category="list-text">选择已配置的Storage VM根卷安全模式。有效值为** UNIT**、** NTFS**或**混合**。</block>
+  <block id="018dde2c5d72e2150624f098fc0cc1a6" category="list-text">(可选)指定Storage VM管理密码。</block>
+  <block id="9543403a9b9b42e9d5d0bfc9f21c11ea" category="list-text">(可选)单击加号并输入标记名称和值、最多创建50个标记以对SVM进行分类。</block>
+  <block id="7a769e7e42a18ebf369a288f74ee719a" category="list-text">选择**添加**以添加Storage VM。</block>
+  <block id="59ea7c00742a0b7e298503e1f32e0728" category="paragraph">此时、新的Storage VM将添加到工作环境和Amazon FSx for NetApp ONTAP文件系统中。</block>
+  <block id="44b681a7cf925625164e7c4c46844561" category="section-title">管理Storage VM</block>
+  <block id="03440d1141f070ed41a52d3ff99eb20c" category="paragraph">您可以查看Storage VM详细信息、管理标记、设置SMB/CCIFS连接或删除Storage SVM。</block>
+  <block id="017d4418a9c48f4f00ec01c0bfa6dfe2" category="list-text">选择*存储VM*面板。</block>
+  <block id="e8710a17688284d6cb60abe72d638468" category="list-text">使用三个点(<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>)以打开Storage VM的选项菜单。</block>
+  <block id="a9c09842af31af9cdda6d40752a231e6" category="inline-image-macro">Storage VM面板中的管理Storage VM选项菜单的屏幕截图。</block>
+  <block id="85f46b970d5cbec706143f8c887a539c" category="paragraph"><block ref="85f46b970d5cbec706143f8c887a539c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95ed4b80139db8b5b5b8076e8fdaf8ec" category="list-text">选择一个菜单选项以查看或管理Storage VM设置。</block>
+  <block id="64e34a8b4dd985ab1c20dc09d4e0e8a3" category="list-text">**查看SVM详细信息**：您可以查看详细信息，包括根卷、安全模式、允许的协议、Active Directory域和标记。</block>
+  <block id="94fbec0c035b64d9cc88594687e76f69" category="list-text">**管理SVM标记**：您可以添加、编辑或删除Storage VM标记。您所做的更改将与AWS控制台同步。</block>
+  <block id="2ee8cc8dbc2e1be735d4ae835a6ab479" category="list-text">**设置SMB/CIFS**：如果这是此工作环境的第一个CIFS连接，系统将提示您使用_Active Directory_或_Workgroup_设置配置CIFS连接。</block>
+  <block id="0b614a99d1477b4fce8c90ecbfc24bb0" category="example-title">Active Directory 配置</block>
+  <block id="20486a7eae9ebb16137abc464481958e" category="list-text">**删除SVM**：您可以删除此Storage VM。要将其删除、必须验证Storage VM名称。</block>
+  <block id="5cb8a753feb750c955f13c217735d677" category="admonition">在删除Storage VM之前、必须先删除此Storage VM上的所有卷。</block>
+  <block id="8e9385ac5e4c99f8e0628779659448ca" category="summary">借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量以及存储容量和IOPS、删除或删除工作环境以及管理数据服务、例如备份和恢复、复制和同步、分类、复制和卷缓存。</block>
+  <block id="516c626a337f0fa0093cc3145386640f" category="section-title">管理数据服务</block>
+  <block id="d51e6c9bd2e7b6163e5a1aef40ed76e3" category="paragraph">您可以从Amazon FSx for NetApp ONTAP工作环境管理其他数据服务。</block>
+  <block id="135193a42a4bc9020d4010ff52aafa41" category="inline-image-macro">工作环境中的数据服务选项卡的屏幕截图</block>
+  <block id="275efdc26577366e7591e34db9833a6c" category="paragraph"><block ref="275efdc26577366e7591e34db9833a6c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1feb4fc1fb8c9928667496a5edda35aa" category="paragraph">有关配置数据服务的详细信息、请参见：</block>
+  <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link-macro">BlueXP备份和恢复</block>
+  <block id="31c1170ec8150a60fd9682f9e95a651e" category="list-text"><block ref="4b6df2b9eda75a87ef42b7a6cf79b855" category="inline-link-macro-rx"></block> 为内部和云端的NetApp ONTAP数据、Kubnetes永久性卷、数据库和虚拟机提供高效、安全且经济高效的数据保护。</block>
+  <block id="9b4b22e819a51a3523fc811f5d93370a" category="inline-link-macro">BlueXP复制和同步</block>
+  <block id="5bba45a3f7b8fac945170d30f0c6c6ba" category="list-text"><block ref="1c982db0fcf2f2bf2ef5b764237d1066" category="inline-link-macro-rx"></block> 是一种云复制和同步服务、用于在内部和云对象存储之间传输NAS数据。</block>
+  <block id="d895c3b822b8528e39132b5c071c098c" category="list-text"><block ref="e6a2daea76f015a44bfb9cf7c14b1c0a" category="inline-link-macro-rx"></block> 支持您扫描企业混合多云中的数据并对其进行分类。</block>
+  <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link-macro">复制数据</block>
+  <block id="224186161d4d2bc87c1dd12d707fa1aa" category="list-text"><block ref="c5d7a032677bb1a70c3bf846b6254cfd" category="inline-link-macro-rx"></block> 在ONTAP存储系统之间进行备份和灾难恢复、以支持云端或云之间的备份和灾难恢复。</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="inline-link-macro">卷缓存</block>
+  <block id="c60116399e1bacdf1594c88491ed4a01" category="list-text"><block ref="cce03ca8e200e7f8ffdb2d2c799734f1" category="inline-link-macro-rx"></block> 在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。</block>
+  <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">2023年7月2日</block>
+  <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">添加Storage VM</block>
+  <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">您现在可以： <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</block>
+  <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。</block>
+  <block id="5acc19c1ac9cb4ec703f692929b77d4f" category="paragraph">现在、您可以选择启用 <block ref="798ae2d54008eb1f5d42a000af614a06" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动按集群最大容量的10%到80%的增量增加存储容量。</block>
+  <block id="8427e95422b20518ebfdf9669981c983" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的资产*功能可以自动发现并建议FSx、以便使用Cloud Manager添加和管理ONTAP文件系统。您还可以通过*我的资产*选项卡查看可用的数据服务。</block>
+  <block id="690df0feee64ee1dfd9e2fabd3bd7196" category="inline-link-macro">使用My estate了解FSx for ONTAP</block>
+  <block id="3126d0bb3bdeb0d61fd04be8640e4d8e" category="paragraph"><block ref="3126d0bb3bdeb0d61fd04be8640e4d8e" category="inline-link-macro-rx"></block></block>
+  <block id="72bf8572f979788f8a9b08819c412e18" category="sidebar">创建并挂载卷</block>
+  <block id="a377a5b84f9f0bc2da96286bf312e442" category="sidebar">添加和管理Storage VM</block>
+  <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">管理卷</block>
 </blocks>

@@ -107,14 +107,6 @@ Snapshot 副本可为卷提供时间点副本。创建 Snapshot 副本并将数�
 
 
 
-== 复制和同步数据
-
-您可以使用BlueXP在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系统之间复制数据"^]。
-
-您可以使用BlueXP副本和同步创建同步关系。要配置同步关系，请参见 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["创建同步关系"^]。
-
-
-
 == 删除卷
 
 删除不再需要的卷。
