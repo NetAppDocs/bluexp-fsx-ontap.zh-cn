@@ -4,7 +4,7 @@ permalink: use/task-creating-fsx-working-environment.html
 keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
 summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
 ---
-= 创建或发现适用于NetApp ONTAP 的Amazon FSX工作环境
+= 创建或发现FSx for ONTAP工作环境
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环�
 
 
 
-== 创建适用于NetApp ONTAP 的Amazon FSX工作环境
+== 创建适用于 ONTAP 的 FSX 工作环境
 
 第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用BlueXP发现它"]。
 
@@ -32,7 +32,7 @@ summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环�
 .步骤
 . 在BlueXP中、添加一个新的工作环境、选择* Amazon Web Services*、然后单击*为适用于NetApp ONTAP 的Amazon FSX添加新*。
 +
-image:screenshot_add_fsx_working_env.png["为适用于NetApp ONTAP 的Amazon FSX添加工作环境的屏幕截图"]
+image:screenshot_add_fsx_working_env.png["为FSx for ONTAP添加工作环境的屏幕截图"]
 
 . *用于ONTAP 身份验证的FSX *
 +
@@ -44,7 +44,7 @@ image:screenshot_add_fsx_working_env.png["为适用于NetApp ONTAP 的Amazon FSX
 +
 .. 输入要使用的工作环境名称。
 .. 您也可以单击加号并输入标记名称和值来创建标记。
-.. 您也可以指定Amazon FSx for NetApp ONTAP执行每周30分钟维护的开始时间。这可用于确保维护不会与关键业务活动发生重叠。如果选择*无首选项*，则会随机分配开始时间。您可以随时更改此设置。
+.. 或者、您也可以指定FSx for ONTAP执行每周30分钟维护的开始时间。这可用于确保维护不会与关键业务活动发生重叠。如果选择*无首选项*，则会随机分配开始时间。您可以随时更改此设置。
 .. 输入并确认要使用的 ONTAP 集群密码。
 .. 或者、取消选择此选项以对SVM用户使用相同的密码并设置不同的密码。
 
@@ -106,7 +106,7 @@ NOTE: 如果指定的IOPS值不符合最低要求、则在添加工作环境时�
 .结果
 BlueXP会在Canvas上显示适用于ONTAP 的FSX配置。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。
 
-image:screenshot_add_fsx_cloud.png["工作环境页面上适用于NetApp ONTAP 的Amazon FSX的屏幕截图。"]
+image:screenshot_add_fsx_cloud.png["\"工作环境\"页面上FSx for ONTAP的屏幕截图。"]
 
 
 
@@ -115,7 +115,7 @@ image:screenshot_add_fsx_cloud.png["工作环境页面上适用于NetApp ONTAP �
 如果您之前向BlueXP提供了AWS凭据、则*My est*可以自动发现并建议FSx for ONTAP文件系统、以便使用BlueXP进行添加和管理。您还可以查看可用的数据服务。
 
 .关于此任务
-您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <<创建适用于NetApp ONTAP 的Amazon FSX工作环境>> 或者使用“我的资产”页面。此任务说明了如何使用*My ester*进行发现
+您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <<创建适用于 ONTAP 的 FSX 工作环境>> 或者使用“我的资产”页面。此任务说明了如何使用*My ester*进行发现
 
 .步骤
 . 在BlueXP中、单击*我的资产*选项卡。

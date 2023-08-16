@@ -17,7 +17,7 @@ indexpage:
       url: "/requirements/task-setting-up-permissions-fsx.html"
     - title: 安全组规则
       url: "/requirements/reference-security-groups-fsx.html"
-  - title: 使用适用于NetApp ONTAP 的Amazon FSx
+  - title: 使用FSx for ONTAP
     links:
     - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"

@@ -4,7 +4,7 @@ permalink: use/task-add-fsx-svm.html
 keywords: fsx for ontap, fsx, aws, storage vm, storage virtual machine, svm, add svm, virtual machine, delete svm, tags, smb, cifs, delete 
 summary: '创建工作环境后、您可以在受管Amazon FSx for NetApp ONTAP集群上添加、查看和管理Storage Virtual Machine (VM)。' 
 ---
-= 添加和管理Storage VM for Amazon FSx for NetApp ONTAP
+= 为FSx for ONTAP添加和管理Storage VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: '创建工作环境后、您可以在受管Amazon FSx for NetApp ONTAP�
 
 
 [role="lead"]
-创建工作环境后、您可以在受管Amazon FSx for NetApp ONTAP集群上添加、查看和管理Storage Virtual Machine (VM)(也称为_SVM_)。
+创建工作环境后、您可以在受管FSx for ONTAP集群上添加、查看和管理Storage Virtual Machine (VM)(也称为_SVM_)。
 
 
 
 == 添加Storage VM
 
-使用BlueXP、您可以向Amazon FSx for ONTAP文件系统添加Storage VM、但最多不得超过允许的最大数量。请参见 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS：管理适用于ONTAP Storage Virtual Machine的FSx"^] 了解详细信息。
+使用BlueXP、您可以向FSx for ONTAP文件系统添加Storage VM、但最多不得超过允许的最大数量。请参见 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS：管理适用于ONTAP Storage Virtual Machine的FSx"^] 了解详细信息。
 
 .关于此任务
 您可以通过打开工作环境并选择*Storage VM*选项卡或从工作环境*Overview*面板添加Storage VM。此任务介绍如何使用*存储VM*面板添加Storage VM。
@@ -48,7 +48,7 @@ image:svm-add.png["Storage VM面板的屏幕截图。"]
 
 
 .结果
-此时、新的Storage VM将添加到工作环境和Amazon FSx for NetApp ONTAP文件系统中。
+此时、新的Storage VM将添加到工作环境和FSx for ONTAP文件系统中。
 
 
 
@@ -69,7 +69,7 @@ image:svm-manage.png["Storage VM面板中的管理Storage VM选项菜单的屏�
 . 选择一个菜单选项以查看或管理Storage VM设置。
 +
 ** **查看SVM详细信息**：您可以查看详细信息，包括根卷、安全模式、允许的协议、Active Directory域和标记。
-** **管理SVM标记**：您可以添加、编辑或删除Storage VM标记。您所做的更改将与AWS控制台同步。
+** **管理SVM标记**：您可以添加、编辑或删除Storage VM标记。您所做的更改将与AWS管理控制台同步。
 ** **设置SMB/CIFS**：如果这是此工作环境的第一个CIFS连接，系统将提示您使用_Active Directory_或_Workgroup_设置配置CIFS连接。
 +
 *** 如果选择工作组设置，请输入为 CIFS 配置的工作组的服务器和工作组名称。

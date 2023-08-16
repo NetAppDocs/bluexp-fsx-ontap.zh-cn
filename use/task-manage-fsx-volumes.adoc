@@ -4,7 +4,7 @@ permalink: use/task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
 summary: 您可以使用BlueXP管理卷、克隆和快照、并更改适用于ONTAP 的FSX的分层策略。 
 ---
-= 管理适用于NetApp ONTAP 的Amazon FSX的卷
+= 管理FSx for ONTAP的卷
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -62,7 +62,7 @@ NOTE: 您可以将鼠标悬停在卷名称上以显示卷类型。
 
 == 管理卷标记
 
-您可以添加、修改或删除卷标记。在BlueXP中添加的标记将反映在AWS控制台中。与AWS控制台同步标记可能需要长达一小时的时间。
+您可以添加、修改或删除卷标记。在BlueXP中添加的标记将反映在AWS管理控制台中。与AWS管理控制台同步标记可能需要长达一小时的时间。
 
 
 NOTE: 在与AWS同步之前、您无法编辑在BlueXP中创建的卷标记。这可能需要长达一小时的时间。如果*管理卷标记*选项呈灰色显示、则AWS尚未同步卷标记。
