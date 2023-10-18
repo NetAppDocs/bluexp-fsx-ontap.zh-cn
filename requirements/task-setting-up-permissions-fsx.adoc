@@ -24,16 +24,22 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 
 .步骤
 . 转到目标帐户中的 IAM 控制台。
-. 在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
+. 授予BlueXP对AWS帐户的访问权限。在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
 +
 ** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
-** 选择*其他AWS帐户*并输入BlueXP的ID。
+** 选择*另一个AWS帐户*并输入BlueXP *帐户ID*：
 +
 *** 对于BlueXP SaaS：952013314444
 *** 对于AWS GovCloud (美国)：033442085313
++
+
+NOTE: 为了提高安全性、建议您指定 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html["外部ID_"^]。要访问您的AWS帐户、BlueXP必须提供角色ARN (Amazon资源名称)和您指定的外部ID。这会阻止 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html["令人困惑的副问题"^]。
 
 
-** 根据需要创建一个包含以下所需最低权限和可选权限的策略。
+
+
+
+. 根据需要创建一个包含以下所需最低权限和可选权限的策略。
 +
 [role="tabbed-block"]
 ====
@@ -93,9 +99,7 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 ----
 --
 ====
-
-
-. 复制IAM角色的角色ARN、以便在下一步将其粘贴到BlueXP中。
+. 复制IAM角色的角色ARN、以便在下一步中将其粘贴到BlueXP中。
 
 
 .结果
@@ -108,7 +112,7 @@ IAM 角色现在具有所需的权限。
 为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。
 
 .开始之前
-如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。
+如果您刚刚创建了IAM角色、请等待几分钟、以使新凭据可用。
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
@@ -118,7 +122,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 . 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
 +
 .. *凭据位置*：选择* Amazon Web Services > BlueX*。
-.. * 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。
+.. *定义身份凭证*：提供*身份凭证名称*以及您在创建时创建的*角色ARN*和*外部ID*(如果已指定) <<设置 IAM 角色>>。
 +
 [NOTE]
 ====

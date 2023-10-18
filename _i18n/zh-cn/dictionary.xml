@@ -231,12 +231,10 @@
   <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">为适用于 ONTAP 的 FSX 设置权限</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">设置 IAM 角色</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">转到目标帐户中的 IAM 控制台。</block>
-  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">IAM 角色现在具有所需的权限。</block>
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">添加凭据</block>
   <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。</block>
-  <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">* 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。</block>
   <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">* 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。</block>
   <block id="c0abab76d53e87b10c7a7de184fc0f53" category="paragraph">现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相关链接</block>
@@ -399,11 +397,8 @@
   <block id="9936779ebe4e0ac089fa89c319d5473b" category="summary">BlueXP创建了AWS安全组、其中包含了BlueXP和适用于ONTAP 的FSX成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用于BlueXP的DNS解析</block>
   <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">设置一个IAM角色、使BlueXP能够承担此角色。</block>
-  <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">选择*其他AWS帐户*并输入BlueXP的ID。</block>
   <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">对于BlueXP SaaS：952013314444</block>
-  <block id="fa9df323148192800073dd2a78c81f73" category="list-text">复制IAM角色的角色ARN、以便在下一步将其粘贴到BlueXP中。</block>
   <block id="d5dc64744da4d60a47aa835877d08194" category="paragraph">为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。</block>
-  <block id="6d9d6baff2479ce7a87bf705f93f1641" category="paragraph">如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">一个屏幕截图、显示了BlueXP控制台右上角的设置图标。</block>
   <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
@@ -819,4 +814,12 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
+  <block id="8e2d9036bdca41a47ed6a62d5c651b17" category="list-text">授予BlueXP对AWS帐户的访问权限。在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
+  <block id="100857c2eecdae8b99b613fc837c4b77" category="list-text">选择*另一个AWS帐户*并输入BlueXP *帐户ID*：</block>
+  <block id="7705419552b80484a159f2d27d7cf57b" category="inline-link-macro">外部ID_</block>
+  <block id="2ecdc21261ba583d893ec3e735f02292" category="inline-link-macro">令人困惑的副问题</block>
+  <block id="a382deac7db7b733bc63619e401d8f45" category="admonition">为了提高安全性、建议您指定 <block ref="96b272eff9669a5b2b13cba8c25b9973" category="inline-link-macro-rx"></block>。要访问您的AWS帐户、BlueXP必须提供角色ARN (Amazon资源名称)和您指定的外部ID。这会阻止 <block ref="2847290d28a09952a637392df577ce64" category="inline-link-macro-rx"></block>。</block>
+  <block id="5490038d2be728c6d3679ab6915e87e3" category="list-text">复制IAM角色的角色ARN、以便在下一步中将其粘贴到BlueXP中。</block>
+  <block id="1a913f679da8e614b14423480f9ce6be" category="paragraph">如果您刚刚创建了IAM角色、请等待几分钟、以使新凭据可用。</block>
+  <block id="a2841ca82f44794bf8912d92f8eaf4d6" category="list-text">*定义身份凭证*：提供*身份凭证名称*以及您在创建时创建的*角色ARN*和*外部ID*(如果已指定) <block ref="a1061025d6c6e25a2b8607068ce69197" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
