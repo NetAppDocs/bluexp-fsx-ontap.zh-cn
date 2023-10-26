@@ -21,7 +21,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["�
 == 功能
 
 * 无需配置或管理存储设备，软件或备份。
-* 支持 CIFS ， NFSv3 ， NFSv4.x 和 SMB v2.0 - v3.1.1 协议。
+* 支持CIFS、iSCSI、NFSv3、NFSv4.x和SMB v2.0 - v3.1.1协议。
 * 使用可用的不常访问（ IA ）存储层，可实现低成本，几乎无限制的数据存储容量。
 * 经过认证，可在延迟敏感型应用程序上运行，包括 Oracle RAC 。
 * 可选择捆绑定价和按需购买定价

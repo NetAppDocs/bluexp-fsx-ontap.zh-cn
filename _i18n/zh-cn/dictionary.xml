@@ -241,7 +241,6 @@
   <block id="97911b3c54a4e826b34c1f79026316c5" category="inline-link">AWS 凭据和权限</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">无需配置或管理存储设备，软件或备份。</block>
-  <block id="620d7e4da65c27b65a66bca15517b802" category="list-text">支持 CIFS ， NFSv3 ， NFSv4.x 和 SMB v2.0 - v3.1.1 协议。</block>
   <block id="f6ad83cb7f527e383e392f709849a098" category="list-text">使用可用的不常访问（ IA ）存储层，可实现低成本，几乎无限制的数据存储容量。</block>
   <block id="3c36508c8697f7ec7a94803545518d69" category="list-text">经过认证，可在延迟敏感型应用程序上运行，包括 Oracle RAC 。</block>
   <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">可选择捆绑定价和按需购买定价</block>
@@ -822,4 +821,5 @@
   <block id="5490038d2be728c6d3679ab6915e87e3" category="list-text">复制IAM角色的角色ARN、以便在下一步中将其粘贴到BlueXP中。</block>
   <block id="1a913f679da8e614b14423480f9ce6be" category="paragraph">如果您刚刚创建了IAM角色、请等待几分钟、以使新凭据可用。</block>
   <block id="a2841ca82f44794bf8912d92f8eaf4d6" category="list-text">*定义身份凭证*：提供*身份凭证名称*以及您在创建时创建的*角色ARN*和*外部ID*(如果已指定) <block ref="a1061025d6c6e25a2b8607068ce69197" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1d2976e5126e0cf8526afeab66bc8fa3" category="list-text">支持CIFS、iSCSI、NFSv3、NFSv4.x和SMB v2.0 - v3.1.1协议。</block>
 </blocks>
