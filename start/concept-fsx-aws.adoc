@@ -67,4 +67,4 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 有关BlueXP或BlueXP存储解决方案和服务的一般问题、您可以从在线BlueXP聊天开始。
 
-有关BlueXP或BlueXP存储解决方案和服务的特定技术支持问题、您可以使用BlueXP帐户级别序列号创建NetApp支持服务单。您需要 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/support/task-support-registration.html["注册您的BlueXP帐户"^] 激活支持。
+对于特定于BlueXP  或BlueXP  存储解决方案和服务的技术支持问题、您可以使用您的NetApp组织级别序列号创建BlueXP  支持服务单。您需要link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/support/task-support-registration.html["注册您的BlueXP  组织"^]激活支持。

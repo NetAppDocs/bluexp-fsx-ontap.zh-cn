@@ -114,7 +114,7 @@ image:screenshot-configure-iops.png["用于更改存储容量和IOPS值的页面
 
 
 
-== 从工作空间中删除适用于 ONTAP 的 FSX
+== 从项目或工作空间中删除FSx for ONTAP
 
 您可以从BlueXP中删除FSx for ONTAP、而无需删除帐户或卷。您可以随时将适用于ONTAP 的FSX工作环境重新添加到BlueXP中。
 
