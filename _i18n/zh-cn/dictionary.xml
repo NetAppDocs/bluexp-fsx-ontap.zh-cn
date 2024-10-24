@@ -459,7 +459,6 @@
   <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">管理自动容量</block>
   <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">您可以选择启用自动容量管理、以便根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最高可达集群最大容量的80%。</block>
   <block id="0b77a63f8ac25e1cd8509e906523f459" category="inline-link-macro">创建工作环境</block>
-  <block id="0185df25abbf3744285dd03ec2704b86" category="admonition">如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新总容量的IOPS增加3个GiB。如果指定了IOPS值、则BlueXP不会调整IOPS。有关配置IOPS的详细信息、请参见 <block ref="54a688b79e41730a76924297f5ac42a6" category="inline-link-macro-rx"></block>。</block>
   <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">默认情况下、自动容量管理处于禁用状态。您可以在AWS中管理具有或不具有活动Connector的自动容量。</block>
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">在没有活动Connector的情况下管理自动容量</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">您可以在AWS中管理自动容量、而无需使用活动的Connector。</block>
@@ -820,4 +819,5 @@
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
   <block id="43bfe52d70c7aa3f5d364396cd6ec3fd" category="section-title">从项目或工作空间中删除FSx for ONTAP</block>
+  <block id="6c6cfde7c92a73ae5e1266396d6657d9" category="admonition">如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新总容量的IOPS增加3个GiB。如果指定了IOPS值、则BlueXP不会调整IOPS。有关配置IOPS的详细信息，请参见<block ref="a0c1e5541590cfd29c35eef67f286e58" category="inline-link-macro-rx"></block>。</block>
 </blocks>
