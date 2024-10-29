@@ -1,0 +1,15 @@
+= 添加Storage VM
+:allow-uri-read: 
+
+
+
+
+=== 添加Storage VM
+
+您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["添加Storage VM"] 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。
+
+
+
+=== **我的商机**选项卡现在是**我的资产**
+
+“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。
