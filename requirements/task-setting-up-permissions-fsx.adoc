@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
-keywords: fsx for ontap, iam, user role, permissions, aws govcloud, govcloud, credentials 
+keywords: fsx for ontap, iam, user role, permissions, credentials 
 summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加AWS凭据、方法是提供IAM角色的ARN、为BlueXP提供创建FSx for ONTAP工作环境所需的权限。 
 ---
 = 为适用于 ONTAP 的 FSX 设置权限
@@ -18,134 +18,192 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 
 
 
-== 设置 IAM 角色
+== 为什么需要AWS凭据
 
-设置一个IAM角色、使BlueXP能够承担此角色。
+要在BlueXP  中创建和管理FSx for ONTAP工作环境、需要AWS凭据。您可以创建新的AWS凭据、也可以将AWS凭据添加到现有BlueXP  组织。凭据为BlueXP  提供了在AWS云环境中管理资源和流程所需的权限。
+
+凭据和权限通过BlueXP  工作负载工厂进行管理。BlueXP  工作负载工厂是一个生命周期管理平台、旨在帮助用户使用适用于NetApp ONTAP文件系统的Amazon FSx优化工作负载。BlueXP  使用与BlueXP  工作负载工厂相同的一组AWS凭据和权限。
+
+工作负载出厂界面为BlueXP  用户提供了各种选项、可用于启用存储、VMware、数据库和GenAI等工作负载功能、以及为工作负载选择权限。_Storage_是工作负载工厂提供的存储管理功能、它是唯一需要启用和添加凭据才能创建和管理FSx for ONTAP文件系统的功能。
+
+
+
+== 关于此任务
+
+在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html.html["了解有关操作模式的更多信息"](英文)
+
+可从BlueXP  设置>*凭据*页面查看新的和现有的AWS凭据。
+
+您可以使用两种方法添加凭据：
+
+* *手动*：在工作负载工厂添加凭据的同时、在AWS帐户中创建IAM策略和IAM角色。
+* *自动*：您捕获有关权限的最少信息、然后使用CloudFormation堆栈为凭据创建IAM策略和角色。
+
+
+
+
+== 手动向帐户添加凭据
+
+您可以手动将AWS凭据添加到BlueXP  中、以便为您的帐户授予管理用于运行您的独特工作负载的AWS资源所需的权限。您添加的每组凭据都将根据要使用的工作负载功能包含一个或多个IAM策略、以及分配给您的帐户的IAM角色。
+
+创建凭据分为三部分：
+
+* 选择要使用的服务和权限级别、然后从AWS管理控制台创建IAM策略。
+* 从AWS管理控制台创建IAM角色。
+* 在BlueXP  中的工作负载中、输入名称并添加凭据。
+
+
+要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加AWS凭据、方法是提供IAM角色的ARN、为BlueXP提供创建FSx for ONTAP工作环境所需的权限。
+
+.开始之前
+您需要具有凭据才能登录到AWS帐户。
 
 .步骤
-. 转到目标帐户中的 IAM 控制台。
-. 授予BlueXP对AWS帐户的访问权限。在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
+. 在BlueXP  控制台中，选择*Settings*图标，然后选择*凭 据*。
+. 选择*添加凭据*。
+. 选择*Amazon Web Services*，然后选择*FSx for AMAZON* ONTAP，最后选择*Next*。
 +
-** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
-** 选择*另一个AWS帐户*并输入BlueXP *帐户ID*：
+您现在位于BlueXP  工作负载出厂时的*添加凭据*页面。
+
+. 选择*手动添加*，然后按照以下步骤填写_Permissions configuration_下的三个部分。
 +
-*** 对于BlueXP SaaS：952013314444
-*** 对于AWS GovCloud (美国)：033442085313
+image:screenshot-add-credentials-manually.png["屏幕截图显示了需要为每组凭据手动定义的项目。"]
+
+
+
+
+
+=== 第1步：选择工作负载功能并创建IAM策略
+
+在本节中、您将选择哪些类型的工作负载功能可作为这些凭据的一部分进行管理、以及为每个工作负载启用的权限。您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。
+
+image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。"]
+
+.步骤
+. 在*Create Policies*部分中，启用要包含在这些凭据中的每个工作负载功能。启用*Storage*以创建和管理文件系统。
 +
+您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。
 
-NOTE: 为了提高安全性、建议您指定 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html["外部ID_"^]。要访问您的AWS帐户、BlueXP必须提供角色ARN (Amazon资源名称)和您指定的外部ID。这会阻止 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html["令人困惑的副问题"^]。
+. 对于可选择权限级别("自动"或"读取")的工作负载功能、请选择可通过这些凭据获得的权限类型。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解权限、也称为操作模式"^](英文)
+. 在CodeBox窗口中、复制第一个IAM策略的权限。
+. 打开另一个浏览器窗口、并在AWS管理控制台中登录到您的AWS帐户。
+. 打开IAM服务，然后选择*Policies*>*Create Policy*。
+. 选择JSON作为文件类型，粘贴您在第3步中复制的权限，然后选择*Next*。
+. 输入策略的名称，然后选择*Create Policy*。
+. 如果您在步骤1中选择了多个工作负载功能、请重复这些步骤为每组工作负载权限创建一个策略。
 
 
 
 
+=== 第2步：创建使用策略的IAM角色
 
-. 根据需要创建一个包含以下所需最低权限和可选权限的策略。
+在本节中、您将设置一个IAM角色、工作负载工厂将假定该角色包含您刚刚创建的权限和策略。
+
+image:screenshot-create-role.png["屏幕截图、显示哪些权限将成为新角色的一部分。"]
+
+.步骤
+. 在AWS管理控制台中、选择*角色>创建角色*。
+. 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
 +
-[role="tabbed-block"]
-====
-.所需权限
---
-要允许BlueXP创建FSx for NetApp ONTAP 文件系统、需要具备以下最低权限。
+.. 选择*另一个AWS帐户*、然后从BlueXP  工作负载工厂用户界面复制并粘贴FSx for ONTAP工作负载管理的帐户ID。
+.. 选择*必需的外部ID*，然后从BlueXP  工作负载用户界面复制并粘贴外部ID。
 
+
+. 选择 * 下一步 * 。
+. 在权限策略部分中，选择先前定义的所有策略，然后选择*Next*。
+. 输入角色的名称，然后选择*Create Role*。
+. 复制角色ARN。
+. 返回到BlueXP  Workloads Add cred凭证 页面，展开*Create Role*部分，然后将ARN粘贴到_Role ARN_字段中。
+
+
+
+
+=== 第3步：输入名称并添加凭据
+
+最后一步是在BlueXP  Workload Factory中输入凭据的名称。
+
+.步骤
+. 在BlueXP  Workloads Add credcredcredcredcredcredals.页面中、展开*凭据名称*。
+. 输入要用于这些凭据的名称。
+. 选择*Add*以创建凭据。
+
+
+.结果
+此时将创建这些凭据、并可在"凭据"页面上查看这些凭据。现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。
+
+
+
+== 使用CloudFormation向帐户添加凭据
+
+您可以通过选择要使用的工作负载功能、然后在AWS帐户中启动AWS CloudFormation堆栈、使用AWS CloudFormation堆栈向BlueXP  工作负载添加AWS凭据。CloudFormation将根据您选择的工作负载功能创建IAM策略和IAM角色。
+
+.开始之前
+* 您需要具有凭据才能登录到AWS帐户。
+* 使用CloudFormation堆栈添加凭据时、您需要在AWS帐户中具有以下权限：
++
 [source, json]
 ----
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "fsx:*",
-                "ec2:Describe*",
-                "ec2:CreateTags",
-                "iam:CreateServiceLinkedRole",
-                "kms:Describe*",
-                "kms:List*",
-                "kms:CreateGrant"
+                "cloudformation:CreateStack",
+                "cloudformation:UpdateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:ListStacks",
+                "cloudformation:ListStackResources",
+                "cloudformation:GetTemplate",
+                "cloudformation:ValidateTemplate",
+                "lambda:InvokeFunction",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:AttachRolePolicy",
+                "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"
         }
     ]
 }
 ----
---
-.自动容量
---
-要启用、需要具备以下附加权限 link:../use/task-manage-working-environment.html["自动容量管理"]。
 
-[source, json]
-----
-"cloudwatch:GetMetricData",
-"cloudwatch:GetMetricStatistics"
-----
---
-.安全组
---
-要允许BlueXP执行此操作、需要具备以下附加权限 link:../use/task-creating-fsx-working-environment.html["生成安全组"]。
-
-[source, json]
-----
-"ec2:AuthorizeSecurityGroupEgress",
-"ec2:AuthorizeSecurityGroupIngress",
-"ec2:RevokeSecurityGroupEgress",
-"ec2:RevokeSecurityGroupIngress",
-"ec2:CreateSecurityGroup",
-"ec2:DeleteSecurityGroup",
-"cloudformation:CreateStack",
-"cloudformation:ValidateTemplate",
-"cloudformation:DescribeStacks",
-"cloudformation:DescribeStackEvents"
-----
---
-====
-. 复制IAM角色的角色ARN、以便在下一步中将其粘贴到BlueXP中。
-
-
-.结果
-IAM 角色现在具有所需的权限。
-
-
-
-== 添加凭据
-
-为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。
-
-.开始之前
-如果您刚刚创建了IAM角色、请等待几分钟、以使新凭据可用。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
+. 在BlueXP  控制台中，选择*Settings*图标，然后选择*凭 据*。
+. 选择*添加凭据*。
+. 选择*Amazon Web Services*，然后选择*FSx for AMAZON* ONTAP，最后选择*Next*。您现在位于BlueXP  工作负载出厂时的*添加凭据*页面。
+. 选择*通过AWS CloudFormation*添加。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot-add-credentials-cloudformation.png["屏幕截图显示了在启动CloudFormation以创建凭据之前需要定义的项目。"]
 
-. 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
+. 在*创建策略*下，启用要包含在这些凭据中的每个工作负载功能，然后为每个工作负载选择一个权限级别。
 +
-.. *凭据位置*：选择* Amazon Web Services > BlueX*。
-.. *定义身份凭证*：提供*身份凭证名称*以及您在创建时创建的*角色ARN*和*外部ID*(如果已指定) <<设置 IAM 角色>>。
+您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。
+
+. 在*凭据名称*下，输入要用于这些凭据的名称。
+. 从AWS CloudFormation添加凭据：
 +
-[NOTE]
-====
-*** 如果您使用的是AWS GovCloud (US)帐户、请选中*我使用的是AWS GovCloud (US)帐户*。
+.. 选择*添加*(或选择*重定向到CloudFormation*)、此时将显示重定向到CloudFormation页面。
 +
-image:screenshot-govcloud-checkbox.png["GovCloud (US)帐户复选框的屏幕截图。"]
+image:screenshot-redirect-cloudformation.png["显示如何创建CloudFormation堆栈以添加策略和工作负载工厂凭据角色的屏幕截图。"]
 
-*** 使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。
+.. 如果在AWS中使用单点登录(SSO)、请先打开单独的浏览器选项卡并登录AWS控制台、然后再选择*继续*。
++
+您应登录到FSx for ONTAP文件系统所在的AWS帐户。
 
-
-====
-.. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
+.. 从重定向到CloudFormation页面中选择*继续*。
+.. 在Quick create堆栈页面的"Capabilities"下、选择*我确认AWS CloudFormation可能会创建IAM资源*。
+.. 选择*创建堆栈*。
+.. 返回到BlueXP  工作负载出厂设置、然后从菜单图标打开凭据页面、以验证新凭据是否正在运行或是否已添加。
 
 
 
 
 .结果
-现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。
-
-
-
-== 相关链接
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["AWS 凭据和权限"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据"^]
-
+此时将创建这些凭据、并可在"凭据"页面上查看这些凭据。现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。

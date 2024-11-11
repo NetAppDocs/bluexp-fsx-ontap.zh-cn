@@ -20,94 +20,199 @@ summary: 使用BlueXP、您可以创建或发现适用于ONTAP 的FSX工作环�
 
 == 创建适用于 ONTAP 的 FSX 工作环境
 
-第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用BlueXP发现它"]。
+第一步是创建FSx for ONTAP工作环境或文件系统。如果已在AWS管理控制台中创建适用于ONTAP的FSx文件系统，则可以link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用BlueXP发现它"]。
+
+.关于此任务
+创建文件系统时会创建Storage VM。
 
 .开始之前
-在BlueXP中创建适用于ONTAP 的FSX工作环境之前、您需要：
+在创建FSx for ONTAP文件系统之前、您需要：
 
-* IAM角色的ARN、为BlueXP提供为ONTAP 工作环境创建FSX所需的权限。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将AWS凭据添加到BlueXP"] 了解详细信息。
-* 要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。
+* IAM角色的ARN、它为Workload Factory提供了创建FSx for ONTAP文件系统所需的权限。link:task-setting-up-permissions-fsx.html["了解如何为AWS帐户授予权限"^](英文)
+* 要为其创建 FSX for ONTAP 实例的区域和 VPC 信息。
 
+
+
+
+== 创建FSx for ONTAP文件系统
+
+您可以使用_Quick cre成_或_Advanced cre成_来创建FSx for ONTAP文件系统。您还可以使用CodeBox中提供的以下工具：REST API、CloudFormation和Terraform。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["了解如何使用CodeBox实现自动化"^](英文)
+
+
+NOTE: 使用来自CodeBox的Terraform时、您复制或下载的代码会隐藏 `fsxadmin` 和 `vsadmin` 密码。运行代码时、您需要重新输入密码。
+
+[role="tabbed-block"]
+====
+.快速创建
+--
+通过快速创建、您可以使用建议的最佳实践配置。创建FSx for ONTAP文件系统后、您可以更改大多数设置。
 
 .步骤
-. 在BlueXP中、添加一个新的工作环境、选择* Amazon Web Services*、然后单击*为适用于NetApp ONTAP 的Amazon FSX添加新*。
+. 在BlueXP  中，添加新的工作环境，选择*Amazon Web Services*，然后选择*Add new* for Amazon FSx for NetApp ONTAP。
+. 在"Create FSx for ONTAP (创建FSx for Windows)"页面上、选择*快速创建*。
 +
-image:screenshot_add_fsx_working_env.png["为FSx for ONTAP添加工作环境的屏幕截图"]
+您也可以加载已保存的配置。
 
-. *用于ONTAP 身份验证的FSX *
+. 在文件系统常规配置下、提供以下内容：
 +
-.. 如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。
-.. 如果您的帐户中没有IAM角色、请单击*凭据*、然后按照向导中的步骤使用FSX for ONTAP 凭据为AWS IAM角色添加ARN。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将AWS凭据添加到BlueXP"] 了解详细信息。
-
-
-. *详细信息和凭据*
+.. *AWS凭据*：选择此项可添加AWS凭据、也可在不使用凭据的情况下继续操作。如果没有凭据、您可以从代码框复制和下载部分完整的代码。代码可以像模板一样使用、您可以在模板中填写缺少的信息(例如凭据)、也可以在运行代码之前自定义某些数据。
+.. *文件系统名称*：输入文件系统的名称。
+.. *部署拓扑*：选择部署拓扑。
 +
-.. 输入要使用的工作环境名称。
-.. 您也可以单击加号并输入标记名称和值来创建标记。
-.. 或者、您也可以指定FSx for ONTAP执行每周30分钟维护的开始时间。这可用于确保维护不会与关键业务活动发生重叠。如果选择*无首选项*，则会随机分配开始时间。您可以随时更改此设置。
-.. 输入并确认要使用的 ONTAP 集群密码。
-.. 或者、取消选择此选项以对SVM用户使用相同的密码并设置不同的密码。
+*** 纵向扩展拓扑是指使用一个文件系统进行数据分发、并可增加文件大小以适应数据增长。
+*** 横向扩展拓扑使用多个文件系统进行数据分发。
 
 
-. * HA部署模式*
+.. *HA对*：输入HA对的数量。
 +
-.. 选择*单个可用性区域*或*多个可用性区域* HA部署模式。对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。
-.. 选择要与文件系统关联的虚拟私有云(Virtual Private Cloud、VPC)。
-.. 使用现有安全组或选择*生成的安全组*以启用BlueXP生成仅允许选定VPC内流量的安全组。
+*** 对于纵向扩展部署、只能有一个HA对。
+*** 对于横向扩展部署、可以有两到十二个HA对。
+
+
+.. *部署类型*：选择部署类型。
 +
+*** 单可用性区域(单可用性区域、单可用性)部署：通过监控硬件故障来确保可用性、并在发生故障时自动更换基础架构组件。通过在可用性区域中自动复制数据以防止其发生组件故障、实现高持久性。
+*** 多可用性区域(Multi-AZ)部署：即使可用性区域不可用、也能持续提供数据。多可用性文件系统支持单可用性文件系统的所有可用性和持久性功能。多可用性文件系统专为业务关键型生产工作负载而设计、这些工作负载要求共享ONTAP文件数据具有高可用性、并需要具有跨可用性区域内置复制功能的存储。
 
-NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
+
+.. *标记*：您可以选择最多添加50个标记。
 
 
-
-. *浮动IP*(仅限多个可用性区域)
+. 在*网络和安全性*下的*区域和VPC*字段中，为文件系统选择区域和VPC。
+. 在*文件系统详细信息*下，提供以下内容：
 +
-将_CIDR Ranges_留空以自动设置可用范围。您也可以选择使用 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 传输网关"^] 手动配置范围。
+.. *SSD存储容量*：输入存储容量并选择存储容量单位。
+.. * ONTAP凭据*：输入您的ONTAP用户名和密码。
+.. *SMB/CCIFS设置*：可选。如果您计划使用SMB/CCIFS协议访问卷、则必须在文件系统创建期间为Storage VM配置Active Directory。提供为此文件系统创建的Storage VM的以下详细信息。
++
+... *要加入的Active Directory域*：输入Active Directory的完全限定域名(FQDN)。
+... *DNS IP地址*：最多输入三个DNS IP地址，以逗号分隔。
+... *SMB服务器NetBIOS名称*：输入要为Storage VM创建的Active Directory计算机对象的SMB服务器NetBIOS名称。这是Active Directory中此Storage VM的名称。
+... *用户名*：输入现有Active Directory中服务帐户的用户名。
++
+请勿包含域前缀或后缀。对于 `EXAMPLE\ADMIN`，请使用 `ADMIN`。
+
+... *密码*：输入服务帐户的密码。
+... *组织单位*：(可选)输入要为FSx for ONTAP创建计算机帐户的组织单位的名称。OU是要加入文件系统的组织单位的可分辨路径名称。
+... *委派管理员组*：(可选)输入Active Directory中可管理文件系统的组的名称。
++
+如果您使用的是AWS Managed Microsoft AD、则必须指定一个组、例如AWS Delegated FSx Administrators、AWS Delegated Administrators或具有对OU的委派权限的自定义组。
 
 +
-[WARNING]
-====
-.不支持以下范围的IPS：
-** 0.0.0.0/8.
-** 127.0.0.0/8.
-** 198.19.0.0/20.
-** 224.0.0.0/4.
-** 240.0.0.0/4.
-** 255．255．255．255．32
-
-
-====
-. *路由表*(仅限多个可用性区域)
-+
-选择包含到浮动 IP 地址的路由的路由表。如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。
-
-. *数据加密*
-+
-接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["设置 AWS KMS"^]。
-
-. *存储配置*
-+
-.. 选择吞吐量，容量和单位。您可以随时更改吞吐量、存储容量和IOPS。
-.. 您也可以指定 IOPS 值。如果未指定IOPS值、则BlueXP将根据输入的总容量的每GiB 3个IOPS设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。您可以随时更改IOPS值。
-+
-
-NOTE: 如果指定的IOPS值不符合最低要求、则在添加工作环境时将收到错误。
+如果您要加入自行管理的广告、请使用广告中的组名称。默认组为 `Domain Admins`。
 
 
 
-. *审阅*
-+
-.. 单击选项卡以查看 ONTAP 属性，提供程序属性和网络配置。
-.. 单击*上一步*对任何设置进行更改、或者单击*添加*接受设置并创建工作环境。
 
 
+. 打开*Summary (摘要)*以查看您定义的配置。如果需要、您可以在保存或创建文件系统之前更改此时的任何设置。
+. 保存或创建文件系统。
 
 
 .结果
-BlueXP会在Canvas上显示适用于ONTAP 的FSX配置。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。
+如果您创建了文件系统、BlueXP  将在画布上显示FSx for ONTAP配置。现在、您可以link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["添加卷"^]使用BlueXP  Workload Factory访问FSx for ONTAP工作环境。
+
+--
+.高级创建
+--
+使用Advanced create、您可以设置所有配置选项、包括可用性、安全性、备份和维护。
+
+.步骤
+. 在BlueXP  中，添加新的工作环境，选择*Amazon Web Services*，然后选择*Add new* for Amazon FSx for NetApp ONTAP。
+. 在"Create FSx for ONTAP (创建FSx for Windows)"页面上、选择*高级创建*。
++
+您也可以加载已保存的配置。
+
+. 在文件系统常规配置下、提供以下内容：
++
+.. *AWS凭据*：选择在Workload Factory中添加AWS凭据、或者在不使用凭据的情况下继续操作。
+.. *文件系统名称*：输入文件系统的名称。
+.. *部署拓扑*：选择部署拓扑。
++
+*** 纵向扩展拓扑是指使用一个文件系统进行数据分发、并可增加文件大小以适应数据增长。
+*** 横向扩展拓扑使用多个文件系统进行数据分发。
+
+
+.. *HA对*：输入HA对的数量。
++
+*** 对于纵向扩展部署、只能有一个HA对。
+*** 对于横向扩展部署、可以有两到十二个HA对。
+
+
+.. *部署类型*：选择部署类型。
++
+*** 单可用性区域(单可用性区域、单可用性)部署：通过监控硬件故障来确保可用性、并在发生故障时自动更换基础架构组件。通过在可用性区域中自动复制数据以防止其发生组件故障、实现高持久性。
+*** 多可用性区域(Multi-AZ)部署：即使可用性区域不可用、也能持续提供数据。多可用性文件系统支持单可用性文件系统的所有可用性和持久性功能。多可用性文件系统专为业务关键型生产工作负载而设计、这些工作负载要求共享ONTAP文件数据具有高可用性、并需要具有跨可用性区域内置复制功能的存储。
+
+
+.. *标记*：您可以选择最多添加50个标记。
+
+
+. 在"网络和安全"下、提供以下内容：
++
+.. *区域和VPC*：为文件系统选择区域和VPC。
+.. *安全组*：创建或使用现有安全组。
+.. *可用性区域*：选择可用性区域和子网。
++
+*** 对于集群配置节点1：选择可用性区域和子网。
+*** 对于集群配置节点2：选择可用性区域和子网。
+
+
+.. *vPC路由表*：选择VPC路由表以启用客户端对卷的访问。
+.. *端点IP地址范围*：选择VPC*以外的*浮动IP地址范围或*输入IP地址范围*并输入IP地址范围。
+.. *加密*：从下拉列表中选择加密密钥名称。
+
+
+. 在文件系统详细信息下、提供以下内容：
++
+.. *SSD存储容量*：输入存储容量并选择存储容量单位。
+.. *已配置IOPs*：选择*自动*或*用户已配置*。
+.. *每个HA对的吞吐量*：选择每个HA对的吞吐量容量。
+.. * ONTAP凭据*：输入您的ONTAP用户名和密码。
+.. * Storage VM凭据*：输入您的用户名。密码可以特定于此文件系统、也可以使用为ONTAP凭据输入的相同密码。
+.. *SMB/CCIFS设置*：可选。如果您计划使用SMB/CCIFS协议访问卷、则必须在文件系统创建期间为Storage VM配置Active Directory。提供为此文件系统创建的Storage VM的以下详细信息。
++
+... *要加入的Active Directory域*：输入Active Directory的完全限定域名(FQDN)。
+... *DNS IP地址*：最多输入三个DNS IP地址，以逗号分隔。
+... *SMB服务器NetBIOS名称*：输入要为Storage VM创建的Active Directory计算机对象的SMB服务器NetBIOS名称。这是Active Directory中此Storage VM的名称。
+... *用户名*：输入现有Active Directory中服务帐户的用户名。
++
+请勿包含域前缀或后缀。对于 `EXAMPLE\ADMIN`，请使用 `ADMIN`。
+
+... *密码*：输入服务帐户的密码。
+... *组织单位*：(可选)输入要为FSx for ONTAP创建计算机帐户的组织单位的名称。OU是要加入文件系统的组织单位的可分辨路径名称。
+... *委派管理员组*：(可选)输入Active Directory中可管理文件系统的组的名称。
++
+如果您使用的是AWS Managed Microsoft AD、则必须指定一个组、例如AWS Delegated FSx Administrators、AWS Delegated Administrators或具有对OU的委派权限的自定义组。
+
++
+如果您要加入自行管理的广告、请使用广告中的组名称。默认组为 `Domain Admins`。
+
+
+
+
+
+. 在备份和维护下、提供以下内容：
++
+.. *FSx for ONTAP Backup*：默认情况下启用每日自动备份。如果需要、请禁用。
++
+... *自动备份保留期限*：输入自动备份的保留天数。
+... *每日自动备份窗口*:选择*No Preferences*(已为您选择每日备份开始时间)或*Select start time for daily backups*并指定开始时间。
+... *每周维护窗口*:选择*No Preferences*(为您选择每周维护窗口开始时间)或*Select start time for 30 minute每周维护窗口*并指定开始时间。
+
+
+
+
+. 保存或创建文件系统。
+
+
+.结果
+如果您创建了文件系统、BlueXP  将在画布上显示FSx for ONTAP配置。现在、您可以link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["添加卷"^]使用BlueXP  Workload Factory访问FSx for ONTAP工作环境。
 
 image:screenshot_add_fsx_cloud.png["\"工作环境\"页面上FSx for ONTAP的屏幕截图。"]
 
+--
+====
 
 
 == 发现适用于 ONTAP 的现有 FSX 文件系统
@@ -115,15 +220,28 @@ image:screenshot_add_fsx_cloud.png["\"工作环境\"页面上FSx for ONTAP的屏
 如果您之前向BlueXP提供了AWS凭据、则*My est*可以自动发现并建议FSx for ONTAP文件系统、以便使用BlueXP进行添加和管理。您还可以查看可用的数据服务。
 
 .关于此任务
-您可以在发现适用于ONTAP 文件系统的FSx时进行查找 <<创建适用于 ONTAP 的 FSX 工作环境>> 或者使用“我的资产”页面。此任务说明了如何使用*My ester*进行发现
+您可以在使用或使用*My ester*页面发现FSx for ONTAP文件系统<<创建适用于 ONTAP 的 FSX 工作环境>>。
 
+[role="tabbed-block"]
+====
+.通过添加工作环境进行发现
+--
 .步骤
-. 在BlueXP中、单击*我的资产*选项卡。
-. 此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。
+. 在BlueXP  中，添加新的工作环境，选择*Amazon Web Services*，然后选择*Discover Exister* for Amazon FSx for NetApp ONTAP。
+. 选择凭据和区域以显示现有文件系统。
+. 选择一个或多个文件系统，然后选择*Discover (发现)*将其添加到“Canvas (画布)”。
+
+
+--
+.使用<strong>的</strong>页面进行发现
+--
+.步骤
+. 在BlueXP  中，选择*我的资产*选项卡。
+. 此时将显示已发现的ONTAP 文件系统FSX计数。选择*发现*。
 +
 image:screenshot-opportunities.png["FSx for ONTAP的\"我的资产\"页面的屏幕截图。"]
 
-. 选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。
+. 选择一个或多个文件系统，然后选择*Discover (发现)*将其添加到“Canvas (画布)”。
 
 
 [NOTE]
@@ -133,7 +251,9 @@ image:screenshot-opportunities.png["FSx for ONTAP的\"我的资产\"页面的屏
 
 
 ====
+--
+====
 .结果
-BlueXP会在Canvas上显示您发现的适用于ONTAP 的FSX文件系统。现在、您可以使用BlueXP将卷添加到适用于ONTAP 的FSX工作环境中。
+BlueXP会在Canvas上显示您发现的适用于ONTAP 的FSX文件系统。现在、您可以link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["添加卷"^]访问FSx for ONTAP工作环境、并通过BlueXP  工作负载中的存储管理FSx for ONTAP文件系统。
 
-image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
+image:screenshot_fsx_working_environment_select.png["画布中的工作环境云的屏幕截图"]

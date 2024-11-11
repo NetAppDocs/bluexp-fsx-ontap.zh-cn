@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Amazon FSX for NetApp ONTAP 文档
+  title: 使用BlueXP  进行Amazon FSx for NetApp ONTAP管理
   lead: 适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用NetApp
     BlueXP管理适用于ONTAP 的FSX。
   tiles:
@@ -12,20 +12,12 @@ indexpage:
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-  - title: 要求
-    links:
-    - title: 设置权限
-      url: "/requirements/task-setting-up-permissions-fsx.html"
-    - title: 安全组规则
-      url: "/requirements/reference-security-groups-fsx.html"
-  - title: 使用FSx for ONTAP
-    links:
     - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"
-    - title: 创建并挂载卷
-      url: "/use/task-add-fsx-volumes.html"
-    - title: 添加和管理Storage VM
-      url: "/use/task-add-fsx-svm.html"
+  - title: 使用FSx for ONTAP
+    links:
+    - title: 管理FSx for ONTAP文件系统
+      url: "/use/task-manage-working-environment.html"
     - title: NVMe和iSCSI主机配置
       url: https://docs.netapp.com/us-en/ontap-sanhost/
   - title: 知识和支持

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
 keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
-summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量以及存储容量和IOPS、删除或删除工作环境以及管理数据服务、例如备份和恢复、复制和同步、分类、复制和卷缓存。 
+summary: 在BlueXP  中创建或发现FSx for ONTAP工作环境后、您可以管理文件系统并使用提供备份和恢复等功能的BlueXP  数据服务。 
 ---
-= 管理FSx for ONTAP工作环境
+= 管理FSx for ONTAP文件系统
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,161 +14,68 @@ summary: 借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您�
 
 
 [role="lead"]
-借助BlueXP、您可以管理适用于ONTAP 的FSX工作环境。您可以启用自动容量管理、更改吞吐量以及存储容量和IOPS、删除或删除工作环境以及管理数据服务、例如备份和恢复、复制和同步、分类、复制和卷缓存。
+在BlueXP  中创建或发现FSx for ONTAP工作环境后、您可以通过创建卷、管理Storage VM、保护数据和管理文件系统来管理文件系统。此外、您还可以通过BlueXP  使用数据服务来提供备份和恢复、数据分类、数据同步等功能。
 
 
 
-== 管理自动容量
+== 使用BlueXP  工作负载工厂管理文件系统
 
-您可以选择启用自动容量管理、以便根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最高可达集群最大容量的80%。
+从BlueXP  画布中打开FSx for ONTAP工作环境后、您将进入BlueXP  工作负载工厂。工作负载工厂是一种智能优化和自动化服务、它使用Amazon FSx for NetApp ONTAP、利用行业最佳实践来设计、设置和运行关键工作负载。
 
+https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["了解如何使用BlueXP  工作负载工厂管理文件系统"^]
 
-NOTE: 如果在创建工作环境时未手动指定IOPS值、则BlueXP会将新总容量的IOPS增加3个GiB。如果指定了IOPS值、则BlueXP不会调整IOPS。有关配置IOPS的详细信息，请参见link:task-creating-fsx-working-environment.html["创建工作环境"]。
 
-默认情况下、自动容量管理处于禁用状态。您可以在AWS中管理具有或不具有活动Connector的自动容量。
 
+== 使用ONTAP系统管理器管理文件系统
 
+如果您熟悉ONTAP系统管理器、则可以使用ONTAP系统管理器界面直接从BlueXP  管理FSx for ONTAP文件系统。
 
-=== 在没有活动Connector的情况下管理自动容量
+image:screenshot-system-manager.png["选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。"]
 
-您可以在AWS中管理自动容量、而无需使用活动的Connector。
 
-.步骤
-. 在画布上选择工作环境、然后选择*进入工作环境*。
-. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*自动容量管理*页面。
-+
 
-NOTE: 所有其他选项都需要一个Connector并已禁用。
+== 将BlueXP  数据服务与文件系统结合使用
 
-+
-** 选中此框可启用自动容量管理。
-** 如果先前已启用自动容量管理、请取消选中此框以禁用自动容量管理。
+将BlueXP  数据服务与FSx for ONTAP文件系统结合使用、可以备份和恢复数据、传输和同步数据、扫描数据并对数据进行分类、复制数据以及加快访问或卸载流量。
 
+image:screenshot-data-services.png["选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。"]
 
-. 选择 * 应用 * 。
 
 
+=== 备份和恢复数据
 
+BlueXP  备份和恢复服务可为内部和云端的NetApp ONTAP数据、数据库和虚拟机提供高效、安全且经济高效的数据保护。
 
-=== 使用活动的Connector管理自动容量
+https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["开始使用BlueXP  备份和恢复"^]
 
-您可以使用AWS中的活动Connector管理自动容量。
 
-.步骤
-. 打开适用于 ONTAP 的 FSX 工作环境。
-. 从*概述*选项卡中、选择*功能*。
-. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*自动容量管理*页面。
-. 在*自动容量管理*页面上：
-+
-** 选中此框可启用自动容量管理。
-** 如果先前已启用自动容量管理、请取消选中此框以禁用自动容量管理。
 
+=== 传输和同步数据
 
-. 选择 * 应用 * 。
+BlueXP复制和同步是一种云复制和同步服务、用于在内部和云对象存储之间传输NAS数据。
 
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["开始使用BlueXP  副本和同步"^]
 
 
 
-== 更改吞吐量容量
+=== 扫描数据并进行分类
 
-在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。
+通过BlueXP分类、您可以扫描组织混合多云中的数据并对其进行分类。
 
-.开始之前
-您需要一个活动的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
+https://docs.netapp.com/us-en/bluexp-classification/index.html["开始使用BlueXP  分类"^]
 
-.步骤
-. 打开适用于 ONTAP 的 FSX 工作环境。
-. 从*概述*选项卡中、选择*功能*。
-. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*吞吐量容量*编辑页面。
-. 从下拉列表中选择一个新的吞吐量容量、然后选择*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。
 
 
+=== 复制数据
 
+通过BlueXP  复制、您可以在ONTAP存储系统之间复制数据、以支持备份和灾难恢复到云或云之间。
 
-== 更改存储容量和IOPS
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["开始使用BlueXP  复制"^]
 
-在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改存储容量和IOPS。
 
-.开始之前
-您需要一个活动的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS 中的连接器"^]。
 
-.步骤
-. 打开适用于 ONTAP 的 FSX 工作环境。
-. 从*概述*选项卡中、选择*功能*。
-. 选择铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])以打开*存储容量和IOPS*编辑页面。
-. 您可以每六小时更改一次存储容量和IOPS。如果您尝试更频繁地进行更改、则会收到错误。
-+
-image:screenshot-configure-iops.png["用于更改存储容量和IOPS值的页面的屏幕截图。"]
+=== 加快访问速度或卸载流量
 
-+
-[NOTE]
-====
-** 建议的最大存储容量利用率为80%、以保持数据分层性能并为其他数据提供容量。
-** 选择*自动* IOPS可使主存储的每个GiB上配置的三个SSD IOPS的比率保持在160、000。您不能手动配置大于16万的IOPS值。
+BlueXP  卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。
 
-
-====
-. 选中此复选框可确认您了解更改存储容量会影响ONTAP 服务的FSX成本、并且在六小时内无法进行其他更改。
-. 选择*更新*以确认所做的更改。
-
-
-
-
-== 从项目或工作空间中删除FSx for ONTAP
-
-您可以从BlueXP中删除FSx for ONTAP、而无需删除帐户或卷。您可以随时将适用于ONTAP 的FSX工作环境重新添加到BlueXP中。
-
-.步骤
-. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角、选择操作菜单、然后选择*从工作空间中删除*。
-+
-image:screenshot_fsx_working_environment_remove.png["BlueXP界面中适用于ONTAP 的FSX的删除选项的屏幕截图。"]
-
-. 选择*删除*以从BlueXP中删除适用于ONTAP 的FSX。
-
-
-
-
-== 删除适用于 ONTAP 的 FSX 工作环境
-
-您可以从BlueXP中删除适用于ONTAP 的FSX。
-
-
-WARNING: 此操作将删除与工作环境关联的所有资源。此操作无法撤消。
-
-.开始之前
-在删除工作环境之前、您必须：
-
-* 在此工作环境中中断所有复制关系。
-* link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。要删除卷，您需要在 AWS 中使用活动的 Connector 。
-+
-
-NOTE: 必须使用AWS管理控制台或命令行界面删除故障卷。
-
-
-
-.步骤
-. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角、选择操作菜单并选择*删除*。
-+
-image:screenshot_fsx_working_environment_delete.png["BlueXP界面中适用于ONTAP 的FSX的删除选项的屏幕截图。"]
-
-. 输入工作环境的名称并选择*删除*。
-
-
-
-
-== 管理数据服务
-
-您可以从FSx for ONTAP工作环境管理其他数据服务。
-
-image:data-services.png["工作环境中的数据服务选项卡的屏幕截图"]
-
-有关配置数据服务的详细信息、请参见：
-
-* link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["BlueXP备份和恢复"^] 为内部和云端的NetApp ONTAP数据、Kubnetes永久性卷、数据库和虚拟机提供高效、安全且经济高效的数据保护。
-* link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["BlueXP复制和同步"^] 是一种云复制和同步服务、用于在内部和云对象存储之间传输NAS数据。
-* link:https://docs.netapp.com/us-en/bluexp-classification/index.html["BlueXP分类"^] 支持您扫描企业混合多云中的数据并对其进行分类。
-* link:https://docs.netapp.com/us-en/bluexp-replication/index.html["复制数据"^] 在ONTAP存储系统之间进行备份和灾难恢复、以支持云端或云之间的备份和灾难恢复。
-* link:https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["卷缓存"^] 在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。
-
+https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["开始使用BlueXP  卷缓存"^]

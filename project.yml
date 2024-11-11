@@ -22,24 +22,12 @@ sidebar:
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-  - title: 要求
-    entries:
     - title: 设置权限
       url: "/requirements/task-setting-up-permissions-fsx.html"
-    - title: 安全组规则
-      url: "/requirements/reference-security-groups-fsx.html"
-  - title: 使用适用于NetApp ONTAP 的Amazon FSx
-    entries:
     - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"
-    - title: 管理工作环境
-      url: "/use/task-manage-working-environment.html"
-    - title: 创建并挂载卷
-      url: "/use/task-add-fsx-volumes.html"
-    - title: 管理卷
-      url: "/use/task-manage-fsx-volumes.html"
-    - title: 添加和管理Storage VM
-      url: "/use/task-add-fsx-svm.html"
+  - title: 管理FSx for ONTAP文件系统
+    url: "/use/task-manage-working-environment.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持
