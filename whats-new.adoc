@@ -52,7 +52,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 添加Storage VM
 
-您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["添加Storage VM"] 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。
+现在、您可以使用BlueXP  将Storage VM添加到Amazon FSx for NetApp ONTAP文件系统中。
 
 
 
@@ -68,13 +68,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 维护窗口开始时间
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
+当时link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
 
 
 
 === 使用FlexGroup分发卷数据
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
+创建卷时、您可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
 
 
 
@@ -84,13 +84,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 维护窗口开始时间
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
+当时link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
 
 
 
 === 使用FlexGroup分发卷数据
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
+创建卷时、您可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
 
 
 
@@ -106,7 +106,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 === 添加或修改标记
 
-您可以选择link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["添加"]和link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["修改"]标记以对卷进行分类。
+您可以选择添加和修改标记以对卷进行分类。
 
 
 
@@ -170,13 +170,13 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-workin
 
 === 复制和同步数据
 
-现在、您可以link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"]使用FSx for ONTAP作为源访问内部部署和其他FSx for ONTAP系统。
+现在、您可以使用FSx for ONTAP作为源、将数据复制并同步到内部和其他FSx for ONTAP系统。
 
 
 
 === 创建iSCSI卷
 
-您现在可以了link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"]。
+现在、您可以使用Cloud Manager在FSx for ONTAP中创建iSCSI卷。
 
 
 
@@ -224,7 +224,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up
 
 === 创建卷时选择卷单元
 
-您可以link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["创建卷时，请选择卷单位（ GiB 或 TiB ）"]在FSx for ONTAP中执行此操作。
+在FSx for ONTAP中创建卷时、您可以选择卷单位(GiB或TiB)。
 
 
 
@@ -234,13 +234,13 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up
 
 === 使用 Cloud Manager 创建 CIFS 卷
 
-现在您可以 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用 Cloud Manager 在适用于 ONTAP 的 FSX 中创建 CIFS 卷"]。
+现在、您可以使用Cloud Manager在FSx for ONTAP中创建CIFS卷。
 
 
 
 === 使用 Cloud Manager 编辑卷
 
-现在您可以 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["使用 Cloud Manager 编辑 ONTAP 卷的 FSX"]。
+现在、您可以使用Cloud Manager编辑适用于ONTAP卷的FSx。
 
 
 

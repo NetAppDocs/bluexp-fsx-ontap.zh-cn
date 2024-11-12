@@ -6,10 +6,10 @@
 
 === 维护窗口开始时间
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
+当时link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
 
 
 
 === 使用FlexGroup分发卷数据
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
+创建卷时、您可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
