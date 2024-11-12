@@ -30,7 +30,7 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 
 == 关于此任务
 
-在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html.html["了解有关操作模式的更多信息"](英文)
+在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解有关操作模式的更多信息"](英文)
 
 可从BlueXP  设置>*凭据*页面查看新的和现有的AWS凭据。
 

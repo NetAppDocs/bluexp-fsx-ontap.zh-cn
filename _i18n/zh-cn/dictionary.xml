@@ -348,7 +348,6 @@
   <block id="e0b4e8575b26211ee68cab758d1b0cac" category="paragraph">凭据和权限通过BlueXP  工作负载工厂进行管理。BlueXP  工作负载工厂是一个生命周期管理平台、旨在帮助用户使用适用于NetApp ONTAP文件系统的Amazon FSx优化工作负载。BlueXP  使用与BlueXP  工作负载工厂相同的一组AWS凭据和权限。</block>
   <block id="2ffc5ab59f8fac9a9a3376e281855295" category="paragraph">工作负载出厂界面为BlueXP  用户提供了各种选项、可用于启用存储、VMware、数据库和GenAI等工作负载功能、以及为工作负载选择权限。_Storage_是工作负载工厂提供的存储管理功能、它是唯一需要启用和添加凭据才能创建和管理FSx for ONTAP文件系统的功能。</block>
   <block id="4dacf6e0adb6ed0f64acd514a486bf8a" category="inline-link-macro">了解有关操作模式的更多信息</block>
-  <block id="8ac3c34b26a8ad6f8186c49f54f40eaf" category="paragraph">在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。<block ref="c4601583893f884c96ed3090be0e6e80" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="3d8d24e33543a3c398a30850c79b37d8" category="paragraph">可从BlueXP  设置&gt;*凭据*页面查看新的和现有的AWS凭据。</block>
   <block id="df21e6f22445f7e313093546a4762e64" category="paragraph">您可以使用两种方法添加凭据：</block>
   <block id="a8d22daacb593b2058549a21847e76f3" category="list-text">*手动*：在工作负载工厂添加凭据的同时、在AWS帐户中创建IAM策略和IAM角色。</block>
@@ -421,39 +420,28 @@
   <block id="7407a944f7ba648de83a8109aee6d270" category="summary">Amazon FSx for NetApp ONTAP是一项完全托管的服务、允许客户启动和运行由NetApp的ONTAP存储操作系统提供支持的文件系统。</block>
   <block id="748db65cf4725be2bd3a1588440913cd" category="section-title">在BlueXP  中使用FSx for ONTAP</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作负载工厂</block>
-  <block id="1442063ab43a42a128dde83e435a2f6d" category="paragraph">在BlueXP  画布中、您可以创建和发现FSx for ONTAP工作环境、使用System Manager和其他BlueXP  服务以及查看凭据。如果您要管理使用FSx for ONTAP文件系统的凭据和工作负载，请使用<block ref="809afc2f4cb79e608d46f9e3b3ede420" category="inline-link-rx"></block>。</block>
-  <block id="4e7416eb82a2e30218ab1c99273593ee" category="inline-link-macro">详细了解如何在BlueXP  中使用FSx for ONTAP</block>
-  <block id="973b0ef3d620a958146d42029fbba63d" category="paragraph"><block ref="b27f119c0608bd87391dbe77bfc6d870" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="15e6df97d428ddc84a8106eefd03191e" category="list-text">在_standard_模式下使用BlueXP  时、支持FSx for ONTAP、此模式可利用BlueXP  SaaS层提供完整功能。</block>
-  <block id="1f591ada027cd358af1a8dabc6fa8457" category="section-title">连接器和链路解锁所有FSx for ONTAP功能</block>
   <block id="fa564e78bdca67738e4bb0ed90a354d5" category="paragraph">通过连接器和链路、可以在BlueXP  和Amazon FSx for NetApp ONTAP工作环境之间建立连接和信任关系。BlueXP  连接器是在云或内部网络中运行的NetApp软件、其链接使用AWS Lamba执行NetApp代码。您不需要连接器或链接即可开始使用BlueXP  或创建FSx for ONTAP工作环境、但您需要使用连接器或链接来充分利用FSx for ONTAP功能。</block>
   <block id="9b814365a691fc676cf3a5574ded54ef" category="paragraph">详细了解连接器和链路以及应在何时使用它们：</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link">了解有关连接器的更多信息</block>
   <block id="ff1ab22026d632586425b679cb5f7ff1" category="list-text"><block ref="dfe0add539943e53dd2a136d10c9015c" category="inline-link-rx"></block>(英文)</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">了解有关链接的更多信息</block>
   <block id="58bc5bc51e764e92b9b768fcc5d8ae0c" category="list-text"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block>(英文)</block>
-  <block id="040539721ee712cdb5b6a4e1be2583d0" category="paragraph">适用于NetApp ONTAP 的Amazon FSX是AWS第一方解决方案。如有与您的FSx for ONTAP工作环境、基础架构或使用此服务的任何解决方案相关的问题或技术支持问题、请使用AWS管理控制台中的支持中心创建AWS支持案例。选择"FSX for ONTAP "服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。</block>
   <block id="38e2d42dcf4b784aff50b561adf13042" category="summary">通过添加凭据、创建连接器或链接以及创建或发现文件系统、开始在BlueXP  中使用Amazon FSx for NetApp ONTAP。</block>
   <block id="f9448640bc8e190207efd1db5c109cbc" category="paragraph">通过添加凭据、创建连接器或链接以及创建或发现FSx for ONTAP文件系统、开始在BlueXP  中使用Amazon FSx for NetApp ONTAP。</block>
   <block id="c947186ad38a1acff7e8d20be0248c51" category="inline-link-macro">添加凭据和权限</block>
   <block id="867ca12036002c9fdf7da7b1fe3485ca" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0280736b18477edd6313066237675a4e" category="inline-link-macro-rx"></block></block>
   <block id="1163d914fc07d294d21b206f711f0f5c" category="paragraph">要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Automate permissions和_read permissions之间进行选择。</block>
-  <block id="4d803378c47b49b85bec0d2c6673dd59" category="paragraph-title"><block ref="4b6bbaeae9b6799ee02ea5158d279251" category="inline-image-macro-rx" type="image"></block>创建接头或链接</block>
-  <block id="cb672b364b83d661939e69954ea51520" category="paragraph">要管理FSx for ONTAP文件系统、您需要BlueXP  连接器或BlueXP  工作负载出厂链接。</block>
-  <block id="139b65c0f5a2c5923fd4ac3f3076884d" category="paragraph">_Connect尔_是您在VPC中部署的一个虚拟机、用于管理FSx for ONTAP文件系统。a _link_利用AWS Lamba创建与FSx for ONTAP文件系统的信任关系和连接。</block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link">了解如何在 AWS 中创建连接器</block>
   <block id="016f0cc4b9d1f1cf5dbe0851b121b350" category="list-text"><block ref="016f0cc4b9d1f1cf5dbe0851b121b350" category="inline-link-rx"></block></block>
   <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link">了解如何在内部创建Connector</block>
   <block id="ace4ad83034f6e2478fdd24d9c154d39" category="list-text"><block ref="ace4ad83034f6e2478fdd24d9c154d39" category="inline-link-rx"></block></block>
   <block id="68cd2ca9724f378c0a2815415eeecfbd" category="inline-link">了解如何创建链接</block>
   <block id="35d312ad6c576252ccfa87842dc6e767" category="list-text"><block ref="35d312ad6c576252ccfa87842dc6e767" category="inline-link-rx"></block></block>
-  <block id="9024d70f5c0f3ddffbb9ed71f25969d1" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block> <block ref="401532355c6c08ea243135435dce843b" category="inline-link-macro-rx"></block></block>
   <block id="b2a85c53ddb7bee961b7a27a16d75cbe" category="paragraph">直接从BlueXP  创建FSx for ONTAP文件系统、或者发现已在AWS环境中创建的文件系统。</block>
   <block id="e36cc635d251cd5b0a182729d1625bd1" category="paragraph">第一步是创建FSx for ONTAP工作环境或文件系统。如果已在AWS管理控制台中创建适用于ONTAP的FSx文件系统，则可以<block ref="f0e62c6abb102491f5e44c803b014bee" category="inline-link-macro-rx"></block>。</block>
   <block id="1633ddc656802ead23bcb179d8c7fcad" category="paragraph">创建文件系统时会创建Storage VM。</block>
   <block id="d0e7f7527c3a0ceae557c9f12bb1d5e7" category="paragraph">在创建FSx for ONTAP文件系统之前、您需要：</block>
   <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">了解如何为AWS帐户授予权限</block>
-  <block id="55ebfcf1e5b88b9c99a5ee4ee0bb9cd3" category="list-text">IAM角色的ARN、它为Workload Factory提供了创建FSx for ONTAP文件系统所需的权限。<block ref="c674ec525346aa467f22330499ae60f6" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="aba4a700f63e9801b4211989fc2b559f" category="list-text">要为其创建 FSX for ONTAP 实例的区域和 VPC 信息。</block>
   <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="section-title">创建FSx for ONTAP文件系统</block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">了解如何使用CodeBox实现自动化</block>
@@ -537,7 +525,6 @@
   <block id="f463d3e9a8e7f33d29b10b45e1c1b792" category="inline-link">了解如何使用BlueXP  工作负载工厂管理文件系统</block>
   <block id="3da6761ab924c0b71bfdd78b6137c4d1" category="paragraph"><block ref="3da6761ab924c0b71bfdd78b6137c4d1" category="inline-link-rx"></block></block>
   <block id="9a7d7fe4ea2506122f2a5355c685706e" category="section-title">使用ONTAP系统管理器管理文件系统</block>
-  <block id="2b1aa05589ed9cdb128a75d86ce3e560" category="paragraph">如果您熟悉ONTAP系统管理器、则可以使用ONTAP系统管理器界面直接从BlueXP  管理FSx for ONTAP文件系统。</block>
   <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。</block>
   <block id="3dba4e614d87a8373424f60ec23a5f81" category="paragraph"><block ref="3dba4e614d87a8373424f60ec23a5f81" category="inline-image-macro-rx" type="image"></block></block>
   <block id="537b06a9fc5f2181195e399203ea4df5" category="section-title">将BlueXP  数据服务与文件系统结合使用</block>
@@ -564,4 +551,30 @@
   <block id="02a2d5dac7e811fa480b87a01b7c8754" category="paragraph"><block ref="02a2d5dac7e811fa480b87a01b7c8754" category="inline-link-rx"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="cf9ae4b94802ab988b8884ed9bf12509" category="sidebar">使用BlueXP  进行Amazon FSx for NetApp ONTAP管理</block>
+  <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">如果您正在查找_advancedView选项、该选项可用于使用ONTAP系统管理器管理FSx for ONTAP文件系统、则在选择工作环境后、您可以从BlueXP  画布中找到该选项。</block>
+  <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1de58d4f64d081fb97f1d591f6b96a7c" category="paragraph">在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="d8030aec0b616170c1d448f645629048" category="paragraph">在BlueXP  画布中、您可以创建和发现FSx for ONTAP工作环境、并使用System Manager和其他BlueXP  服务。如果要管理FSx for ONTAP工作环境和在Amazon FSx for NetApp ONTAP上运行的工作负载，请使用<block ref="809afc2f4cb79e608d46f9e3b3ede420" category="inline-link-rx"></block>。</block>
+  <block id="080bf239eab90228128570c1dcff727d" category="inline-link-macro">了解如何在BlueXP  中创建和发现FSx for ONTAP工作环境</block>
+  <block id="cb955ea4bb940d72f2e54584baf5cad0" category="paragraph"><block ref="245fb4ba49d4510f0ab7c36a85ac006b" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="497ebbc25c8f867ad9d53f7b6c16b326" category="list-text">在_standard_模式下使用BlueXP  时、支持FSx for ONTAP、此模式可利用BlueXP  SaaS层提供完整功能。不支持_Restricted_模式和_Private模式。</block>
+  <block id="4a4f82407af5107bc1a19e3f298040a0" category="section-title">连接器和链路解锁所有FSx for ONTAP功能</block>
+  <block id="79ba9ae91870b4f56a5ad623d9d6cc16" category="paragraph">要使用以下功能、您需要一个连接器或链接：</block>
+  <block id="ab887a13e0e43ab14f26aa4139d3931e" category="list-text">显示FSx for ONTAP文件系统上安装的ONTAP版本</block>
+  <block id="6a0bbe6ca6ca13a9f69ba22ff72d4db9" category="list-text">管理系统上的iSCSI卷</block>
+  <block id="f713a1eba4a310a7dee6e6148031ac90" category="list-text">为卷启用和禁用自动增长功能</block>
+  <block id="b688472ba5c5b20a13e35de55bbd243e" category="list-text">创建和管理Snapshot策略</block>
+  <block id="607207d543b313ae2d9720c777e7a286" category="list-text">配置复制关系并在文件系统之间复制卷</block>
+  <block id="f39a1ae39e9d73b3a9aa6c431f9fb9d4" category="list-text">配置备份关系并将卷数据备份到云存储</block>
+  <block id="f15997f78fd09915dc098e9c00579d74" category="list-text">克隆文件系统中的卷</block>
+  <block id="12f68de27d579f57f0f70762ccd96328" category="list-text">直接从ONTAP显示其他指标(默认指标由Amazon CloudWatch收集)</block>
+  <block id="310e8bd2aa0fbf766664a8fadbb86083" category="list-text">管理NFS导出策略</block>
+  <block id="d6d578d7902b08905b3aaecc2b6d1d8a" category="paragraph">适用于NetApp ONTAP 的Amazon FSX是AWS第一方解决方案。如有与您的FSx for ONTAP文件系统、基础架构或使用此服务的任何解决方案相关的问题或技术支持问题、请使用AWS管理控制台中的支持中心创建AWS支持案例。选择"FSX for ONTAP "服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。</block>
+  <block id="f4e893e1ef301532d19ee55595aae17a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>可选：创建连接器或链接</block>
+  <block id="41d5093bb5f29af62a706f04427d8907" category="paragraph">要从BlueXP  执行某些管理任务、您需要BlueXP  连接器或BlueXP  工作负载出厂链接。_Connect尔_是您在VPC中部署的一个虚拟机、用于管理FSx for ONTAP文件系统。a _link_利用AWS Lamba创建与FSx for ONTAP文件系统的信任关系和连接。</block>
+  <block id="7b4b5f49e92ebcde2ae17d1a9788ef69" category="inline-link-macro">了解FSx for ONTAP管理何时需要连接器或链路</block>
+  <block id="dfc2ddbb1af198e530e42bbfa71313a2" category="list-text"><block ref="dfc2ddbb1af198e530e42bbfa71313a2" category="inline-link-macro-rx"></block></block>
+  <block id="6cabc65b89f99f38b4824d1241bd15a3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="401532355c6c08ea243135435dce843b" category="inline-link-macro-rx"></block></block>
+  <block id="4364b9162c48ee2ca000144e249c6a3e" category="list-text">IAM角色的ARN、它为Workload Factory提供了创建FSx for ONTAP文件系统所需的权限。<block ref="f28bfe0f9eab78a4f7a8c2891d2dbc22" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="b8a87fcf328823bb52cca677b8438c33" category="paragraph">您可以使用ONTAP系统管理器界面直接从BlueXP  管理FSx for ONTAP文件系统。要使用System Manager、需要使用连接器。</block>
 </blocks>

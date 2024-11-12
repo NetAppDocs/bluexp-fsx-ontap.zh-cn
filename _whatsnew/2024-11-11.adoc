@@ -9,3 +9,7 @@
 FSx for ONTAP文件系统管理任务(例如添加卷、扩展文件系统容量和管理Storage VM)现在可在BlueXP  Workload Factory中进行管理、这是NetApp和Amazon FSx for NetApp ONTAP提供的一项新服务。您可以像以前一样使用现有凭据和权限。不同之处在于、您现在可以从BlueXP  工作负载工厂执行更多操作来管理文件系统。从BlueXP  画布中打开FSx for ONTAP工作环境后、您将直接转到BlueXP  工作负载工厂。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["了解BlueXP  工作负载工厂中FSx for ONTAP的功能"^]
+
+如果您正在查找_advancedView选项、该选项可用于使用ONTAP系统管理器管理FSx for ONTAP文件系统、则在选择工作环境后、您可以从BlueXP  画布中找到该选项。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。"]
