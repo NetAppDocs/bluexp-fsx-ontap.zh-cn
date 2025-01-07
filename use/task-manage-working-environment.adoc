@@ -38,7 +38,7 @@ image:screenshot-system-manager.png["选择显示BlueXP  Manager选项的工作
 
 您可以使用Amazon CloudFormation为ONTAP文件系统资源(卷、CIFS共享、导出策略等)配置和管理FSx。
 
-link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["NetApp CloudFormation FSx for ONTAP提供程序GitHub存储库"^]
 
 
 
