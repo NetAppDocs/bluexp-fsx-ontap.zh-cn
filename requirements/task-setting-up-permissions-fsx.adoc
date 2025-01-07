@@ -30,7 +30,7 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 
 == 关于此任务
 
-在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解有关操作模式的更多信息"](英文)
+在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。_read_与查看权限相同。_Automate _与操作权限相同。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解有关操作模式的更多信息"](英文)
 
 可从BlueXP  设置>*凭据*页面查看新的和现有的AWS凭据。
 
@@ -73,9 +73,9 @@ image:screenshot-add-credentials-manually.png["屏幕截图显示了需要为每
 
 
 
-=== 第1步：选择工作负载功能并创建IAM策略
+=== 第1步：选择存储功能并创建IAM策略
 
-在本节中、您将选择哪些类型的工作负载功能可作为这些凭据的一部分进行管理、以及为每个工作负载启用的权限。您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。
+在本节中、您将选择要作为这些凭据的一部分进行管理的存储功能、以及为存储启用的权限。您还可以选择其他工作负载、例如数据库、GenAI或VMware。做出选择后、您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。
 
 image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。"]
 
@@ -86,6 +86,51 @@ image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的�
 
 . 对于可选择权限级别("自动"或"读取")的工作负载功能、请选择可通过这些凭据获得的权限类型。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解权限、也称为操作模式"^](英文)
 . 在CodeBox窗口中、复制第一个IAM策略的权限。
++
+也可以从以下选项卡复制存储权限。
+
++
+[role="tabbed-block"]
+====
+.读取权限
+--
+[source, json]
+----
+        "fsx:Describe*",
+        "fsx:ListTagsForResource",
+        "ec2:Describe*",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics"
+----
+--
+.自动执行权限
+--
+[source, json]
+----
+        "fsx:*",
+        "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:CreateSecurityGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "kms:CreateGrant",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "iam:SimulatePrincipalPolicy",
+        "cloudwatch:GetMetricStatistics"
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup"
+----
+--
+====
 . 打开另一个浏览器窗口、并在AWS管理控制台中登录到您的AWS帐户。
 . 打开IAM服务，然后选择*Policies*>*Create Policy*。
 . 选择JSON作为文件类型，粘贴您在第3步中复制的权限，然后选择*Next*。

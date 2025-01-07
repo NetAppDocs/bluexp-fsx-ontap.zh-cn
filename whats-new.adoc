@@ -18,6 +18,18 @@ summary: 了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。
 
 
 
+== 2025年1月6日
+
+
+
+=== NetApp发布了其他CloudFormation资源
+
+NetApp现在可提供CloudFormation资源、使客户能够利用未在AWS控制台中公开的高级ONTAP组件。CloudFormation是适用于AWS的基础架构即代码机制。您将能够创建复制关系、CIFS共享、NFS导出策略、快照等。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx"]
+
+
+
 == 2024年11月11日
 
 

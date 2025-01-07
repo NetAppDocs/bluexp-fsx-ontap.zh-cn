@@ -34,6 +34,14 @@ image:screenshot-system-manager.png["选择显示BlueXP  Manager选项的工作
 
 
 
+== 使用Amazon CloudFormation管理文件系统
+
+您可以使用Amazon CloudFormation为ONTAP文件系统资源(卷、CIFS共享、导出策略等)配置和管理FSx。
+
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+
+
+
 == 将BlueXP  数据服务与文件系统结合使用
 
 将BlueXP  数据服务与FSx for ONTAP文件系统结合使用、可以备份和恢复数据、传输和同步数据、扫描数据并对数据进行分类、复制数据以及加快访问或卸载流量。

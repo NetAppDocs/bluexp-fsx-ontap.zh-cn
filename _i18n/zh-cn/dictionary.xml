@@ -85,7 +85,6 @@
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您无权针对选定服务创建案例"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用产品内聊天功能</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">通过提交非技术案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="74e5a199ea27b8b415c0c77d75229e79" category="sidebar">NVMe和iSCSI主机配置</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
@@ -348,8 +347,6 @@
   <block id="c8df78ded4cea0598f7679f11a3c3246" category="list-text">选择*手动添加*，然后按照以下步骤填写_Permissions configuration_下的三个部分。</block>
   <block id="ef7fe40c036b5b08d74837dcb702dc33" category="inline-image-macro">屏幕截图显示了需要为每组凭据手动定义的项目。</block>
   <block id="083fb8583b0a2366ef9a94388dd9640f" category="paragraph"><block ref="083fb8583b0a2366ef9a94388dd9640f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d11861b4e2dfc9ac3d86245926aa2785" category="section-title">第1步：选择工作负载功能并创建IAM策略</block>
-  <block id="530d81548274a062436af51b8c3e829f" category="paragraph">在本节中、您将选择哪些类型的工作负载功能可作为这些凭据的一部分进行管理、以及为每个工作负载启用的权限。您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。</block>
   <block id="445f4ba50fbc8e7b285aedb4396412bb" category="inline-image-macro">屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。</block>
   <block id="0edc9a25423073fcc768405f6aeda88b" category="paragraph"><block ref="0edc9a25423073fcc768405f6aeda88b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb73cd2a4bbc3dbb4bbab5f5a9b6fb8d" category="list-text">在*Create Policies*部分中，启用要包含在这些凭据中的每个工作负载功能。启用*Storage*以创建和管理文件系统。</block>
@@ -535,7 +532,6 @@
   <block id="cf9ae4b94802ab988b8884ed9bf12509" category="sidebar">使用BlueXP  进行Amazon FSx for NetApp ONTAP管理</block>
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">如果您正在查找_advancedView选项、该选项可用于使用ONTAP系统管理器管理FSx for ONTAP文件系统、则在选择工作环境后、您可以从BlueXP  画布中找到该选项。</block>
   <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1de58d4f64d081fb97f1d591f6b96a7c" category="paragraph">在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="d8030aec0b616170c1d448f645629048" category="paragraph">在BlueXP  画布中、您可以创建和发现FSx for ONTAP工作环境、并使用System Manager和其他BlueXP  服务。如果要管理FSx for ONTAP工作环境和在Amazon FSx for NetApp ONTAP上运行的工作负载，请使用<block ref="809afc2f4cb79e608d46f9e3b3ede420" category="inline-link-rx"></block>。</block>
   <block id="080bf239eab90228128570c1dcff727d" category="inline-link-macro">了解如何在BlueXP  中创建和发现FSx for ONTAP工作环境</block>
   <block id="cb955ea4bb940d72f2e54584baf5cad0" category="paragraph"><block ref="245fb4ba49d4510f0ab7c36a85ac006b" category="inline-link-macro-rx"></block>(英文)</block>
@@ -568,4 +564,18 @@
   <block id="fa7394842a17e21de2bb5eb52a3d97eb" category="paragraph">在FSx for ONTAP中创建卷时、您可以选择卷单位(GiB或TiB)。</block>
   <block id="25c675873bda3d8b54aac90e0f94b61a" category="paragraph">现在、您可以使用Cloud Manager在FSx for ONTAP中创建CIFS卷。</block>
   <block id="d3700b7f8295ad136939c888e0efdcee" category="paragraph">现在、您可以使用Cloud Manager编辑适用于ONTAP卷的FSx。</block>
+  <block id="16e305f77c7a0272aceac8c95312d98a" category="doc">NetApp发布了其他CloudFormation资源</block>
+  <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp现在可提供CloudFormation资源、使客户能够利用未在AWS控制台中公开的高级ONTAP组件。CloudFormation是适用于AWS的基础架构即代码机制。您将能够创建复制关系、CIFS共享、NFS导出策略、快照等。</block>
+  <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx</block>
+  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
+  <block id="c92644a757476bbef61fa3b782e32d95" category="paragraph">在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。_read_与查看权限相同。_Automate _与操作权限相同。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="facff49e2bd72676ffc323376c6f7c86" category="section-title">第1步：选择存储功能并创建IAM策略</block>
+  <block id="643bb3986a2755c5582d9f82862ff934" category="paragraph">在本节中、您将选择要作为这些凭据的一部分进行管理的存储功能、以及为存储启用的权限。您还可以选择其他工作负载、例如数据库、GenAI或VMware。做出选择后、您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。</block>
+  <block id="45f2112a5aef07c91c1003cce4dc5410" category="paragraph">也可以从以下选项卡复制存储权限。</block>
+  <block id="7a38975bfee632036d1205b2951258b2" category="open-title">读取权限</block>
+  <block id="79eecef4aff74983cfd4aed5da7f2f30" category="open-title">自动执行权限</block>
+  <block id="be0bf2e3af6b03378bb493466f3c335f" category="section-title">使用Amazon CloudFormation管理文件系统</block>
+  <block id="c2f7d57c8ea888af74a7d46699221837" category="paragraph">您可以使用Amazon CloudFormation为ONTAP文件系统资源(卷、CIFS共享、导出策略等)配置和管理FSx。</block>
+  <block id="2c263d7a0f58593b73a60f40d9f5805e" category="paragraph"><block ref="2c263d7a0f58593b73a60f40d9f5805e" category="inline-link-macro-rx"></block></block>
+  <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025年1月6日</block>
 </blocks>
