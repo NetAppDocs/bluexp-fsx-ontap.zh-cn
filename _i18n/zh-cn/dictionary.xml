@@ -585,7 +585,6 @@
   <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">BlueXP  工作负载中提供了CloudShell</block>
   <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">当您在BlueXP  控制台中的BlueXP  工作负载中时、可以使用CloudShell。通过CloudShell、您可以使用在BlueXP  帐户中提供的AWS和ONTAP凭据、并在类似于Shell的环境中执行AWS命令行界面命令或ONTAP命令行界面命令。</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">使用CloudShell</block>
-  <block id="71ee7ec26ff8d29a0d286a605f08aeb5" category="paragraph"><block ref="71ee7ec26ff8d29a0d286a605f08aeb5" category="inline-link-macro-rx"></block></block>
   <block id="1f7f7589b5db575980a7c6142051bb44" category="paragraph">如果您之前向BlueXP  提供了AWS凭据、则*My est*可以自动发现并建议工作空间中ONTAP文件系统的FSx、以便使用BlueXP  进行添加和管理。您还可以查看可用的数据服务。</block>
   <block id="142acbaf383c4f4c44d1693c75c309df" category="paragraph">您可以在添加工作环境时或使用*我的资产*页面发现FSx for ONTAP文件系统。</block>
   <block id="0e2c79da1cf7b4ae88e08f783a1f7f85" category="paragraph">您只能在BlueXP  帐户中发现FSx for ONTAP文件系统一次、并将其附加到一个工作空间。之后、可以删除文件系统并将其重新关联到其他工作空间。</block>
@@ -650,4 +649,5 @@
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP网络研讨会</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">使用Tracker监控操作</block>
   <block id="26efc0a2e060feb5086fc0ee17ded6e1" category="sidebar">从工作空间中删除文件系统</block>
+  <block id="03efd4c623255859d8f24cea1414ca80" category="paragraph"><block ref="03efd4c623255859d8f24cea1414ca80" category="inline-link-macro-rx"></block></block>
 </blocks>
