@@ -28,6 +28,10 @@ sidebar:
       url: "/use/task-creating-fsx-working-environment.html"
   - title: 管理FSx for ONTAP文件系统
     url: "/use/task-manage-working-environment.html"
+  - title: 使用Tracker监控操作
+    url: "/use/task-monitor-operations.html"
+  - title: 从工作空间中删除文件系统
+    url: "/use/task-remove-filesystem.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持

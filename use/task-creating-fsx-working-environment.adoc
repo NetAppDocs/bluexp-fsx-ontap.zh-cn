@@ -217,10 +217,12 @@ image:screenshot_add_fsx_cloud.png["\"工作环境\"页面上FSx for ONTAP的屏
 
 == 发现适用于 ONTAP 的现有 FSX 文件系统
 
-如果您之前向BlueXP提供了AWS凭据、则*My est*可以自动发现并建议FSx for ONTAP文件系统、以便使用BlueXP进行添加和管理。您还可以查看可用的数据服务。
+如果您之前向BlueXP  提供了AWS凭据、则*My est*可以自动发现并建议工作空间中ONTAP文件系统的FSx、以便使用BlueXP  进行添加和管理。您还可以查看可用的数据服务。
 
 .关于此任务
-您可以在使用或使用*My ester*页面发现FSx for ONTAP文件系统<<创建适用于 ONTAP 的 FSX 工作环境>>。
+您可以在添加工作环境时或使用*我的资产*页面发现FSx for ONTAP文件系统。
+
+您只能在BlueXP  帐户中发现FSx for ONTAP文件系统一次、并将其附加到一个工作空间。之后、可以删除文件系统并将其重新关联到其他工作空间。
 
 [role="tabbed-block"]
 ====

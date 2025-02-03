@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: use/task-remove-filesystem.html 
+keywords: amazon fsx for netapp ontap, fsx for ontap, fsx, remove fsx for ontap file system, remove file system, workspace, file system, disassociate file system, working environment 
+summary: 从BlueXP  画布中的工作空间中删除FSx for ONTAP文件系统。 
+---
+= 从BlueXP  的工作空间中删除FSx for ONTAP文件系统
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+从BlueXP  画布中的工作空间中删除FSx for ONTAP文件系统。此操作会将文件系统与一个工作空间解除关联、以便您可以将其与同一帐户中的另一个工作空间相关联。
+
+.关于此任务
+从工作空间中删除FSx for ONTAP文件系统会将其从BlueXP  中删除。但不会删除FSx for ONTAP文件系统。之后、您可以从同一帐户重新发现同一工作区或不同工作区中的FSx for ONTAP文件系统或工作环境。
+
+.步骤
+. 打开BlueXP  画布。
+. 选择包含要删除的文件系统的工作环境。
+. 选择*进入工作环境*。
+. 从存储的FSx for ONTAP选项卡中、选择三点菜单、然后选择*从工作空间中删除*。
++
+image:screenshot-remove-file-system.png["文件系统中打开菜单的屏幕截图。此时将突出显示用于从工作空间中删除的选项。"]
+
+. 选择*Remove*以确认从工作空间中删除文件系统。
+
+
+.结果
+文件系统将从工作空间中删除。现在、您可以将文件系统与同一帐户中的另一个工作空间相关联。

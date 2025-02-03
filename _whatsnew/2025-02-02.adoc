@@ -1,0 +1,35 @@
+= 将FSx for ONTAP文件系统与BlueXP  中的工作空间相关联
+:allow-uri-read: 
+
+
+
+
+=== 将FSx for ONTAP文件系统与BlueXP  中的工作空间相关联
+
+在2024年11月集成BlueXP  后、新创建的适用于ONTAP文件系统的FSx未与BlueXP  中的一个工作空间关联。现在、当您创建或发现FSx for ONTAP文件系统时、这些文件系统将与BlueXP  帐户中的一个工作空间相关联。
+
+如果您现有的FSx for ONTAP文件系统未与工作空间关联、我们将帮助您将其与BlueXP  中的工作空间关联。您可以link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["向NetApp支持部门创建案例"^]从BlueXP  控制台中执行此操作。选择*Workload Factory作为服务。
+
+
+
+=== 从BlueXP  画布中删除文件系统
+
+现在、您可以从BlueXP  画布中的工作空间中删除FSx for ONTAP文件系统。此操作会将文件系统与一个工作空间解除关联、以便您可以将其与同一BlueXP  帐户中的另一个工作空间相关联。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["了解如何在BlueXP  中从工作空间中删除FSx for ONTAP文件系统"^]
+
+
+
+=== 跟踪器可用于监控和跟踪操作
+
+追踪器是一项新的监控功能、可在BlueXP  Amazon FSx for NetApp ONTAP中使用。您可以使用Tracker监控和跟踪凭据、存储和链接操作的进度和状态、查看操作任务和子任务的详细信息、诊断任何问题或故障、编辑失败操作的参数以及重试失败操作。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP  中监控和跟踪FSx for ONTAP操作"^]
+
+
+
+=== BlueXP  工作负载中提供了CloudShell
+
+当您在BlueXP  控制台中的BlueXP  工作负载中时、可以使用CloudShell。通过CloudShell、您可以使用在BlueXP  帐户中提供的AWS和ONTAP凭据、并在类似于Shell的环境中执行AWS命令行界面命令或ONTAP命令行界面命令。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html#before-you-begin["使用CloudShell"^]

@@ -54,7 +54,7 @@ image:screenshot-data-services.png["选择显示BlueXP  Manager选项的工作�
 
 BlueXP  备份和恢复服务可为内部和云端的NetApp ONTAP数据、数据库和虚拟机提供高效、安全且经济高效的数据保护。
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["开始使用BlueXP  备份和恢复"^]
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["开始使用BlueXP  备份和恢复"^]
 
 
 
@@ -62,7 +62,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["开始使用Blu
 
 BlueXP复制和同步是一种云复制和同步服务、用于在内部和云对象存储之间传输NAS数据。
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["开始使用BlueXP  副本和同步"^]
+link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["开始使用BlueXP  副本和同步"^]
 
 
 
@@ -70,7 +70,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["开始使�
 
 通过BlueXP分类、您可以扫描组织混合多云中的数据并对其进行分类。
 
-https://docs.netapp.com/us-en/bluexp-classification/index.html["开始使用BlueXP  分类"^]
+link:https://docs.netapp.com/us-en/bluexp-classification/index.html["开始使用BlueXP  分类"^]
 
 
 
@@ -78,7 +78,7 @@ https://docs.netapp.com/us-en/bluexp-classification/index.html["开始使用Blue
 
 通过BlueXP  复制、您可以在ONTAP存储系统之间复制数据、以支持备份和灾难恢复到云或云之间。
 
-https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["开始使用BlueXP  复制"^]
+link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["开始使用BlueXP  复制"^]
 
 
 
@@ -86,4 +86,4 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["开
 
 BlueXP  卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。
 
-https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["开始使用BlueXP  卷缓存"^]
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["开始使用BlueXP  卷缓存"^]
