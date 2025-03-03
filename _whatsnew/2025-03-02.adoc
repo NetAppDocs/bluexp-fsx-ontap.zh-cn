@@ -1,0 +1,11 @@
+= Tracker中的CloudShell事件
+:allow-uri-read: 
+
+
+
+
+=== Tracker中的CloudShell事件
+
+无论何时使用CloudShell从BlueXP  工作负载执行FSx for ONTAP操作、事件都会显示在Tracker中。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["了解如何在BlueXP  中监控和跟踪FSx for ONTAP操作"^]
