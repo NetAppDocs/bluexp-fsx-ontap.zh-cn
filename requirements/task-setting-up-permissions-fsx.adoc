@@ -77,7 +77,7 @@ image:screenshot-add-credentials-manually.png["屏幕截图显示了需要为每
 
 在本节中、您将选择要作为这些凭据的一部分进行管理的存储功能、以及为存储启用的权限。您还可以选择其他工作负载、例如数据库、GenAI或VMware。做出选择后、您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。
 
-image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。"]
+image:screenshot-create-policies-manual-permissions-check.png["屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。"]
 
 .步骤
 . 在*Create Policies*部分中，启用要包含在这些凭据中的每个工作负载功能。启用*Storage*以创建和管理文件系统。
@@ -85,6 +85,7 @@ image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的�
 您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。
 
 . 对于可选择权限级别("自动"或"读取")的工作负载功能、请选择可通过这些凭据获得的权限类型。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解权限、也称为操作模式"^](英文)
+. 可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将添加 `iam:SimulatePrincipalPolicy permission`到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。
 . 在CodeBox窗口中、复制第一个IAM策略的权限。
 +
 也可以从以下选项卡复制存储权限。
@@ -129,51 +130,50 @@ image:screenshot-create-policies-manual.png["屏幕截图显示哪些类型的�
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "fsx:*",
-                "ec2:Describe*",
-                "ec2:CreateTags",
-                "ec2:CreateSecurityGroup",
-                "iam:CreateServiceLinkedRole",
-                "kms:Describe*",
-                "elasticfilesystem:Describe*",
-                "kms:List*",
-                "kms:CreateGrant",
-                "cloudwatch:PutMetricData",
-                "cloudwatch:GetMetricData",
-                "iam:SimulatePrincipalPolicy",
-                "cloudwatch:GetMetricStatistics"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:DeleteSecurityGroup"
-            ],
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/AppCreator": "NetappFSxWF"
-                }
-            }
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "iam:SimulatePrincipalPolicy"
-            ],
-            "Resource": "*"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "fsx:*",
+        "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:CreateSecurityGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "kms:CreateGrant",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "ec2:ResourceTag/AppCreator": "NetappFSxWF"
         }
-    ]
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ----
 --
@@ -278,6 +278,7 @@ image:screenshot-add-credentials-cloudformation.png["屏幕截图显示了在启
 +
 您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。
 
+. 可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将权限添加 `iam:SimulatePrincipalPolicy`到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。
 . 在*凭据名称*下，输入要用于这些凭据的名称。
 . 从AWS CloudFormation添加凭据：
 +

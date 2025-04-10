@@ -345,7 +345,6 @@
   <block id="ef7fe40c036b5b08d74837dcb702dc33" category="inline-image-macro">屏幕截图显示了需要为每组凭据手动定义的项目。</block>
   <block id="083fb8583b0a2366ef9a94388dd9640f" category="paragraph"><block ref="083fb8583b0a2366ef9a94388dd9640f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="445f4ba50fbc8e7b285aedb4396412bb" category="inline-image-macro">屏幕截图显示哪些类型的工作负载功能可作为这些凭据中的策略的一部分进行管理。</block>
-  <block id="0edc9a25423073fcc768405f6aeda88b" category="paragraph"><block ref="0edc9a25423073fcc768405f6aeda88b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb73cd2a4bbc3dbb4bbab5f5a9b6fb8d" category="list-text">在*Create Policies*部分中，启用要包含在这些凭据中的每个工作负载功能。启用*Storage*以创建和管理文件系统。</block>
   <block id="3b9b789374908017040d97f81eb4008d" category="paragraph">您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。</block>
   <block id="a488a73463d70a082950f1cd09a4be8c" category="inline-link-macro">了解权限、也称为操作模式</block>
@@ -653,4 +652,12 @@
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="doc">Tracker中的CloudShell事件</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">无论何时使用CloudShell从BlueXP  工作负载执行FSx for ONTAP操作、事件都会显示在Tracker中。</block>
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
+  <block id="4ef50e373522b91f7df59d5cba69a8b7" category="doc">IAM：SimulatePermission Policy权限更新</block>
+  <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">现在、当您添加其他AWS帐户凭据或添加新工作负载功能(例如GenAI工作负载)时、您可以从BlueXP  控制台管理此<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>权限。</block>
+  <block id="6cff628e35cc5d429a57e4a125a0bf6b" category="inline-link-macro">权限引用更改日志</block>
+  <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
+  <block id="c1bc5d8eeb872326cb512499f02befb5" category="paragraph"><block ref="c1bc5d8eeb872326cb512499f02befb5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将添加<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。</block>
+  <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将权限添加<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
 </blocks>
