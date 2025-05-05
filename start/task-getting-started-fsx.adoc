@@ -18,7 +18,7 @@ summary: 通过添加凭据、创建连接器或链接以及创建或发现文�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:../requirements/task-setting-up-permissions-fsx.html["添加凭据和权限"]
 [role="quick-margin-para"]
-要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Automate permissions和_read permissions之间进行选择。
+要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Read/Write_权限和_Read-Only_权限之间进行选择。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]可选：创建连接器或链接
 [role="quick-margin-para"]

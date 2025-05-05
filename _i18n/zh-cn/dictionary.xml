@@ -348,7 +348,6 @@
   <block id="eb73cd2a4bbc3dbb4bbab5f5a9b6fb8d" category="list-text">在*Create Policies*部分中，启用要包含在这些凭据中的每个工作负载功能。启用*Storage*以创建和管理文件系统。</block>
   <block id="3b9b789374908017040d97f81eb4008d" category="paragraph">您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。</block>
   <block id="a488a73463d70a082950f1cd09a4be8c" category="inline-link-macro">了解权限、也称为操作模式</block>
-  <block id="99d132e42e3df08ae21e3481006ebc5a" category="list-text">对于可选择权限级别("自动"或"读取")的工作负载功能、请选择可通过这些凭据获得的权限类型。<block ref="1b00b1a76801899cea6526d97ddbb2de" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="6d45b51df5e4b4d742aed3a012be7ece" category="list-text">在CodeBox窗口中、复制第一个IAM策略的权限。</block>
   <block id="d9951e6a22fb7f7d403d017e5b8ef9c6" category="list-text">打开另一个浏览器窗口、并在AWS管理控制台中登录到您的AWS帐户。</block>
   <block id="0545945650ae73f856cfac5d203df5f5" category="list-text">打开IAM服务，然后选择*Policies*&gt;*Create Policy*。</block>
@@ -405,7 +404,6 @@
   <block id="f9448640bc8e190207efd1db5c109cbc" category="paragraph">通过添加凭据、创建连接器或链接以及创建或发现FSx for ONTAP文件系统、开始在BlueXP  中使用Amazon FSx for NetApp ONTAP。</block>
   <block id="c947186ad38a1acff7e8d20be0248c51" category="inline-link-macro">添加凭据和权限</block>
   <block id="867ca12036002c9fdf7da7b1fe3485ca" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0280736b18477edd6313066237675a4e" category="inline-link-macro-rx"></block></block>
-  <block id="1163d914fc07d294d21b206f711f0f5c" category="paragraph">要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Automate permissions和_read permissions之间进行选择。</block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link">了解如何在 AWS 中创建连接器</block>
   <block id="016f0cc4b9d1f1cf5dbe0851b121b350" category="list-text"><block ref="016f0cc4b9d1f1cf5dbe0851b121b350" category="inline-link-rx"></block></block>
   <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link">了解如何在内部创建Connector</block>
@@ -558,12 +556,9 @@
   <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp现在可提供CloudFormation资源、使客户能够利用未在AWS控制台中公开的高级ONTAP组件。CloudFormation是适用于AWS的基础架构即代码机制。您将能够创建复制关系、CIFS共享、NFS导出策略、快照等。</block>
   <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx</block>
   <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
-  <block id="c92644a757476bbef61fa3b782e32d95" category="paragraph">在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。_read_与查看权限相同。_Automate _与操作权限相同。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="facff49e2bd72676ffc323376c6f7c86" category="section-title">第1步：选择存储功能并创建IAM策略</block>
   <block id="643bb3986a2755c5582d9f82862ff934" category="paragraph">在本节中、您将选择要作为这些凭据的一部分进行管理的存储功能、以及为存储启用的权限。您还可以选择其他工作负载、例如数据库、GenAI或VMware。做出选择后、您需要从CodeBox中复制每个选定工作负载的策略权限、并将其添加到AWS帐户中的AWS管理控制台中以创建策略。</block>
   <block id="45f2112a5aef07c91c1003cce4dc5410" category="paragraph">也可以从以下选项卡复制存储权限。</block>
-  <block id="7a38975bfee632036d1205b2951258b2" category="open-title">读取权限</block>
-  <block id="79eecef4aff74983cfd4aed5da7f2f30" category="open-title">自动执行权限</block>
   <block id="be0bf2e3af6b03378bb493466f3c335f" category="section-title">使用Amazon CloudFormation管理文件系统</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025年1月6日</block>
   <block id="e211b2db96a2f5b2b2868517a76988c8" category="paragraph">您可以使用Amazon CloudFormation为ONTAP文件系统资源(卷、CIFS共享、导出策略等)配置和管理FSx。</block>
@@ -660,4 +655,26 @@
   <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将添加<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。</block>
   <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将权限添加<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
+  <block id="e740d5331c1318c8aeedd3bc928fee0f" category="doc">跟踪器响应支持</block>
+  <block id="afa647328e65fc54651ec9202e08f684" category="paragraph">Tracker现在提供API响应、以便您可以查看与任务相关的REST API输出。</block>
+  <block id="7dc7c15512069d38e071e0b7f2eb0075" category="section-title">支持对AWS专有信息管理器进行链接身份验证</block>
+  <block id="73ecd40a86b02acff9f56b3a1ac74d7f" category="paragraph">现在、您可以选择使用AWS机密管理器中的密钥对链接进行身份验证、这样就不必使用存储在BlueXP  工作负载中的凭据。</block>
+  <block id="37b002845528ac0296b86d28bb71e5a5" category="inline-link-macro">使用Lamba链接连接到FSx for ONTAP文件系统</block>
+  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
+  <block id="b4650b4ce326d6a3b7fad5e98b1b29d3" category="section-title">为FSx for ONTAP文件系统实施最佳实践</block>
+  <block id="bf66fc8532837c2f341b98d92d40bd27" category="paragraph">BlueXP  工作负载提供了一个信息板、您可以在其中查看文件系统配置的架构良好状态。您可以利用此分析为FSx for ONTAP文件系统实施最佳实践。文件系统配置分析包括以下配置：SSD容量阈值、计划的本地快照、计划的ONTAP备份FSx、数据分层和远程数据复制。</block>
+  <block id="20c1cdeb819f1a107044754c5b7cd16d" category="inline-link-macro">了解对文件系统配置进行精心设计的分析</block>
+  <block id="f85ae2c7c8690dad4aad4469edd0d4d1" category="list-text"><block ref="f85ae2c7c8690dad4aad4469edd0d4d1" category="inline-link-macro-rx"></block></block>
+  <block id="ee8bd13e9852f521384a9366f9fddac8" category="inline-link-macro">为文件系统实施最佳实践</block>
+  <block id="a04ab86f504e47221c279d8c74e9697c" category="list-text"><block ref="a04ab86f504e47221c279d8c74e9697c" category="inline-link-macro-rx"></block></block>
+  <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">针对文件系统问题设计合理的通知</block>
+  <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">现在、在BlueXP  控制台中、对于架构良好的文件系统、FSx for ONTAP文件系统会在"画布"中显示一条通知、指示何时文件系统存在问题需要修复。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
+  <block id="7ad34443be66bd769d7526052866c23d" category="paragraph">在BlueXP  工作负载工厂中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中操作的权限级别或_operational mode_。要发现和部署AWS资源、例如适用于ONTAP文件系统的FSx、您需要_read-only _或_read/Write_权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_read-only模式或_read/Write_模式。_read-only _与查看权限相同。_Read/Write_与操作权限相同。<block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="c0f13e28260a8d6334a9ba083a9ecd8c" category="list-text">对于可选择权限级别(读/写或只读)的工作负载功能、请选择可通过这些凭据获得的权限类型。<block ref="1b00b1a76801899cea6526d97ddbb2de" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="afcef91c603f5a2caaca0c02452c1093" category="open-title">只读权限</block>
+  <block id="6c89d11178770d48b64eed2f5ad15ee0" category="open-title">读/写权限</block>
+  <block id="bff2a32004a29ed6a2b848b515ee2ed4" category="paragraph">要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Read/Write_权限和_Read-Only_权限之间进行选择。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
 </blocks>

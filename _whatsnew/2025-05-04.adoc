@@ -1,0 +1,39 @@
+= 跟踪器响应支持
+:allow-uri-read: 
+
+
+
+
+=== 跟踪器响应支持
+
+Tracker现在提供API响应、以便您可以查看与任务相关的REST API输出。
+
+
+
+=== 支持对AWS专有信息管理器进行链接身份验证
+
+现在、您可以选择使用AWS机密管理器中的密钥对链接进行身份验证、这样就不必使用存储在BlueXP  工作负载中的凭据。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["使用Lamba链接连接到FSx for ONTAP文件系统"]
+
+
+
+=== 为FSx for ONTAP文件系统实施最佳实践
+
+BlueXP  工作负载提供了一个信息板、您可以在其中查看文件系统配置的架构良好状态。您可以利用此分析为FSx for ONTAP文件系统实施最佳实践。文件系统配置分析包括以下配置：SSD容量阈值、计划的本地快照、计划的ONTAP备份FSx、数据分层和远程数据复制。
+
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["了解对文件系统配置进行精心设计的分析"]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["为文件系统实施最佳实践"]
+
+
+
+
+=== 针对文件系统问题设计合理的通知
+
+现在、在BlueXP  控制台中、对于架构良好的文件系统、FSx for ONTAP文件系统会在"画布"中显示一条通知、指示何时文件系统存在问题需要修复。
+
+
+
+=== 更新了权限术语
+
+现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。

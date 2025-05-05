@@ -30,7 +30,7 @@ summary: 要创建或管理FSx for ONTAP工作环境、您需要向BlueXP添加A
 
 == 关于此任务
 
-在BlueXP  Workload Factory中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中运行的权限级别或_operational mode_。要发现和部署适用于ONTAP文件系统的FSx等AWS资源、您需要_read_或_Automate _权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_Read_模式或_Automate模式。_read_与查看权限相同。_Automate _与操作权限相同。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解有关操作模式的更多信息"](英文)
+在BlueXP  工作负载工厂中从存储添加FSx for ONTAP的新凭据时、您需要确定要在中操作的权限级别或_operational mode_。要发现和部署AWS资源、例如适用于ONTAP文件系统的FSx、您需要_read-only _或_read/Write_权限。BlueXP  FSx for ONTAP将在_BASIC模式下运行、除非您选择_read-only模式或_read/Write_模式。_read-only _与查看权限相同。_Read/Write_与操作权限相同。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解有关操作模式的更多信息"](英文)
 
 可从BlueXP  设置>*凭据*页面查看新的和现有的AWS凭据。
 
@@ -84,7 +84,7 @@ image:screenshot-create-policies-manual-permissions-check.png["屏幕截图显�
 +
 您可以稍后添加其他功能、因此只需选择当前要部署和管理的工作负载即可。
 
-. 对于可选择权限级别("自动"或"读取")的工作负载功能、请选择可通过这些凭据获得的权限类型。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解权限、也称为操作模式"^](英文)
+. 对于可选择权限级别(读/写或只读)的工作负载功能、请选择可通过这些凭据获得的权限类型。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["了解权限、也称为操作模式"^](英文)
 . 可选：选择*启用自动权限检查*以检查您是否具有完成工作负载操作所需的AWS帐户权限。启用此复选框会将添加 `iam:SimulatePrincipalPolicy permission`到权限策略中。此权限的目的仅是确认权限。您可以在添加凭据后删除此权限、但我们建议保留此权限、以防止为部分成功的操作创建资源、并避免手动清理任何所需的资源。
 . 在CodeBox窗口中、复制第一个IAM策略的权限。
 +
@@ -93,7 +93,7 @@ image:screenshot-create-policies-manual-permissions-check.png["屏幕截图显�
 +
 [role="tabbed-block"]
 ====
-.读取权限
+.只读权限
 --
 [source, json]
 ----
@@ -125,7 +125,7 @@ image:screenshot-create-policies-manual-permissions-check.png["屏幕截图显�
 }
 ----
 --
-.自动执行权限
+.读/写权限
 --
 [source, json]
 ----
@@ -236,32 +236,32 @@ image:screenshot-create-role.png["屏幕截图、显示哪些权限将成为新�
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:CreateStack",
-                "cloudformation:UpdateStack",
-                "cloudformation:DeleteStack",
-                "cloudformation:DescribeStacks",
-                "cloudformation:DescribeStackEvents",
-                "cloudformation:DescribeChangeSet",
-                "cloudformation:ExecuteChangeSet",
-                "cloudformation:ListStacks",
-                "cloudformation:ListStackResources",
-                "cloudformation:GetTemplate",
-                "cloudformation:ValidateTemplate",
-                "lambda:InvokeFunction",
-                "iam:PassRole",
-                "iam:CreateRole",
-                "iam:UpdateAssumeRolePolicy",
-                "iam:AttachRolePolicy",
-                "iam:CreateServiceLinkedRole"
-            ],
-            "Resource": "*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateStack",
+        "cloudformation:UpdateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:DescribeChangeSet",
+        "cloudformation:ExecuteChangeSet",
+        "cloudformation:ListStacks",
+        "cloudformation:ListStackResources",
+        "cloudformation:GetTemplate",
+        "cloudformation:ValidateTemplate",
+        "lambda:InvokeFunction",
+        "iam:PassRole",
+        "iam:CreateRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:AttachRolePolicy",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ----
 
