@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-monitor-operations.html 
-keywords: monitor databases, monitor jobs, track database jobs 
+keywords: monitor jobs, track jobs, monitor, track 
 summary: 在BlueXP  中使用跟踪器跟踪FSx for ONTAP操作并监控操作进度。 
 ---
 = 使用BlueXP  中的Tracker监控FSx for ONTAP操作
@@ -14,11 +14,11 @@ summary: 在BlueXP  中使用跟踪器跟踪FSx for ONTAP操作并监控操作�
 在BlueXP  中使用Tracker监控和跟踪FSx for ONTAP操作的执行情况、并监控作业进度。
 
 .关于此任务
-BlueXP  提供了一项作业监控功能跟踪器、可用于监控和跟踪凭据、FSx for ONTAP和链接操作的进度和状态、查看操作任务和子任务的详细信息、诊断任何问题或故障、编辑失败操作的参数以及重试失败的操作。
+BlueXP  提供了一项作业监控功能跟踪器、可用于监控和跟踪凭据、FSx for ONTAP和链接操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。
 
 Tracker提供了多种操作。您可以按时间范围(过去24小时、7天、14天或30天)、工作负载、状态和用户筛选作业；使用搜索功能查找作业；以及将作业表下载为CSV文件。您可以随时刷新Tracker。您可以快速重试失败的操作、也可以编辑失败操作的参数并重试此操作。
 
-Tracker支持两个级别的监控。创建文件系统等每个任务都会显示任务说明、状态、开始时间、任务持续时间、用户、区域、代理资源(链接关联)、任务ID以及所有相关子任务。
+Tracker支持两个级别的监控、具体取决于操作。每个任务(例如文件系统部署)都会显示任务说明、状态、开始时间、任务工期、用户、区域、代理资源、任务ID以及所有相关子任务。您可以查看API响应以了解操作期间发生的情况。
 
 带有示例的跟踪器任务级别::
 +

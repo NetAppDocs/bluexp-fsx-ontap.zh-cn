@@ -590,9 +590,7 @@
   <block id="1d871a79e130277eac94bdf23b8f559d" category="summary">在BlueXP  中使用跟踪器跟踪FSx for ONTAP操作并监控操作进度。</block>
   <block id="16edaff1d441f823f269cfb57989844e" category="doc">使用BlueXP  中的Tracker监控FSx for ONTAP操作</block>
   <block id="c51aab10e5fd03127f375a02c70e31d1" category="paragraph">在BlueXP  中使用Tracker监控和跟踪FSx for ONTAP操作的执行情况、并监控作业进度。</block>
-  <block id="030aa1dc2f523ee33fca72b98728f303" category="paragraph">BlueXP  提供了一项作业监控功能跟踪器、可用于监控和跟踪凭据、FSx for ONTAP和链接操作的进度和状态、查看操作任务和子任务的详细信息、诊断任何问题或故障、编辑失败操作的参数以及重试失败的操作。</block>
   <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">Tracker提供了多种操作。您可以按时间范围(过去24小时、7天、14天或30天)、工作负载、状态和用户筛选作业；使用搜索功能查找作业；以及将作业表下载为CSV文件。您可以随时刷新Tracker。您可以快速重试失败的操作、也可以编辑失败操作的参数并重试此操作。</block>
-  <block id="f2cee538b7196c0114b7722b311de074" category="paragraph">Tracker支持两个级别的监控。创建文件系统等每个任务都会显示任务说明、状态、开始时间、任务持续时间、用户、区域、代理资源(链接关联)、任务ID以及所有相关子任务。</block>
   <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">带有示例的跟踪器任务级别</block>
   <block id="05bee9860c0a2efcc43ba9c2e7d71a73" category="list-text">级别1 (父任务)：跟踪文件系统部署。</block>
   <block id="bf4ab25188da8d1000fe4fd110b6cc4e" category="list-text">级别2 (子任务)：跟踪与文件系统部署相关的子任务。</block>
@@ -677,4 +675,6 @@
   <block id="6c89d11178770d48b64eed2f5ad15ee0" category="open-title">读/写权限</block>
   <block id="bff2a32004a29ed6a2b848b515ee2ed4" category="paragraph">要为BlueXP  提供创建和管理FSx for ONTAP文件系统所需的权限、需要添加AWS凭据。您可以在_Read/Write_权限和_Read-Only_权限之间进行选择。</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
+  <block id="5a727a54cd3005d4cc50f72f6b62d2d0" category="paragraph">BlueXP  提供了一项作业监控功能跟踪器、可用于监控和跟踪凭据、FSx for ONTAP和链接操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。</block>
+  <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">Tracker支持两个级别的监控、具体取决于操作。每个任务(例如文件系统部署)都会显示任务说明、状态、开始时间、任务工期、用户、区域、代理资源、任务ID以及所有相关子任务。您可以查看API响应以了解操作期间发生的情况。</block>
 </blocks>
