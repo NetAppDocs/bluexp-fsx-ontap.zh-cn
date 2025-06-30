@@ -18,6 +18,26 @@ summary: 了解适用于NetApp ONTAP 的Amazon FSX中的新增功能。
 
 
 
+== 2025年6月29日
+
+
+
+=== 凭证更新
+
+为 FSx for ONTAP 文件系统设置凭据和权限后，您将被重定向到 BlueXP 凭据页面。在此页面，您可以重命名或删除 FSx for ONTAP 凭据。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["设置 FSx for ONTAP 文件系统的权限"]
+
+
+
+=== 支持在两个 FSx for ONTAP 文件系统之间复制数据
+
+现在可以通过 BlueXP 控制台在两个 FSx for ONTAP 文件系统之间进行数据复制。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["复制数据"]
+
+
+
 == 2025年5月4日
 
 
@@ -54,7 +74,7 @@ BlueXP  工作负载提供了一个信息板、您可以在其中查看文件�
 
 === 更新了权限术语
 
-现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。
+工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。
 
 
 
